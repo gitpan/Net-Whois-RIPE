@@ -1,0 +1,11 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         Net-Whois-RIPE
+version:      1.20
+version_from: RIPE.pm
+installdirs:  site
+requires:
+    IO:                            1.2
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.17

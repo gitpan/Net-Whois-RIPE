@@ -1,33 +1,28 @@
-BEGIN { $| = 1; print "1..7\n"; }
-END {print "not ok 1\n" unless $loaded;}
-use Net::Whois::RIPE;
-$loaded = 1;
-print "ok 1\n";
-
-sub test {
-	local($^W)=0;
-	my($num,$true,$msg)=@_;
-	print($true ? "ok $num\n" : "not ok $num $msg\n");
-}
-
+use Test;
+use Carp;
 use strict;
 
-use vars qw($DEBUG $HOST);
+BEGIN { require "t/common.pl", plan tests => 5 };
 
-my $file = $0;
-$file =~ s/\/.+\.t$/\/test_parms.pl/;
-test(2,(do $file),"failed to do $file");
+my $w;
+my $DEBUG = 1;
+use vars qw($HOST);
 
-my $w;		# whois object
+eval { require Net::Whois::RIPE; return 1;};
+ok($@,'');
+croak() if $@;  
 
-test(3,$w = Net::Whois::RIPE->debug($DEBUG)==$DEBUG,"debug method failed");
+ok($w = Net::Whois::RIPE->debug($DEBUG)==$DEBUG);
+ok($w = Net::Whois::RIPE->debug(0)==0);
 
-test(4,$w = Net::Whois::RIPE->new($HOST), "object constructor failed");
-test(5,$w->server eq $HOST, "server method should return $HOST");
+eval {
+	$w = Net::Whois::RIPE->new($HOST);
+	croak() unless $w;
+};
+
+skip(!defined($w),defined($w));
 
 # these tests should fail.
-test(6,!($w = Net::Whois::RIPE->new), 
-	"object constructor should return undef when no host is supplied");
-test(7,!($w = Net::Whois::RIPE->new('garbage')), "bad hostname");
+ok(!($w = Net::Whois::RIPE->new));
 
 exit 0;

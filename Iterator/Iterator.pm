@@ -6,7 +6,7 @@ use Net::Whois::RIPE::Object;
 use Net::Whois::RIPE::Object::Template;
 
 use vars qw($VERSION);
-$VERSION = do {my @r=(q$Revision: 1.2 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
+$VERSION = do {my @r=(q$Revision: 1.1.1.1 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
 
 # class wide debug flag 0=off,1=on,2=on for IO::Socket
 my $DEBUG=0;

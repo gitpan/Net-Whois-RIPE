@@ -3,7 +3,7 @@ use strict;
 use Carp;
 
 use vars qw($VERSION @ISA);
-$VERSION = do {my @r=(q$Revision: 1.5 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
+$VERSION = do {my @r=(q$Revision: 1.1.1.1 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
 
 @ISA = qw(Net::Whois::RIPE::Object);
 

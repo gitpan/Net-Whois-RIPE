@@ -6,7 +6,7 @@ my $errstr = '';
 sub errstr { $errstr }
 
 use vars qw($VERSION $AUTOLOAD);
-$VERSION = do {my @r=(q$Revision: 1.6 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
+$VERSION = do {my @r=(q$Revision: 1.2 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
 
 my %NO_ADD=(		# hash of values not permitted to be added
 	content=> 1,
@@ -27,7 +27,7 @@ sub new {
 	my $proto  = shift;
 	my $class = ref($proto) || $proto;
 	my $handle = shift;
- 	my $persistance = shift;
+ 	my $persistance = shift || 0;
 
 	unless ($handle and ref($handle)) {
 		$errstr = 'expected handle not found';

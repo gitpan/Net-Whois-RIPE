@@ -1,17 +1,12 @@
-
-% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
-
-person:      [mandatory]  [single]     [primary/look-up key]    
-address:     [mandatory]  [multiple]   [ ]                      
-country:     [optional]   [single]     [ ]                      
-phone:       [mandatory]  [multiple]   [ ]                      
-fax-no:      [optional]   [multiple]   [ ]                      
-e-mail:      [mandatory]  [multiple]   [look-up key]            
-nic-hdl:     [mandatory]  [single]     [primary/look-up key]    
-remarks:     [optional]   [multiple]   [ ]                      
-notify:      [optional]   [multiple]   [inverse key]            
-mnt-by:      [mandatory]  [multiple]   [inverse key]            
-changed:     [mandatory]  [multiple]   [ ]                      
-source:      [mandatory]  [single]     [ ]                      
-
-
+person:        [mandatory]  [single]     [lookup key]
+address:       [mandatory]  [multiple]   [ ]
+country:       [mandatory]  [single]     [ ]
+phone:         [mandatory]  [multiple]   [ ]
+fax-no:        [optional]   [multiple]   [ ]
+e-mail:        [mandatory]  [multiple]   [lookup key]
+nic-hdl:       [mandatory]  [single]     [primary/look-up key]
+remarks:       [optional]   [multiple]   [ ]
+notify:        [optional]   [multiple]   [inverse key]
+mnt-by:        [mandatory]  [multiple]   [inverse key]
+changed:       [mandatory]  [multiple]   [ ]
+source:        [mandatory]  [single]     [ ]

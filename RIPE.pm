@@ -13,7 +13,7 @@ use constant SLEEP_INTERVAL=> 1;     # time interval between attempts
 
 
 use vars qw($VERSION);
-$VERSION = do {my @r=(q$Revision: 1.19 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
+$VERSION = do {my @r=(q$Revision: 1.20 $=~/\d+/g); sprintf "%d."."%02d"x$#r,@r};
 
 # class wide debug flag 0=off,1=on,2=on for IO::Socket
 my $DEBUG=0;
@@ -51,7 +51,7 @@ sub new
 		FLAG_g=> 0,	# used to sync databases. shouldn't be used for general use
 		FLAG_h=> $host,# host to connect to
 		FLAG_i=> '',	# do an inverse lookup for specified attributes
-    FLAG_k=> 0, # for persistant socket connection
+		FLAG_k=> 0, # for persistant socket connection
 		FLAG_L=> 0,	# find all Less specific matches
 		FLAG_m=> 0,	# find first level more specific matches
 		FLAG_M=> 0,	# find all More specific matches
@@ -72,11 +72,16 @@ sub new
 		if $self->{FLAG_h} =~ /$RE_WHOIS/oi and $ENV{"REMOTE_ADDR"};
 
 	# connect to server
-	unless ($self->_connect) {
-		carp "new: whois connection failure." if $DEBUG || $debug;
-		return undef;
-	}
+#unless ($self->_connect) {
+#	carp "new: whois connection failure." if $DEBUG || $debug;
+#	return undef;
+#	}
 	return $self
+}
+
+sub connect {
+		my $self = shift;
+		$self->_connect();
 }
 
 sub query_iterator

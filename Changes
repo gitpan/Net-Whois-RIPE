@@ -1,0 +1,6 @@
+Revision history for Perl extension Net::Whois::RIPE.
+
+1.19  Wed Jul 17 13:47:00 AEST 2002
+	- First release outside of APNIC
+	- Paul Gampe <pgampe@users.sourceforge.net>
+
