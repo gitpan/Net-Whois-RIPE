@@ -1,0 +1,160 @@
+$EMAIL = 'nojava@apnic.net';
+$SOURCE = 'TEST';
+$PASSWORD = 'test';
+
+$CREATE_PERSON = <<MSG1
+person:      Kevin Baker
+address:     APNIC Milton
+country:     AU
+phone:       +61-7-3846-3847
+e-mail:      $EMAIL
+nic-hdl:     AUTO-1
+mnt-by:      MAINT-TEST
+changed:     $EMAIL 20000301
+source:      $SOURCE
+password:    $PASSWORD
+
+.
+
+MSG1
+;
+
+$OBJECT_THAT_IS_NOT_IN_WHOIS = 'BLAH_NOT_THERE';
+$UPDATE_THAT_FAILS= "NOT_THERE: blah\nchanged:      $EMAIL\n\n.\n";
+
+# a badly formatted delete message, just destined to fail!
+$BAD_DELETE = <<BAD
+garbage:     blah
+changed:     $EMAIL
+source:      $SOURCE
+password:    $PASSWORD
+delete:      delete it
+
+.
+
+BAD
+;
+
+################################################################################
+# Delete messages.
+# These exist because when the test fails it is sometimes necessary
+# to delete pre delete them from a previous test
+################################################################################
+
+$PRE_DELETE_MSG1 = <<DEL_MSG1
+person:      Kevin Baker
+address:     APNIC Milton
+country:     AU
+phone:       +61-7-3846-3847
+e-mail:      $EMAIL
+nic-hdl:     KB1-TEST
+mnt-by:      MAINT-TEST
+changed:     $EMAIL 20000301
+source:      $SOURCE
+password:    $PASSWORD
+delete:      delete it
+
+.
+
+DEL_MSG1
+;
+
+$PRE_DELETE_MSG2 = <<DEL_MSG2
+person:      Kevin Baker
+address:     APNIC Milton
+country:     AU
+phone:       +61-7-3846-3847
+fax:         +61-7-3345-4656
+e-mail:      $EMAIL
+nic-hdl:     KB1-TEST
+mnt-by:      MAINT-TEST
+changed:     $EMAIL 20000301
+source:      $SOURCE
+password:    $PASSWORD
+delete:      delete it
+
+.
+
+DEL_MSG2
+;
+
+$PRE_DELETE_MSG3 = <<DEL_MSG3
+person:      Kevin Baker
+address:     APNIC Milton
+country:     AU
+phone:       +61-7-3846-3847
+fax-no:      +61-7-3345-4656
+fax-no:      +61-7-3345-4656
+fax-no:      +61-7-3345-4656
+e-mail:      $EMAIL
+nic-hdl:     KB1-TEST
+mnt-by:      MAINT-TEST
+changed:     $EMAIL 20000301
+changed:     $EMAIL 20000420
+changed:     $EMAIL 20000420
+changed:     $EMAIL 20000420
+source:      $SOURCE
+password:    $PASSWORD
+delete:      delete it
+
+.
+
+DEL_MSG3
+;
+
+$PRE_DELETE_MSG4 = <<DEL_MSG4
+person:      Kevin Baker
+address:     APNIC Milton
+country:     AU
+phone:       +61-7-3846-3847
+e-mail:      $EMAIL
+nic-hdl:     KB2-TEST
+mnt-by:      MAINT-TEST
+changed:     $EMAIL 20000301
+source:      $SOURCE
+password:    $PASSWORD
+delete:      delete it
+
+.
+
+DEL_MSG4
+;
+
+$PRE_DELETE_MSG5 = <<DEL_MSG5
+person:      Kevin Baker
+address:     APNIC Milton
+country:     AU
+phone:       +61-7-3846-3847
+fax-no:      +61-7-3345-4656
+e-mail:      $EMAIL
+nic-hdl:     KB1-TEST
+mnt-by:      MAINT-TEST
+changed:     $EMAIL 20000301
+changed:     $EMAIL 20000420
+source:      $SOURCE
+password:    $PASSWORD
+delete:      delete it
+
+.
+
+DEL_MSG5
+;
+
+$PRE_DELETE_MSG6 = <<DEL_MSG6
+person:      Kevin Baker
+address:     APNIC Milton
+country:     AU
+phone:       +61-7-3846-3847
+e-mail:      $EMAIL
+nic-hdl:     KB2-TEST
+mnt-by:      MAINT-TEST
+changed:     $EMAIL 20000301
+source:      $SOURCE
+password:    $PASSWORD
+delete:      delete it
+
+.
+
+DEL_MSG6
+;
+1;

@@ -1,0 +1,21 @@
+
+% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
+
+route:       [mandatory]  [single]     [primary/look-up key]    
+descr:       [mandatory]  [multiple]   [ ]                      
+country:     [optional]   [single]     [ ]                      
+origin:      [mandatory]  [single]     [primary key]            
+hole:        [optional]   [multiple]   [ ]                      
+withdrawn:   [optional]   [single]     [ ]                      
+comm-list:   [optional]   [multiple]   [ ]                      
+advisory:    [optional]   [multiple]   [ ]                      
+remarks:     [optional]   [multiple]   [ ]                      
+cross-nfy:   [optional]   [multiple]   [inverse key]            
+community:   [optional]   [multiple]   [ ]                      
+cross-mnt:   [optional]   [multiple]   [inverse key]            
+notify:      [optional]   [multiple]   [inverse key]            
+mnt-by:      [mandatory]  [multiple]   [inverse key]            
+changed:     [mandatory]  [multiple]   [ ]                      
+source:      [mandatory]  [single]     [ ]                      
+
+

@@ -1,0 +1,16 @@
+
+% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
+
+inet-rtr:    [mandatory]  [single]     [primary/look-up key]    
+localas:     [mandatory]  [single]     [ ]                      
+ifaddr:      [mandatory]  [multiple]   [look-up key]            
+peer:        [optional]   [multiple]   [ ]                      
+admin-c:     [mandatory]  [multiple]   [inverse key]            
+tech-c:      [mandatory]  [multiple]   [inverse key]            
+remarks:     [optional]   [multiple]   [ ]                      
+notify:      [optional]   [multiple]   [inverse key]            
+mnt-by:      [mandatory]  [multiple]   [inverse key]            
+changed:     [mandatory]  [multiple]   [ ]                      
+source:      [mandatory]  [single]     [ ]                      
+
+

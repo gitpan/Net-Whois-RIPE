@@ -1,0 +1,23 @@
+
+% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
+
+aut-num:     [mandatory]  [single]     [primary/look-up key]    
+as-name:     [optional]   [single]     [ ]                      
+descr:       [mandatory]  [multiple]   [ ]                      
+country:     [optional]   [single]     [ ]                      
+as-in:       [optional]   [multiple]   [ ]                      
+as-out:      [optional]   [multiple]   [ ]                      
+interas-in:  [optional]   [multiple]   [ ]                      
+interas-out: [optional]   [multiple]   [ ]                      
+as-exclude:  [optional]   [multiple]   [ ]                      
+default:     [optional]   [multiple]   [ ]                      
+guardian:    [optional]   [single]     [ ]                      
+admin-c:     [mandatory]  [multiple]   [inverse key]            
+tech-c:      [mandatory]  [multiple]   [inverse key]            
+remarks:     [optional]   [multiple]   [ ]                      
+notify:      [optional]   [multiple]   [inverse key]            
+mnt-by:      [mandatory]  [multiple]   [inverse key]            
+changed:     [mandatory]  [multiple]   [ ]                      
+source:      [mandatory]  [single]     [ ]                      
+
+

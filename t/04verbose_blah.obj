@@ -1,0 +1,111 @@
+
+% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
+
+% No verbose template available for object "blah"
+
+Use
+
+whois -v <object-type>
+
+to obtain detailed information about RIPE database objects
+where <object-type> is one of
+
+as-macro
+
+An `AS Macro' is a group of autonomous systems with
+the same routing policies. See ripe-181 for details.
+
+
+aut-num
+
+The aut-num object describes the details of the
+registered owner of an Autonomous System and their
+routing policy for that AS. See ripe-181 and
+RFC-BGP4 for details.
+
+
+community
+
+A community is a group of routes that cannot be
+represented by an AS or group of AS's. See
+ripe-181 for details.
+
+
+domain
+
+A domain object represents a Top Level Domain (TLD) or
+other domain registrations. It is for information only.
+APNIC uses the domain object to store active in-addr.arpa
+or ip6.int delegations (reverse DNS).
+
+
+dom-prefix
+
+The dom-prefix object represents CLNS address
+space and routing.
+
+
+inet6num
+
+An experimental object for IP Version 6 addresses.
+
+
+inetnum
+
+An inetnum object contains information on allocations
+and assignments of IP address space. See ripe-142 for
+information on requesting IP address space.
+
+
+inet-rtr
+
+The inet-rtr object represents an internet router
+within a routing registry. See ripe-122 for details.
+
+
+key-cert
+
+The key certificate object is used to store PGP
+certificates for use with the maintainer objects
+as a means of authentication.
+
+
+mntner
+
+The mntner object contains details of who is authorised
+to make changes to RIPE Database objects and details of
+a process that actually verifies that the person who
+makes the changes is authorised to do so.
+Mntner objects are not created automatically, but are
+forwarded to RIPE NCC staff.
+
+
+person
+
+The person object contains information on how to
+contact those people who are responsible for
+network operations or RIPE Database objects.
+
+
+role
+
+The role object represents a "help desk", a network
+operations centre or a contact point for help or
+information on network operations.
+
+
+route
+
+The route object represents a single route injected into
+the Internet routing mesh.
+
+
+
+
+Further information may be found at:
+
+<http://www.ripe.net/docs/ripe-157.html>
+<ftp://ftp.ripe.net/ripe/docs/ripe-157.ps>
+<ftp://ftp.ripe.net/ripe/docs/ripe-157.txt>
+
+

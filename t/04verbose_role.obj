@@ -1,0 +1,127 @@
+
+% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
+
+The role object:
+
+The role object represents a "help desk", a network
+operations centre or a contact point for help or
+information on network operations.
+
+
+role:        [mandatory]  [single]     [primary/look-up key]    
+address:     [mandatory]  [multiple]   [ ]                      
+country:     [optional]   [single]     [ ]                      
+phone:       [optional]   [multiple]   [ ]                      
+fax-no:      [optional]   [multiple]   [ ]                      
+e-mail:      [mandatory]  [multiple]   [look-up key]            
+trouble:     [optional]   [multiple]   [ ]                      
+admin-c:     [mandatory]  [multiple]   [inverse key]            
+tech-c:      [mandatory]  [multiple]   [inverse key]            
+nic-hdl:     [mandatory]  [single]     [primary/look-up key]    
+remarks:     [optional]   [multiple]   [ ]                      
+notify:      [optional]   [multiple]   [inverse key]            
+mnt-by:      [mandatory]  [multiple]   [inverse key]            
+changed:     [mandatory]  [multiple]   [ ]                      
+source:      [mandatory]  [single]     [ ]                      
+
+The content of the attributes of the role object are defined below:
+
+role
+	The full name of a role entity e.g. APNIC DBM.
+
+	Two components, each consisting of alphabetic
+	characters. Note: there is no "-" character
+	between the two components of the the name.
+
+address
+	Full postal address of a person.
+
+	Free Text.
+
+country
+	Name of the country of the admin-c.
+
+	2 letter uppercase ISO 3166 country code.
+
+phone
+	Telephone number
+
+	+ <Country Code><Area Code><Phone Number>
+	+ <Country Code><Area Code><Phone Number> ext. <number>
+	Optional: spaces may be used to split up the phone number
+	into its constituent components. "." characters can also
+	be used between to separate the digits.
+
+fax-no
+	The fax number of a person or role
+
+	+ <Country Code> <Area Code> <Fax Number>
+
+e-mail
+	The e-mail address of a person or role.
+
+	RFC-822 address.
+
+trouble
+	Information on who to contact when there are problems.
+
+	<Free text>
+
+admin-c
+	An on-site contact (person)
+
+	<NIC-handle>
+
+tech-c
+	A technical contact.
+
+	<NIC-handle>
+
+nic-hdl
+	The NIC handle of a role or person object.
+	This can be a APNIC NIC-handle or a NIC-handle
+	assigned by other regional registries.
+
+	APNIC NIC-handle: <Initials><0-999>-AP
+
+remarks
+	General remarks. Can include an URL or RFC822
+	address (if preceeded by mailto:).
+
+	<free text>
+
+notify
+	The e-mail address to which notifications of changes to
+	an object should be sent.
+
+	<RFC-822 address>
+
+mnt-by
+	The identifier of a registered mntner object used for
+	authorization and authentication.
+
+	<mntner>
+
+changed
+	Who previously changed this object
+	and when this change was made.
+
+	<RFC822 e-mail address> <DATE>
+	E-mail address of person updating the object.
+	DATE in YYYYMMDD or YYMMDD format.
+
+source
+	Identifier of the database containing
+	authoritative data for this object.
+	Use APNIC for objects in the APNIC Database.
+
+	Uppercase Text.
+
+
+Further information may be found at:
+
+<http://www.ripe.net/docs/ripe-157.html>
+<ftp://ftp.ripe.net/ripe/docs/ripe-157.ps>
+<ftp://ftp.ripe.net/ripe/docs/ripe-157.txt>
+
+

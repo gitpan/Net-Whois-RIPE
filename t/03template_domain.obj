@@ -1,0 +1,21 @@
+
+% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
+
+domain:      [mandatory]  [single]     [primary/look-up key]    
+descr:       [mandatory]  [multiple]   [ ]                      
+country:     [optional]   [single]     [ ]                      
+admin-c:     [mandatory]  [multiple]   [inverse key]            
+tech-c:      [mandatory]  [multiple]   [inverse key]            
+zone-c:      [mandatory]  [multiple]   [inverse key]            
+nserver:     [mandatory]  [multiple]   [inverse key]            
+sub-dom:     [optional]   [multiple]   [inverse key]            
+dom-net:     [optional]   [multiple]   [ ]                      
+remarks:     [optional]   [multiple]   [ ]                      
+notify:      [optional]   [multiple]   [inverse key]            
+mnt-by:      [mandatory]  [multiple]   [inverse key]            
+refer:       [optional]   [single]     [ ]                      
+mnt-lower:   [optional]   [multiple]   [ ]                      
+changed:     [mandatory]  [multiple]   [ ]                      
+source:      [mandatory]  [single]     [ ]                      
+
+

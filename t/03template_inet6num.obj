@@ -1,0 +1,19 @@
+
+% Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
+
+inet6num:    [mandatory]  [single]     [primary/look-up key]    
+netname:     [mandatory]  [single]     [look-up key]            
+descr:       [mandatory]  [multiple]   [ ]                      
+country:     [mandatory]  [multiple]   [ ]                      
+admin-c:     [mandatory]  [multiple]   [inverse key]            
+tech-c:      [mandatory]  [multiple]   [inverse key]            
+rev-srv:     [optional]   [multiple]   [ ]                      
+status:      [generated]  [single]     [ ]                      
+remarks:     [optional]   [multiple]   [ ]                      
+notify:      [optional]   [multiple]   [inverse key]            
+mnt-by:      [optional]   [multiple]   [inverse key]            
+mnt-lower:   [optional]   [multiple]   [inverse key]            
+changed:     [mandatory]  [multiple]   [ ]                      
+source:      [mandatory]  [single]     [ ]                      
+
+
