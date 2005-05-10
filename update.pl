@@ -1,4 +1,9 @@
 #!/usr/bin/perl
+###############################################################################
+# Net::Whois::RIPE - implementation of RIPE Whois.
+# Copyright (C) 2005 Paul Gampe
+# vim:tw=78:ts=4
+###############################################################################
 use strict;
 
 BEGIN { require "t/common.pl" };

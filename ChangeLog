@@ -1,0 +1,164 @@
+2005-05-09 13:38  pgampe
+
+	* MANIFEST, Object/t/03large.obj: importing patch and advise from
+	  Marco md@Linux.IT
+
+2005-05-09 13:19  pgampe
+
+	* RIPE.pm, RIPE.pod, perl-Net-Whois-RIPE.spec, test.cfg, update.pl,
+	  Iterator/Iterator.pm, Object/Object.pm, Object/t/01general.obj,
+	  Object/t/01general.t, Object/t/03no_attributes.obj,
+	  Object/t/03no_attributes.t, Object/t/04large.obj: importing patch
+	  and advise from Marco md@Linux.IT
+
+2004-11-08 12:40  pgampe
+
+	* perl-Net-Whois-RIPE.spec: fix typo
+
+2004-11-08 12:37  pgampe
+
+	* ChangeLog, perl-Net-Whois-RIPE.spec: switch to ChangeLog and add
+	  spec to cvs
+
+2004-11-08 12:36  pgampe
+
+	* MANIFEST, Makefile.PL, RIPE.pm: fix sub-module out of sync
+	  version numbers
+
+2004-11-08 12:29  pgampe
+
+	* Object/Template/Template.pm: bump
+
+2004-11-08 12:22  pgampe
+
+	* Object/Template/Template.pm: bump
+
+2004-11-08 12:19  pgampe
+
+	* Object/Template/: Template.pm: bump
+
+2004-11-08 12:16  pgampe
+
+	* Object/: Object.pm: bump
+
+2004-11-08 12:11  pgampe
+
+	* Object/: Object.pm: bump
+
+2004-11-08 12:02  pgampe
+
+	* Object/Object.pm: bump
+
+2004-11-08 11:58  pgampe
+
+	* Iterator/: Iterator.pm: bump
+
+2004-11-08 02:09  pgampe
+
+	* Changes: move to ChangeLog
+
+2004-11-08 01:54  pgampe
+
+	* RIPE.pm: moved connect out of new method to improve testing
+
+2004-11-08 01:52  pgampe
+
+	* RIPE.pm: bump
+
+2004-11-08 01:49  pgampe
+
+	* RIPE.pm: bump
+
+2004-11-08 01:46  pgampe
+
+	* RIPE.pm: bump
+
+2004-11-08 01:42  pgampe
+
+	* MANIFEST, RIPE.pm, t/common.pl: bump
+
+2004-11-08 01:30  pgampe
+
+	* t/01test.t, t/03template.t, t/03template_all.obj,
+	  t/03template_aut-num.obj, t/03template_blah.obj,
+	  t/03template_community.obj, t/03template_dom-prefix.obj,
+	  t/03template_domain.obj, t/03template_inet-rtr.obj,
+	  t/03template_inet6num.obj, t/03template_inetnum.obj,
+	  t/03template_key-cert.obj, t/03template_mntner.obj,
+	  t/03template_person.obj, t/03template_role.obj,
+	  t/03template_route.obj, t/04verbose.t, t/04verbose_all.obj,
+	  t/04verbose_as-macro.obj, t/04verbose_aut-num.obj,
+	  t/04verbose_blah.obj, t/04verbose_community.obj,
+	  t/04verbose_dom-prefix.obj, t/04verbose_domain.obj,
+	  t/04verbose_inet-rtr.obj, t/04verbose_inet6num.obj,
+	  t/04verbose_inetnum.obj, t/04verbose_key-cert.obj,
+	  t/04verbose_mntner.obj, t/04verbose_person.obj,
+	  t/04verbose_role.obj, t/04verbose_route.obj, t/05update.obj,
+	  t/05update.t, t/06iterator.t, t/07which.t, MANIFEST, RIPE.pm,
+	  test.cfg, update.pl, Object/Object.pm: rewrite test suite to skip
+	  if no server found
+
+2004-11-07 17:32  pgampe
+
+	* RIPE.pod: update copyright
+
+2003-01-16 13:29  pgampe
+
+	* t/: 07which.t, test_parms.pl: add test for which method
+
+2003-01-16 12:30  pgampe
+
+	* t/: 02old.pl, 02old.t: remove depreciated test cases
+
+2002-07-31 15:13  pgampe
+
+	* Changes, MANIFEST: need to track changes
+
+2002-07-31 14:48  pgampe
+
+	* Object/t/: 01general.obj, 02empty1.obj, 02empty2.obj,
+	  02empty3.obj, 03large.obj, 03no_attributes.obj, 04large.obj:
+	  forgot obj files
+
+2002-07-31 14:47  pgampe
+
+	* t/: 03template_all.obj, 03template_as-macro.obj,
+	  03template_aut-num.obj, 03template_blah.obj,
+	  03template_community.obj, 03template_dom-prefix.obj,
+	  03template_domain.obj, 03template_inet-rtr.obj,
+	  03template_inet6num.obj, 03template_inetnum.obj,
+	  03template_key-cert.obj, 03template_mntner.obj,
+	  03template_person.obj, 03template_role.obj, 03template_route.obj,
+	  04verbose_all.obj, 04verbose_as-macro.obj, 04verbose_aut-num.obj,
+	  04verbose_blah.obj, 04verbose_community.obj,
+	  04verbose_dom-prefix.obj, 04verbose_domain.obj,
+	  04verbose_inet-rtr.obj, 04verbose_inet6num.obj,
+	  04verbose_inetnum.obj, 04verbose_key-cert.obj,
+	  04verbose_mntner.obj, 04verbose_person.obj, 04verbose_role.obj,
+	  04verbose_route.obj, 05update.obj: forgot the obj files
+
+2002-07-23 21:41  pgampe
+
+	* MANIFEST, Makefile.PL, README, RIPE.pm, RIPE.pod,
+	  Iterator/Iterator.pm, Iterator/Iterator.pod,
+	  Iterator/Makefile.PL, Object/Makefile.PL, Object/Object.pm,
+	  Object/Object.pod, Object/Template/Makefile.PL,
+	  Object/Template/Template.pm, Object/Template/test.pl,
+	  Object/t/01general.t, Object/t/02empty.t,
+	  Object/t/03no_attributes.t, Object/t/04large.t, t/01test.t,
+	  t/02old.pl, t/02old.t, t/03template.t, t/04verbose.t,
+	  t/05update.t, t/06iterator.t, t/test_parms.pl: Initial import to
+	  sourceforge from APNIC
+
+2002-07-23 21:41  pgampe
+
+	* MANIFEST, Makefile.PL, README, RIPE.pm, RIPE.pod,
+	  Iterator/Iterator.pm, Iterator/Iterator.pod,
+	  Iterator/Makefile.PL, Object/Makefile.PL, Object/Object.pm,
+	  Object/Object.pod, Object/Template/Makefile.PL,
+	  Object/Template/Template.pm, Object/Template/test.pl,
+	  Object/t/01general.t, Object/t/02empty.t,
+	  Object/t/03no_attributes.t, Object/t/04large.t, t/01test.t,
+	  t/02old.pl, t/02old.t, t/03template.t, t/04verbose.t,
+	  t/05update.t, t/06iterator.t, t/test_parms.pl: Initial revision
+

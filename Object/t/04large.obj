@@ -1,3701 +1,3701 @@
 
 % Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
 
-person:      Paul Bourke
-address:     4/91 St Lukes Rd
-address:     Mt Albert, Auckland
-address:     NZ
-phone:       +64 9 373 7599 ext 7367
-fax-no:      +64 9 373 7410
-e-mail:      pd.bourke@auckland.ac.nz
-nic-hdl:     PB4-NZ
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 960202
-source:      APNIC
-
-person:      Paul J Hastings
-address:     TEI 210 Sukumwit 64, Bangchak Refinery Building #4
-address:     Prakanong Bangkok 10260 Thailand
-phone:       +66-2-331-0047
-fax-no:      +66-2-332-4873
-e-mail:      pjh@nwg.nectec.or.th
-nic-hdl:     PJ4-TH
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-ITSC-AP
-changed:     passakon@nectec.or.th 950922
-changed:     wasan@strauss.inet.co.th 960718
-source:      APNIC
-
-person:      Paul Goh
-address:     National Bank of Kuwait Sak
-address:     20 Collyer Quay
-address:     #20-00 Tung Centre
-address:     Singapore 049319
-phone:       +65-222-5348
-fax-no:      +65-224-5438
-nic-hdl:     PG1-SG
-mnt-by:      PIPL-NOC-AP
-changed:     siewtin@pacific.net.sg 961120
-source:      APNIC
-
-person:      Paul Manders
-address:     Combined Rural Traders
-address:     Level 2
-address:     Building 3
-address:     20 Bridge St Pymble NSW 2073
-country:     AU
-phone:       +61 2-9488-1288
-fax-no:      +61 2-9983-9535
-nic-hdl:     PM4-AP
-mnt-by:      AONE-NOC
-changed:     wojtek@aone.net.au 970718
-source:      APNIC
-
-person:      Paul Garapetis
-address:     Dallas Systems
-address:     72 Market Street - South Melbourne Vic 3205
-country:     AU
-phone:       +61 3 9645 7100
-fax-no:      +61 3 9645 7066
-nic-hdl:     PG2-AP
-mnt-by:      AONE-NOC
-changed:     wojtek@aone.net.au 970718
-source:      APNIC
-
-person:      Paul Bourke
-address:     Department Of Bush Fire services
-address:     3/175-179 James Ruse Drive - Rosehill NSW 2142
-country:     AU
-phone:       +61 2 684 4411
-fax-no:      +61 2 638 7956
-nic-hdl:     PB7-AP
-mnt-by:      AONE-NOC
-changed:     wojtek@aone.net.au 970719
-source:      APNIC
-
-person:      Paul Byrant
-address:     Monovelestant Pty Ltd trading as Advantage Car Rental
-address:     29 Catalina Drive TULLAMARINE VIC 3043
-country:     AU
-phone:       +61 3 9335 3355
-fax-no:      +61 3 9335 3500
-nic-hdl:     PB6-AP
-mnt-by:      AONE-NOC
-changed:     wojtek@aone.net.au 970727
-source:      APNIC
-
-person:      Paul Kang
-address:     Development Bank of Singapore
-address:     12 Tampines Central 1
-address:     #04-00, DBS Tampines Centre
-address:     Singapore 529537
-phone:       +65-780-2566
-fax-no:      +65-780-2566
-nic-hdl:     PK6-AP
-mnt-by:      PIPL-NOC-AP
-changed:     chriskoh@pacific.net.sg 970918
-source:      APNIC
-
-person:      PAUL MCLEAN
-address:     COMPUTER SERVICES CENTRE
-address:     UNITECH, PMB,
-address:     LAE
-address:     PAPUA NEW GUINEA
-country:     PG
-phone:       +675 4734206
-fax-no:      +675 4734915
-e-mail:      PMCLEAN@CC.UNITECH.AC.PG
-nic-hdl:     PM8-AP
-mnt-by:      UNITECH-CC-AP
-changed:     hostmaster@apnic.net 971013
-source:      APNIC
-
-person:      Paul Smith
-address:     C S Energy Ltd
-address:     GPO Box 769 BRISBANE QLD 4001
-country:     AU
-phone:       +61 3228 7734
-fax-no:      +61 3228 2509
-nic-hdl:     PS6-AP
-mnt-by:      AONE-NOC
-changed:     stuartt@aone.net.au 971121
-source:      APNIC
-
-person:      Paul Aloiss
-address:     Cellnet Cullular Ltd
-address:     18 Manning St SOUTH BRISBANE QLD 4101
-country:     AU
-phone:       +61 7 3853 5487
-fax-no:      +61 7 3853 5511
-nic-hdl:     PA5-AP
-mnt-by:      AONE-NOC
-changed:     stuartt@aone.net.au 971121
-source:      APNIC
-
-person:      Paul Whitting
-address:     Heidelberg Australia
-address:     658 Church Street RICHMOND VIC 3121
-country:     AU
-phone:       +61 15 306 607
-fax-no:      +61 3 9205 4211
-nic-hdl:     PW14-AP
-mnt-by:      AONE-NOC
-changed:     sherry@aone.net.au 971121
-source:      APNIC
-
-person:      Paul Whiting
-address:     Vicgrain Limited
-address:     70 South Bank Boulevard SOUTH MELBOURNE VIC 3626
-country:     AU
-phone:       +61 15 306 607
-fax-no:      +61 3 9251 3444
-nic-hdl:     PW15-AP
-mnt-by:      AONE-NOC
-changed:     sherry@aone.net.au 971121
-source:      APNIC
-
-person:      Paul Whitting
-address:     Heidelberg Australia
-address:     658 Church Street RICHMOND VIC 3121
-country:     AU
-phone:       +61 15 306 607
-fax-no:      +61 3 9205 4211
-nic-hdl:     PW17-AP
-mnt-by:      AONE-NOC
-changed:     sherry@aone.net.au 971121
-source:      APNIC
-
-person:      Paul Martin
-address:     Web 1
-address:     461 South Road MOORABBIN VIC 3189
-country:     AU
-phone:       +61 3 9553 3957
-fax-no:      +61 3 9553 3957
-nic-hdl:     PM10-AP
-mnt-by:      AONE-NOC
-changed:     stuartt@aone.net.au 971121
-source:      APNIC
-
-person:      Paul Cowan
-address:     Lowell Capital Limited
-address:     493-495 Little Bourke Street
-address:     Melbourne
-address:     VIC
-address:     3000
-country:     AU
-phone:       +61
-fax-no:      +61
-nic-hdl:     PC22-AP
-mnt-by:      AONE-NOC
-changed:     stuartt@aone.net.au 971124
-source:      APNIC
-
-person:      Paul Cahill
-address:     Baywind Nominees
-country:     AU
-phone:       +61 8 9316 4224
-fax-no:      +61 8 9316 4223
-nic-hdl:     PC20-AP
-mnt-by:      AONE-NOC
-changed:     stuartt@aone.net.au 971128
-source:      APNIC
-
-person:      Paul Barnett
-address:     cnr Annie & Arthur Streets
-address:     WICKHAM.
-address:     NSW 2293
-address:     AUSTRALIA
-phone:       +61 2 4969 5022
-fax-no:      +61 2 4961 1143
-e-mail:      hugo@hunterlink.net.au
-nic-hdl:     PB10-AP
-mnt-by:      HUNTERLINK-AP
-changed:     hugo@hunterlink.net.au 971210
-source:      APNIC
-
-person:      Paul Hutton
-address:     5 Tyrrell St
-address:     Wallsend.
-address:     NSW 2287
-address:     AUSTRALIA
-phone:       +61 2 4951 7000
-fax-no:      +61 2 4951 8410
-e-mail:      wrsl@hunterlink.net.au
-nic-hdl:     PH10-AP
-mnt-by:      HUNTERLINK-AP
-changed:     hugo@hunterlink.net.au 971210
-source:      APNIC
-
-person:      Paul Murray
-address:     PO Box 714k
-address:     Newcastle.
-address:     NSW 2300
-address:     AUSTRALIA
-phone:       +61 2 4926 1600
-fax-no:      +61 2 4929 1284
-e-mail:      paul.murray@hunterlink.net.au
-nic-hdl:     PM12-AP
-mnt-by:      HUNTERLINK-AP
-changed:     hugo@hunterlink.net.au 971210
-source:      APNIC
-
-person:      Paul Wallin
-address:     PO Box 2186
-address:     Greenhills.
-address:     NSW 2323
-address:     AUSTRALIA
-phone:       +61 2 4934 3322
-fax-no:      +61 2 4934 8355
-e-mail:      pwallin@hunterlink.net.au
-nic-hdl:     PW18-AP
-mnt-by:      HUNTERLINK-AP
-changed:     hugo@hunterlink.net.au 971210
-source:      APNIC
-
-person:      Paul Gabriel
-address:     GPO Box 4356QQ MELBOURNE VIC 3001
-country:     AU
-phone:       +61 3 9651 0349
-fax-no:      +61 3 9651 0356
-nic-hdl:     PG11-AP
-mnt-by:      AONE-NOC
-changed:     sherry@aone.com.au 980213
-source:      APNIC
-
-person:      Paul Gabriel
-address:     GPO Box 4356QQ MELBOURNE VIC 3001
-country:     AU
-phone:       +61 3 9651 0349
-fax-no:      +61 3 9651 0356
-nic-hdl:     PG12-AP
-mnt-by:      AONE-NOC
-changed:     sherry@aone.com.au 980213
-source:      APNIC
-
-person:      Paul Ripamonti
-address:     NetComm Limited
-address:     Block A
-address:     25 Paul Street North
-address:     North Ryde
-address:     NSW 2066
-address:     AU
-phone:       +61 2 878 7459
-fax-no:      +61 2 887 4649
-e-mail:      paulri@msmail.netcomm.pronet.com
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 940309
-source:      APNIC
-
-person:      Paul Simpson
-address:     Bay Technologies Pty Ltd
-address:     PO Box 46
-address:     Sontes Corner
-address:     QLD 4120
-address:     AU
-phone:       +61 7 391 1561
-fax-no:      +61 7 391 1269
-e-mail:      pauls@baytech.com.au
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 940121
-source:      APNIC
-
-person:      Paul Voulas
-address:     Zurich Australian Insurance Group
-address:     5 Blue Street
-address:     North Sydney
-address:     NSW 2060
-address:     AU
-phone:       +61 2 391 1864
-fax-no:      +61 2 391 1830
-e-mail:      zurich1-au@nic.aarnet.edu.au
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 931008
-source:      APNIC
-
-person:      Paul Wallin
-address:     Coal and Allied Operations Pty. Ltd
-address:     PO Box 509
-address:     Singleton
-address:     NSW 2330
-address:     AU
-phone:       +61 65 764 122
-fax-no:      +61 65 764 095
-e-mail:      pwallin@canda.com.au
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 930906
-source:      APNIC
-
-person:      Paul Schroeter
-address:     Hewlett Packard
-address:     31-41 Joseph Street
-address:     Blackburn
-address:     VIC 3131
-address:     AU
-phone:       +61 3 272 2088
-fax-no:      +61 3 898 7130
-e-mail:      pauls@hpmelb7.aus.hp.com
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 940121
-source:      APNIC
-
-person:      Paul Gilet
-address:     Sedgwick Noble Lowndes
-address:     PO Box 929
-address:     North Sydney
-address:     NSW 2059
-address:     AU
-phone:       +61 2 977 2585
-fax-no:      +61 2 957 3980
-e-mail:      sedgwick-nl-au@nic.au.net
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 931027
-source:      APNIC
-
-person:      Paul Rosham
-address:     The Fulcrum Consulting Group Pty Ltd
-address:     12/10-16 Queen Street
-address:     Melbourne
-address:     vic 3000
-address:     AU
-phone:       +61 3 621 2100
-fax-no:      +61 3 621 2724
-e-mail:      Paul.Rosham@fulcrum.com.au
-notify:      dbmon@apnic.net
-changed:     hostmaster@apnic.net 940211
-source:      APNIC
-
-person:      Paul Ng
-address:     8 Shenton Way, Temasek Towers
-address:     #01-01 Singapore 068811
-phone:       +65-474-3635
-fax-no:      +65-221-9795
-e-mail:      ngchp@yahoo.com
-nic-hdl:     PN7-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 980313
-source:      APNIC
-
-person:      Paul Ashworth
-address:     501 Orchard Road #07-01 Wheelock Place
-address:     Singapore 238880
-phone:       +65-737-1733
-fax-no:      +65-737-1730
-nic-hdl:     PA1-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 980401
-source:      APNIC
-
-person:      Paul Ashworth
-address:     501 Orchard Road #07-01 Wheelock Place
-address:     Singapore 238880
-phone:       +65-737-1733
-fax-no:      +65-737-1730
-nic-hdl:     PA6-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 980401
-source:      APNIC
-
-person:      Paul W. Brooks
-address:     Global One Communications
-address:     PO Box N592, Grosvenor Place
-address:     Sydney NSW 2000
-phone:       +61-2-9290-9000
-fax-no:      +61-2-9290-9092
-e-mail:      paul.brooks@globalone.net
-nic-hdl:     PB3-AP
-mnt-by:      GLOBAL-ONE-ANZOPS-AP
-changed:     paul.brooks@globalone.net 980427
-source:      APNIC
-
-person:      Paul Van Der Pennen
-address:     Balfours Wauchope Pty Ltd
-address:     21 Mellor Street
-address:     Adelaide
-address:     SA 5000
-phone:       +61 8 8461-2271
-fax-no:      +61 8 8461-2202
-e-mail:      nobody@balfours.com.au
-nic-hdl:     PVDP1-AP
-mnt-by:      MAINT-OPTUSCOM-AP
-changed:     noc@optus.net.au 980519
-source:      APNIC
-
-person:      Paul Chan
-address:     Rm 121, H.K.I.T.C.,
-address:     72 Tat chee Avenue,
-address:     Kowloon Tong
-address:     Kln
-phone:       +852-25449184
-fax-no:      +852-28540899
-nic-hdl:     PC32-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 980415
-source:      APNIC
-
-person:      Paul Chui
-address:     Intec Engineering (SEA) Sdn Bhd
-address:     Suite 12.2 12th Floor
-address:     Menara Aik Hua, Changkat Raja Chulan
-address:     50200 Kuala Lumpur
-country:     MY
-phone:       +60-3-202-2488
-fax-no:      +60-3-202-3488
-nic-hdl:     PC37-AP
-remarks:     jaring-intec
-notify:      ip-request@jaring.my
-mnt-by:      MAINT-JARING-AP
-changed:     ip-request@jaring.my 980728
-source:      APNIC
-
-person:      Paul Shing
-address:     10/F Grandtech Centre
-address:     8 On Ping Street
-address:     Siu Lok Yuen
-address:     Shatin
-phone:       +852-26362671
-fax-no:      +852-26464181
-nic-hdl:     PS25-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 980629
-source:      APNIC
-
-person:      Paul Shing
-address:     10/F Grandtech Centre
-address:     8 On Ping Street
-address:     Siu Lok Yuen
-address:     Shatin
-phone:       +852-26362671
-fax-no:      +852-26464181
-nic-hdl:     PS26-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 980629
-source:      APNIC
-
-person:      Anthony Paul Kinnear
-address:     Malayan Law Journal Sdn Bhd
-address:     3rd Floor Wisma Bandar
-address:     No 18 Jalan Tuanku Abdul Rahman
-address:     50100 Kuala Lumpur
-country:     MY
-phone:       +60-3-291-7273
-fax-no:      +60-3-291-6440
-e-mail:      postmaster@mlj.com.my
-nic-hdl:     APK1-AP
-remarks:     jaring-mlaw
-notify:      ip-request@jaring.my
-mnt-by:      MAINT-JARING-AP
-changed:     ip-request@jaring.my 980808
-source:      APNIC
-
-person:      Paul Paul
-address:     265 , serangoon Central Drive
-address:     #02-267 Spore 550265
-phone:       +65-966-08644
-fax-no:      +65-285-6288
-nic-hdl:     PP8-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 980911
-source:      APNIC
-
-person:      Paul Collett
-address:     A.S.Petrotech Knowledge (M) S/B
-address:     G9, Impiana Kota
-address:     Jalan Kampong Attap
-address:     50460  Kuala Lumpur
-country:     MY
-phone:       +60-3-273-5200
-fax-no:      +60-3-273-5171
-e-mail:      aspksb@po.jaring.my
-nic-hdl:     PC46-AP
-remarks:     jaring-aspksb
-notify:      ip-request@jaring.my
-mnt-by:      MAINT-JARING-AP
-changed:     ip-request@jaring.my 980924
-source:      APNIC
-
-person:      Paul Chia
-address:     20 Cecil Street, #14-08, The Exchange
-address:     Singapore 049705
-phone:       +65-536-8336
-fax-no:      +65-536-6162
-nic-hdl:     PC48-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 981005
-source:      APNIC
-
-person:      Paul Lee
-address:     A1 7/F 105 Austin Rd
-address:     Tsim Sha Tsui
-country:     HK
-phone:       +852 2375 4341
-fax-no:      +852 2375 4148
-e-mail:      paul@cyberchn.com.hk
-nic-hdl:     PL34-AP
-mnt-by:      HUGE-NET-MAINTAINER
-changed:     ewen@huge.net 19981109
-source:      APNIC
-
-person:      PAUL WU
-address:     5F-1 NO.460 SEC.4 SHIN-EIRD
-address:     Taipei,Taiwan,R.O.C
-country:     TW
-phone:       +886-2-8788-1313
-fax-no:      +886-2-8788-3737
-e-mail:      tpech000@ms12.hinet.net
-nic-hdl:     PW33-AP
-mnt-by:      MAINT-FICNET-AP
-changed:     ccwang@ficnet.net.tw 981119
-source:      APNIC
-
-person:      PAUL WU
-address:     5F-1 NO.460 SEC.4 SHIN-EIRD
-address:     Taipei,Taiwan,R.O.C
-country:     TW
-phone:       +886-2-8788-1313
-fax-no:      +886-2-8788-3737
-e-mail:      tpech000@ms12.hinet.net
-nic-hdl:     PW34-AP
-mnt-by:      MAINT-FICNET-AP
-changed:     ccwang@ficnet.net.tw 981119
-source:      APNIC
-
-person:      Paul Wilson
-address:     Level 1, 33 Park Rd, Milton, QLD 4064
-country:     AU
-phone:       +61 7 3367 0490
-fax-no:      +61 7 3367 0482
-e-mail:      pwilson@apnic.net
-nic-hdl:     PW35-AP
-remarks:     Director General, APNIC
-notify:      pwilson@apnic.net
-mnt-by:      MAINT-APNIC-AP
-changed:     pwilson@apnic.net 19981120
-source:      APNIC
-
-person:      Paul Sorensen
-address:     Level, 3 139 Murray St PYRMONT NSW 2009
-country:     AU
-phone:       +61 2 9552 2300
-fax-no:      +61 2 9552 2676
-nic-hdl:     PS15-AP
-mnt-by:      AONE-NOC
-changed:     paulk@aone.com.au 981204
-source:      APNIC
-
-person:      R Paul Bickerstaff
-address:     c/o Genesis R&D Corp Ltd
-address:     1 Fox St, Parnell
-address:     Auckland
-address:     New Zealand
-country:     NZ
-phone:       +64 9 373 5600 ext 304
-fax-no:      +64 9 373 2189
-e-mail:      rpb@genesis.co.nz
-nic-hdl:     RB18-AP
-mnt-by:      MAINT-PBICKERS
-changed:     rpb@genesis.co.nz 19990121
-source:      APNIC
-
-person:      Paul Young
-address:     C/O OzEmail Network Operations
-address:     39 Herbert St
-address:     St Leonards 2065
-country:     AU
-phone:       +61 2 9223 2288
-fax-no:      +61 2 9223 2288
-nic-hdl:     PY17-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      PAUL RAMSBOTTOM
-address:     PO Box 1265
-address:     Toowong 4066
-country:     AU
-phone:       +61 7 3820 0022
-fax-no:      +61 7 3820 0022
-nic-hdl:     PR10-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      PAUL CORRA
-address:     325 Po Box
-address:     CHESTER HILL 2162
-country:     AU
-phone:       +61 2 9723 1177
-fax-no:      +61 2 9723 1177
-nic-hdl:     PC53-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      Paul Cockburn
-address:     44 Herschel st
-address:     Brisbane 4000
-country:     AU
-phone:       +61 7 3238 3416
-fax-no:      +61 7 3238 3416
-nic-hdl:     PC54-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      PAUL JOHNSON
-address:     1 Weir Street
-address:     Glen Iris 3146
-country:     AU
-phone:       +61 3 9823 0999
-fax-no:      +61 3 9823 0999
-nic-hdl:     PJ7-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      PAUL POFANDT
-address:     Level 23 123 Eagle Street
-address:     Brisbane 4000
-country:     AU
-phone:       +61 7 3303 8832
-fax-no:      +61 7 3303 8832
-nic-hdl:     PP14-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      PAUL HARRINGTON
-address:     124 Walker St
-address:     North Sydney 2060
-country:     AU
-phone:       +61 2 9919 8900
-fax-no:      +61 2 9919 8900
-nic-hdl:     PH19-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      Paul James
-address:     307 Queens St
-address:     Brisbane 4000
-country:     AU
-phone:       +61 7 3405 5000
-fax-no:      +61 7 3405 5000
-nic-hdl:     PJ8-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      PAUL LANGSFORD
-address:     44 Hampden Rd
-address:     Artarmon 2064
-country:     AU
-phone:       +61 2 9412 4422
-fax-no:      +61 2 9412 4422
-nic-hdl:     PL37-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990129
-source:      APNIC
-
-person:      PAUL HEAD
-address:     Suite 2 5 Alexander St
-address:     Crows Nest 2065
-country:     AU
-phone:       +61 2 9906 1222
-fax-no:      +61 2 9906 1222
-nic-hdl:     PH22-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990201
-source:      APNIC
-
-person:      Paul Kovitz
-address:     1 Pacific Hwy
-address:     North Sydney 2060
-country:     AU
-phone:       +61 2 9900 1335
-fax-no:      +61 2 9900 1335
-nic-hdl:     PK21-AP
-mnt-by:      OZEMAIL-NOC
-changed:     sherry@aone.com.au 990201
-source:      APNIC
-
-person:      Paul Dolan
-address:     Tek Travel
-address:     7-9 Falcon Street
-address:     Parnell
-country:     NZ
-phone:       +64-9-309-4780
-fax-no:      +64-9-377-2759
-e-mail:      pdolan@tektravel.co.nz
-nic-hdl:     PD12-AP
-mnt-by:      MAINT-CLIX-NZ
-changed:     jclark@clear.co.nz 19990201
-source:      APNIC
-
-person:      Paul Tarrant
-address:     429 Central Government Office. West Wing,
-address:     11 Ice House St.,
-address:     Central,
-address:     Hong Kong
-phone:       +852-93128350
-fax-no:      +852-25758430
-nic-hdl:     PT31-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19981113
-source:      APNIC
-
-person:      Paul Lee
-address:     Sun Wah Cold Stroage Bldg.,
-address:     215-239 Wu Shan Rd., Tuen Mun
-address:     N.T.
-address:     Hong Kong
-phone:       +852-24043951
-fax-no:      +852-24412030
-nic-hdl:     PL39-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19981123
-source:      APNIC
-
-person:      Paul Leong
-address:     1st Floor, Blk B, Kompleks Pejaba Damansara,
-address:     Jalan Dungun, Damansara Heights,
-address:     50490 Kuala Lumpur
-address:     Malaysia
-country:     MY
-phone:       +60-3-2557177
-fax-no:      +60-3-2561351
-nic-hdl:     PL40-AP
-mnt-by:      MAINT-SWIFTCOM-AP
-changed:     teyap@nasionet.net 19990104
-source:      APNIC
-
-person:      Paul Cabrelli
-address:     1 Hau Yuen Path
-address:     Braemar Hill, Hong Kong
-phone:       +852-25125951
-fax-no:      +852-25125950
-e-mail:      admin0@hk.super.net
-nic-hdl:     PC66-AP
-mnt-by:      PIPL-NOC-AP
-changed:     mingf@hk.super.net 19990313
-source:      APNIC
-
-person:      Paul Collins
-address:     16/F., Silver Fortune Plaza
-address:     1 Wellington Street, Central, Hong Kong
-phone:       +852-25257209
-fax-no:      +852-28106467
-e-mail:      geminip@hk.super.net
-nic-hdl:     PC67-AP
-mnt-by:      PIPL-NOC-AP
-changed:     mingf@hk.super.net 19990313
-source:      APNIC
-
-person:      Cheung Paul W
-address:     22 Peak Road
-address:     Cheung Chau, N.T."
-phone:       +852-29810345
-fax-no:      +852-29819777
-e-mail:      abs@hk.super.net
-nic-hdl:     CPW1-AP
-mnt-by:      PIPL-NOC-AP
-changed:     mingf@hk.super.net 19990313
-source:      APNIC
-
-person:      Person Cheung Paul W
-address:     22 Peak Road
-address:     Cheung Chau, N.T.
-phone:       +852-29810345
-fax-no:      +852-29819777
-e-mail:      abs@hk.super.net
-nic-hdl:     HKSN45-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990318
-source:      APNIC
-
-person:      Paul Lee
-address:     Sun Wah Cold Stroage Bldg.,
-address:     215-239 Wu Shan Rd., Tuen Mun
-address:     NT
-address:     Hong Kong
-phone:       +852-24043951
-fax-no:      +852-24412030
-nic-hdl:     PL45-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19981123
-source:      APNIC
-
-person:      Paul Cheng
-address:     1/F, Han Hing Mansion,
-address:     38 Hankow Rd.,
-address:     TST KLN
-address:     Hong Kong
-phone:       +852-23018208
-fax-no:      +852-23679835
-nic-hdl:     PC70-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19990305
-source:      APNIC
-
-person:      Paul Tan
-address:     116 East Coast Road
-address:     #04-05 Eastgate Singapore
-phone:       +65-97635237
-fax-no:      +65-7412811
-nic-hdl:     PT25-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990408
-source:      APNIC
-
-person:      Paul Chia
-address:     20 Cecil Street #14-08 The Exchange
-address:     Singapore 049705
-phone:       +65-536-8336
-fax-no:      +65-536-8336
-e-mail:      pachia@abvh.com.sg
-nic-hdl:     PC74-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990413
-source:      APNIC
-
-person:      Paul Shum
-address:     Rm 3 12/F Blk A, Bigor Ind Bldg.,
-address:     14-20 Cheung Tat Rd.,Tsing Yi,
-address:     NT
-address:     Hong Kong
-phone:       +852-24159036
-fax-no:      +852-24987771
-nic-hdl:     PS45-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19990416
-source:      APNIC
-
-person:      Paul Chia
-address:     Acer Building
-address:     29 International Business Park #02-03
-phone:       +65-5368336
-fax-no:      +65-5366162
-nic-hdl:     PC83-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990521
-source:      APNIC
-
-person:      PAUL TOH
-address:     300 Beach Road, The Concourse
-address:     #31-02 Singapore 199555
-phone:       +65-393-7112
-fax-no:      +65-297-1272
-nic-hdl:     PT39-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990525
-source:      APNIC
-
-person:      Paul Quek
-address:     International Plant Genetic Resources
-address:     Institute (IPGRI)
-address:     P.O.Box 236, UPM Post Office
-address:     43400 SELANGOR
-country:     MY
-phone:       +60-3-942-3891
-fax-no:      +60-3-948-7655
-e-mail:      ipgriap@po.jaring.my
-nic-hdl:     PQ1-AP
-remarks:     jaring-ipgriap
-notify:      ip-request@jaring.my
-mnt-by:      MAINT-JARING-AP
-changed:     ip-request@jaring.my 19990526
-source:      APNIC
-
-person:      Paul Chia
-address:     30 Cecil Street
-address:     #14-08 The Exchange Singapore 049705
-phone:       +65-5365336
-fax-no:      +65-5368336
-nic-hdl:     PC85-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990527
-source:      APNIC
-
-person:      Paul Reece
-address:     PO Box 25498 St Georges Tce
-address:     PERTH WA 6831
-country:     AU
-phone:       +61 8 9218 2600
-fax-no:      +61 8 9218 2666
-e-mail:      paul.reece@wn.com.au
-nic-hdl:     PR14-AP
-mnt-by:      PDOX-NOC-AP
-changed:     ken@paradox.net.au 19990601
-source:      APNIC
-
-person:      Paul Leong
-address:     76 Shenton Way, #12-01/01A Singapore 079119
-phone:       +65-323-2788
-fax-no:      +65-323-2585
-nic-hdl:     PL50-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990609
-source:      APNIC
-
-person:      PAUL MCMAHON
-address:     130 BALLARAT ROAD FOOTSCRAY VIC 3011
-country:     AU
-phone:       +61 2 9433 2400
-fax-no:      +61 2 9437 5888
-nic-hdl:     PM29-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 19990618
-source:      APNIC
-
-person:      Paul Lam
-address:     38/F, The Lee Garden,
-address:     33 Hysan Avenue,
-address:     Causeway Bay, HK
-address:     Hong Kong
-phone:       +852-29696335
-fax-no:      +852-29696335
-nic-hdl:     PL55-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19990622
-source:      APNIC
-
-person:      Paul A Fink
-address:     207 Riversdale Road
-address:     Hawthorn
-address:     Victoria 3122
-country:     AU
-phone:       +61-3-98194955
-fax-no:      +61-3-98194966
-e-mail:      paul@webward.net.au
-nic-hdl:     PAF1-AP
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19990706
-source:      APNIC
-
-person:      Paul Harrington
-address:     Level 7, 124 Walker Street NORTH SYDNEY NSW 2060
-country:     AU
-phone:       +61 0299198900
-fax-no:      +61 0299566930
-nic-hdl:     PH27-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 19990707
-source:      APNIC
-
-person:      Paul Jong
-address:     7 Temeasek Boulevard #20-02
-address:     Suntec Tower one Singapore 038787
-phone:       +65-3322282
-fax-no:      +65-3375962
-nic-hdl:     PJ12-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990708
-source:      APNIC
-
-person:      Paul Teo
-address:     Blk 3014A UBI Rd 1
-address:     #04-01 Kampong Ubi Industrial Estate
-phone:       +65-7482222
-fax-no:      +65-7423622
-nic-hdl:     PT45-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990720
-source:      APNIC
-
-person:      Paul Teo SG
-address:     Blk 3014A UBI Rd 1
-address:     #04-01 Kampong Ubi Industrial Estate
-phone:       +65-7482222
-fax-no:      +65-7423622
-nic-hdl:     PTS1-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990720
-source:      APNIC
-
-person:      Paul Taylor
-address:     4 Penjuru Lane
-address:     singapore 609185
-phone:       +65-261-8162
-fax-no:      +65-261-6821
-nic-hdl:     PT46-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19990721
-source:      APNIC
-
-person:      Paul Reece
-address:     29 Loftia View,
-address:     Clarkson,
-address:     Western Australia.
-address:     6030
-country:     AU
-phone:       +61 419 048339
-e-mail:      paul@fastlane.net.au
-nic-hdl:     PR19-AP
-mnt-by:      MAINT-AU-FASTLANE
-changed:     paul@fastlane.net.au 19990916
-source:      APNIC
-
-person:      Paul Lee
-address:     FT International Corp.
-address:     231 M.H. Del Pilar St.
-address:     Pulilan
-address:     Bulacan
-country:     PH
-phone:       +63-44-215-6938
-phone:       +63-44-215-6939
-fax-no:      +63-44-215-6398
-e-mail:      paul@fairtrade.com.ph
-nic-hdl:     PL66-AP
-mnt-by:      MAINT-PH-DIGITELONE
-changed:     ngo_s@ditsi.com.ph 19990917
-source:      APNIC
-
-person:      Paul Ng
-address:     Suite 802, K. Wah Centre,
-address:     191 Jave Road,
-address:     North Point, HK
-address:     Hong Kong
-phone:       +852-25708556
-fax-no:      +852-25900996
-nic-hdl:     PN16-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19990917
-source:      APNIC
-
-person:      Paul Wong
-address:     Unit 607, Sing Win Fty Bldg,
-address:     15-17 Shing Yip Street
-address:     Kwun Tong, Kln
-address:     Hong Kong
-phone:       +852-90319139
-fax-no:      +852-23457744
-nic-hdl:     PW55-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19990910
-source:      APNIC
-
-person:      Paul De Mestre
-address:     Unit 12, 70 Castlereagh Street Sydney NSW 2000
-country:     AU
-phone:       +61 2 9433 2400
-fax-no:      +61 2 9437 5888
-nic-hdl:     PDM1-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 19990927
-source:      APNIC
-
-person:      Paul J. Spranger
-address:     D28, Discovery Bay Marina Club,
-address:     Lantau Island,
-address:     Hong Kong
-address:     Hong Kong
-phone:       +852-22436711
-fax-no:      +852-29872495
-nic-hdl:     PJS1-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19990922
-source:      APNIC
-
-person:      Paul Hsu
-address:     Rm 8001-8007, 8/F,
-address:     Asia Terminals Ctr. B, Berth 3,
-address:     Container Port Rd, Kwai Chung, NT
-address:     Hong Kong
-phone:       +852-24194868
-fax-no:      +852-24898635
-nic-hdl:     PH34-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19990923
-source:      APNIC
-
-person:      Paul Ting
-address:     9/F Tower I, Grand Century Place
-address:     193 Prince Edward Road West, Mongkok
-country:     HK
-phone:       +852-2199-8504
-fax-no:      +852-2199-8972
-e-mail:      paulting@ctihk.com
-nic-hdl:     PT11-AP
-mnt-by:      MAINT-HK-CTI
-changed:     hostmaster@apnic.net 19981029
-source:      APNIC
-
-person:      Paul Paul
-address:     29 International Business Park #06-06
-address:     Acer Building Tower B, Singapore 609923
-phone:       +65-967-81445
-fax-no:      +65-747-3088
-nic-hdl:     PP23-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19991011
-source:      APNIC
-
-person:      Paul Choo Kuen Chiu
-address:     158 Cecil St, #06-00 Dapenso Building
-address:     Singapore 069545
-phone:       +65-323-1119
-fax-no:      +65-323-7776
-nic-hdl:     PCKC1-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 19991014
-source:      APNIC
-
-person:      Paul Sagun
-address:     22/F Pacific Center Bldg., San Miguel Ave.,
-address:     Ortigas Center, Pasig City
-phone:       +632-637-1578
-fax-no:      +632-637-1578
-e-mail:      paul_sagun@support.trendmicro.com
-nic-hdl:     PS53-AP
-mnt-by:      PIPL-NOC-AP
-changed:     noc@pacific.net.ph 19991019
-source:      APNIC
-
-person:      Paul Chan
-address:     Unit 1507, Trendy Warehouse,
-address:     682-4 Castle Peak Road,
-address:     Kowloon
-address:     Hong Kong
-phone:       +852-22608629
-fax-no:      +852-29919529
-nic-hdl:     PC102-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991011
-source:      APNIC
-
-person:      Paul Korbel
-address:     49-51 Falcon Street Crows Nest NSW 2065
-country:     AU
-phone:       +61 0299594244
-fax-no:      +61 0299594244
-nic-hdl:     PK34-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 19991102
-source:      APNIC
-
-person:      Paul Sibbald
-address:     145 Macquarie Street Sydney NSW 2000
-country:     AU
-phone:       +61 0292565477
-fax-no:      +61 0292523310
-nic-hdl:     PS54-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 19991108
-source:      APNIC
-
-person:      Victor Paul Sibbald
-address:     145 Macquarie Street Sydney NSW 2000
-country:     AU
-phone:       +61 2 9256 5477
-fax-no:      +61 2 9256 5477
-nic-hdl:     VPS1-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 19991108
-source:      APNIC
-
-person:      Paul Lee
-address:     23/F, China Overseas Bldg.
-address:     139 Hennessy Rd.
-address:     Wanchai
-address:     Hong Kong
-phone:       +852-28622741
-fax-no:      +852-28661120
-nic-hdl:     PL74-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991105
-source:      APNIC
-
-person:      Paul O'Leary
-address:     87 Ipswich Road
-address:     Woolloongbba QLD
-address:     4102
-country:     AU
-phone:       +07-343-51416
-e-mail:      paul.oleary@interactivegold.com
-nic-hdl:     PO10-AP
-mnt-by:      MAINT-OPTUSCOM-AP
-changed:     apnic-asn-reply@optus.net.au 19991101
-source:      APNIC
-
-person:      Paul Lee
-address:     Sun Wah Cold Storage Building,
-address:     215-239 Wu Shan Road,
-address:     Tuen Mun, NT
-address:     Hong Kong
-phone:       +852-24043951
-fax-no:      +852-24412030
-nic-hdl:     PL79-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991111
-source:      APNIC
-
-person:      Paul Ng
-address:     Flat 1, 7/F, Blk E,
-address:     Yuen Mun Ind Ctr,
-address:     76 Pui To Road, Tuen Mun
-address:     Hong Kong
-phone:       +852-24623308
-fax-no:      +852-24563159
-nic-hdl:     PN24-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991118
-source:      APNIC
-
-person:      Paul Glenn Exala
-address:     Subic Vision ISP Corporation
-address:     Unit C02, UB Bldg.
-address:     SBDMC, Subic Bay Industrial Park
-address:     Subic Bay Freeport Zone
-address:     Philippines 2222
-country:     PH
-phone:       +63-47-252-2680
-fax-no:      +63-47-252-1540
-e-mail:      paule@svisp.com
-nic-hdl:     PE6-AP
-mnt-by:      MAINT-PH-INFOCOM
-changed:     pdacanay@info.com.ph 19991210
-source:      APNIC
-
-person:      Noel Paul I Evangelista
-address:     INFOCOM Technologies, Inc.
-address:     2/F CLMC Bldg., 259-269 EDSA, Greenhills,
-address:     Mandaluyong City,  Philippines 1501
-country:     PH
-phone:       +63-2-6380975
-fax-no:      +63-2-6380999
-e-mail:      evans@info.com.ph
-nic-hdl:     NE4-AP
-mnt-by:      MAINT-PH-INFOCOM
-changed:     evans@info.com.ph 19991214
-source:      APNIC
-
-person:      Paul Chau
-address:     UG/F, Kimley Comm Bldg.,
-address:     142-146 Queen's Road,
-address:     Central,
-address:     Hong Kong
-phone:       +852-96533864
-fax-no:      +852-28153132
-nic-hdl:     PC113-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991210
-source:      APNIC
-
-person:      Paul Cheung
-address:     Rm 11, 12/F, New Commerce Center
-address:     19 On Sum Street,
-address:     Shatin, NT
-address:     Hong Kong
-phone:       +852-23884988
-fax-no:      +852-23885322
-nic-hdl:     PC114-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991207
-source:      APNIC
-
-person:      Paul Chan
-address:     Flat B, 18/F,
-address:     Flourish Food Mfy Centre,
-address:     18 Tai Lee Street, Yuen Long
-address:     Hong Kong
-phone:       +852-91037068
-fax-no:      +852-24759856
-nic-hdl:     PC115-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991209
-source:      APNIC
-
-person:      Paul Shing
-address:     Rm 1108, 11/F, Tower 2,
-address:     Cheung Sha Wan Plaza,
-address:     833 Cheung Sha Wan Road,
-address:     Hong Kong
-phone:       +852-27434868
-fax-no:      +852-27458546
-nic-hdl:     PS59-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 19991217
-source:      APNIC
-
-person:      PAUL SHOEBRIDGE
-address:     2-8 Summit Road Noble Park VIC 3174
-country:     AU
-phone:       +61 3 9795 0366
-fax-no:      +61 3 9795 0366
-nic-hdl:     PS60-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 19991230
-source:      APNIC
-
-person:      PAUL MICALLEF
-address:     12-13 / 474 Flinders Street MELBOURNE VIC 3000
-country:     AU
-phone:       +61 3 9613 9010
-fax-no:      +61 3 9613 9550
-nic-hdl:     PM40-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 20000121
-source:      APNIC
-
-person:      PAUL SMITH
-address:     61 Mary St Brisbane QLD 4001
-country:     AU
-phone:       +61 7 3228 7734
-fax-no:      +61 7 3228 7734
-nic-hdl:     PS68-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 20000210
-source:      APNIC
-
-person:      PAUL WEBB
-address:     512 Wickham St Fortitude Valley QLD 4006
-country:     AU
-phone:       +61 7 3250 0300
-fax-no:      +61 7 3250 0300
-nic-hdl:     PW66-AP
-mnt-by:      OZEMAIL-NOC
-changed:     network-ops@list.ozemail.com.au 20000214
-source:      APNIC
-
-person:      Paul Veldhuis
-address:     1st Floor,
-address:     29 Elizabeth Street
-address:     Hobart, 7000
-country:     AU
-phone:       +61 3 6210 6206
-fax-no:      +61 3 6236 9547
-e-mail:      paulv@tassie.net.au
-nic-hdl:     PV4-AP
-mnt-by:      MAINT-AU-TASACCESS
-changed:     paulv@tassie.net.au 20000214
-source:      APNIC
-
-person:      David Paul
-address:     Southern Ocean Systems Pty Ltd
-address:     206 Gilbert Stree
-address:     Adelaide SA 5000
-country:     AU
-phone:       +61-8-8211-8400
-fax-no:      +61-8-8212-9663
-e-mail:      accounts@cybercore.net.au
-nic-hdl:     DP39-AP
-mnt-by:      CONNECT
-changed:     hostmaster@apnic.ent 20000225
-changed:     chris@connect.com.au 20000229
-source:      APNIC
-
-person:      Paul Law
-address:     Chesuyan Interior Design & Decoration Pte Ltd
-address:     20 Sungei Kadut Way
-address:     Singapore 728784
-phone:       +65 98383864
-fax-no:      +65 3677765
-e-mail:      chesuyan@magix.com.sg
-nic-hdl:     PL92-AP
-notify:      hostmaster@singnet.com.sg
-mnt-by:      MAINT-SG-SINGNET
-changed:     hostmaster@singnet.com.sg 20000228
-source:      APNIC
-
-person:      Paul Culmsee
-address:     22 Wyndham St
-address:     St James WA 6102
-country:     AU
-phone:       +61-8-94703585
-e-mail:      fgculp@vianet.net.au
-nic-hdl:     PC130-AP
-mnt-by:      MAINT-NEW
-changed:     fgculp@vianet.net.au 20000308
-source:      APNIC
-
-person:      Paul VanNess
-address:     Kinderworld Educare Pte Ltd
-address:     18 Middle Road
-address:     Singapore 0718
-phone:       +65-339-0771
-fax-no:      +65-339-6369
-nic-hdl:     PV1-SG
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     stbu@technet.sg 19950608
-source:      APNIC
-
-person:      Paul McGlashan
-address:     Optimation NZ Ltd
-address:     Box 106-104
-address:     Down Town, Auckland
-phone:       +64 9 309 7918
-fax-no:      +64 9 307 1285
-e-mail:      paulm@optimation.co.nz
-nic-hdl:     PM3-NZ
-notify:      paulm@optimation.co.nz
-mnt-by:      MAINT-NULL
-changed:     ARRON@WAIKATO.AC.NZ 19950612
-source:      APNIC
-
-person:      PAUL HAAKER
-address:     Asea Brown Boveri Ltd
-address:     Private Bag 92-609
-address:     Auckland
-address:     New Zealand
-phone:       +64 09 356 2160
-fax-no:      +64 09 357 0098
-nic-hdl:     PH6-NZ
-notify:      nic@waikato.ac.nz
-mnt-by:      MAINT-NULL
-changed:     sandy@waikato.ac.nz 19951007
-source:      APNIC
-
-person:      Paul Reddy
-address:     Pharos Systems Ltd
-address:     Level 1, 195 Khyber Pass Road
-address:     Auckland
-address:     New Zealand
-phone:       +64 9 373 2470
-fax-no:      +64 9 379 5650
-e-mail:      paul@pharos.co.nz
-nic-hdl:     PR4-NZ
-notify:      nic@waikato.ac.nz
-notify:      paul@pharos.co.nz
-mnt-by:      MAINT-NULL
-changed:     sandy@waikato.ac.nz 19951116
-source:      APNIC
-
-person:      PAUL GARNHAM
-address:     PO BOX 10278
-address:     LEVEL 3
-address:     WOOL HOUSE
-address:     10 BRANDON STREET
-address:     WELLINGTON
-address:     NEW ZEALAND
-phone:       +64 4 473 1480
-fax-no:      +64 4 473 1515
-e-mail:      paulg@mocom.co.nz
-nic-hdl:     PG4-NZ
-notify:      NIC@WAIKATO.AC.NZ
-notify:      paulg@mocom.co.nz
-mnt-by:      MAINT-NULL
-changed:     sandy@waikato.ac.nz 19951123
-source:      APNIC
-
-person:      Paul Whitmore
-address:     Hong Kong Interbank Clearing Ltd.
-address:     GPO Box 607, Hong Kong
-phone:       +852 2537 5726
-fax-no:      +852 2537 5075
-e-mail:      paul@air.com.hk
-nic-hdl:     PW2-HK
-notify:      paul@air.com.hk
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19951221
-source:      APNIC
-
-person:      Paul Gordon
-address:     Energy Tech Ltd
-address:     PO Box 863
-address:     Nelson
-address:     New Zealand
-phone:       +64 3 5466300
-fax-no:      +64 3 5466100
-e-mail:      baronii@nelson.planet.org.nz
-nic-hdl:     PG5-NZ
-notify:      NIC@WAIKATO.AC.NZ
-notify:      baronii@nelson.planet.org.nz
-mnt-by:      MAINT-NULL
-changed:     arron@waikato.ac.nz 19951221
-source:      APNIC
-
-person:      Paul Phillips
-address:     NZ Dairy Foods
-address:     Una Place
-address:     Takanini
-address:     Auckland
-address:     New Zealand
-phone:       +64 9 296 3700
-fax-no:      +64 9 299 8585
-e-mail:      paul@nzdf.co.nz
-nic-hdl:     PP1-NZ
-remarks:     invalid e-mail address
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19960130
-source:      APNIC
-
-person:      Paul S. Carlson
-address:     PO Box 22887
-address:     GMF 96921
-address:     GU
-phone:       +671 477-9109
-fax-no:      +671 477-4218
-e-mail:      Paul.Carlson@Kuentos.Guam.Net
-nic-hdl:     PC1-GU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19960202
-source:      APNIC
-
-person:      Paul Tan
-address:     10 Ang Mo Kio street 65
-address:     #03-11/12 Techpoint
-address:     Singapore 569059
-phone:       +65 4844826
-fax-no:      +65 4844840
-nic-hdl:     PT3-SG
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     jayanthi@singnet.com.sg 19960425
-source:      APNIC
-
-person:      Paul Curry
-address:     St Patricks College
-address:     207 Fergusson Drive
-address:     Silverstream, Upper Hutt
-address:     NZ
-phone:       +64-4-5284423
-e-mail:      curryp@ANGEN.WARC.CRI.NZ
-nic-hdl:     PC32
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19931019
-source:      APNIC
-
-person:      Paul Carter
-address:     Unisys New Zealand Limited
-address:     P.O. Box 3240
-address:     Wellington
-address:     NZ
-phone:       +64 4 471 2680
-e-mail:      carter@UNISYS.CO.NZ
-nic-hdl:     PC8
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19940406
-source:      APNIC
-
-person:      Paul Heath
-address:     Paxus Ltd.
-address:     PO Box 8690
-address:     Auckland
-address:     NZ
-phone:       +64 9 379 2350
-nic-hdl:     PH27
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19931004
-source:      APNIC
-
-person:      Paul Grey
-address:     Peace Computers
-address:     P O Box 37580
-address:     Parnell
-address:     Auckland
-address:     NZ
-phone:       +64-9-3073974
-nic-hdl:     PG9
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19930708
-source:      APNIC
-
-person:      Paul King
-address:     71b Kidson Tce
-address:     Cashmere
-phone:       +64 3 337 3808
-fax-no:      +64 3 337 3808
-e-mail:      paulking@wizkid.co.nz
-nic-hdl:     PK4-NZ
-notify:      NIC@WAIKATO.AC.NZ
-notify:      paulking@wizkid.co.nz
-mnt-by:      MAINT-NULL
-changed:     sandy@waikato.ac.nz 19960620
-source:      APNIC
-
-person:      Paul Lee
-address:     A1 7/F 105 Austin Road,
-address:     Tsim Sha Tsui, Kowloon, Hong Kong.
-phone:       +852 2375 4341
-fax-no:      +852 2375 4148
-e-mail:      paullee@huge.net.hk
-nic-hdl:     PL4-HK
-notify:      wai@huge.net.hk
-mnt-by:      MAINT-NULL
-changed:     wai@huge.net.hk 19960705
-source:      APNIC
-
-person:      Paul Taylor
-address:     Reserve Bank of New Zealand
-address:     2 The Terrace
-address:     Wellington
-address:     NZ
-phone:       +64 4 4713908
-fax-no:      +64 4 4738554
-e-mail:      taylorp@rbnz.govt.nz
-nic-hdl:     PT1-NZ
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19941015
-source:      APNIC
-
-person:      Paul Haaker
-address:     ABB Power Ltd
-address:     P. O. Box 83-203
-address:     Auckland
-address:     NZ
-phone:       +64-9-837-1234
-fax-no:      +64-9-837-2950
-nic-hdl:     PH3-NZ
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19940908
-source:      APNIC
-
-person:      Paul Cavanaugh
-address:     Inform Group LTD
-address:     Level 7
-address:     Shortland Centre
-address:     Shortland Street
-address:     Auckland
-phone:       +64-9-309-8100
-fax-no:      +64-9-366-4766
-e-mail:      aksup2@inform.co.nz
-nic-hdl:     PC3-NZ
-notify:      nic@waikato.ac.nz
-mnt-by:      MAINT-NULL
-changed:     sandy@waikato.ac.nz 19960730
-source:      APNIC
-
-person:      Paul Dudson
-address:     Digital Equipment Corp
-address:     129 Kilmore St
-address:     PO Box 25-155
-address:     Christchurch
-phone:       +64 3 371 5715
-fax-no:      +64 3 379 9488
-e-mail:      dudson@nzo.mts.dec.com
-nic-hdl:     PD4-NZ
-notify:      NIC@WAIKATO.AC.NZ
-mnt-by:      MAINT-NULL
-changed:     sandy@waikato.ac.nz 19960807
-source:      APNIC
-
-person:      Paul D Gunn
-address:     New Zealand Rail Ltd
-address:     Wellington Railway Station
-address:     PO Box 2085
-address:     Wellington
-address:     NZ
-phone:       +64 4 4983217
-fax-no:      +64 4 4983616
-nic-hdl:     PG2-NZ
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19941121
-source:      APNIC
-
-person:      Paul Giddy
-address:     Honda NZ Ltd
-address:     105 Wiri Station Rd
-address:     South Auckland
-address:     New Zealand
-phone:       +64 9 262 3141
-fax-no:      +64 9 262 3247
-nic-hdl:     PG6-NZ
-notify:      NIC@WAIKATO.AC.NZ
-notify:      peterf@xtra.co.nz
-mnt-by:      MAINT-NULL
-changed:     steved@waikato.ac.nz 19961022
-source:      APNIC
-
-person:      Paul Deavoll
-address:     Private Box 4446
-address:     Christchurch
-country:     NZ
-phone:       +64 25 351321
-fax-no:      +64 3 3840359
-e-mail:      deavollp@edcom.co.nz
-nic-hdl:     PD1-NZ
-notify:      NIC@WAIKATO.AC.NZ
-mnt-by:      MAINT-NULL
-changed:     steved@waikato.ac.nz 19961108
-source:      APNIC
-
-person:      Paul Hugh
-address:     10/F Hong Kong Telecom Tower
-address:     979 King's Road
-address:     Quarry Bay
-country:     HK
-phone:       +852-2825-6557
-fax-no:      +852-2825-0060
-e-mail:      hughp@hk.ibm.com
-nic-hdl:     PH2-AP
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19961219
-source:      APNIC
-
-person:      Paul Manina
-address:     The Gateway, Tower 1, 35/F., 25 Canton Road,
-address:     TST, KLN
-phone:       +852 23651330
-fax-no:      +852 23658329
-nic-hdl:     PM3-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     utsumi@vnet.ibm.com 19970127
-source:      APNIC
-
-person:      Paul Rosham
-address:     Level 4, 468 St Kilda Road
-address:     Melbourne VIC
-country:     AU
-phone:       +61-3-9804-5300
-fax-no:      +61-3-9804-5322
-e-mail:      paulr@hotkey.net.au
-nic-hdl:     PR1-AU
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19970207
-source:      APNIC
-
-person:      Paul Chow
-address:     31/F, Jardine House,
-address:     Central,
-address:     Hong Kong
-phone:       +852-2533-0800
-e-mail:      root@deltasia.com
-nic-hdl:     PC4-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     rimen@hkstar.com 19970211
-source:      APNIC
-
-person:      Paul Edwards
-address:     Nestle New Zealand Ltd
-address:     1 Broadway
-address:     New Market
-address:     Auckland
-country:     NZ
-phone:       +64-9-367-2800
-fax-no:      +64-9-367-2787
-e-mail:      paul.edwards@is.nestlenz.nestle.com
-nic-hdl:     PE2-NZ
-notify:      brettt@netway.co.nz
-mnt-by:      MAINT-NULL
-changed:     brettt@netway.co.nz 19970228
-source:      APNIC
-
-person:      Paul White
-address:     Waste Management NZ ltd
-address:     86 Lunn Ave,Mt Wellington, Auckland
-address:     New Zealand
-country:     NZ
-phone:       +64-9-527-8044
-fax-no:      +64-9-570-5595
-e-mail:      songley@wastemanagement.co.nz
-nic-hdl:     PW5-AP
-notify:      nic@netway.co.nz
-mnt-by:      MAINT-NULL
-changed:     brettt@netway.co.nz 19970407
-source:      APNIC
-
-person:      Paul Colquhoun
-address:     65 Waterloo Rd
-address:     North Ryde
-address:     NSW  2113
-country:     AU
-phone:       +61 2 9850 0901
-fax-no:      +61 2 9850 0817
-e-mail:      pcolquh@tpgi.com.au
-nic-hdl:     PC7-AP
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19970425
-source:      APNIC
-
-person:      Paul Yip
-address:     1/F Jade Mansion 40 Waterloo Road Kowloon
-country:     HK
-phone:       +852 2710-0366
-nic-hdl:     PY2-AP
-mnt-by:      MAINT-NULL
-changed:     tspyip@hkabc.net 19970602
-source:      APNIC
-
-person:      William J Paul
-address:     William J Paul
-address:     29 Jalan Ria
-address:     Singapore 359076
-phone:       +65 2828542
-fax-no:      +65 2837178
-nic-hdl:     WJ7-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     sekchye@singnet.com.sg 19970808
-source:      APNIC
-
-person:      Paul Reece
-address:     Starwon Enterprises Pty Ltd
-address:     PO Box 911
-address:     Nedlands
-address:     WA 6909
-address:     AU
-phone:       +61 8 9389 6363
-fax-no:      +61 8 9389 6868
-e-mail:      paul@starwon.com.au
-nic-hdl:     RP209-AU
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19970819
-source:      APNIC
-
-person:      Paul A Charis
-address:     Department of Electrical Engineering
-address:     Maranatha Christian University
-address:     Jl. Suria Sumantri 65
-address:     Bandung 40164
-country:     ID
-phone:       +62-22-215107
-fax-no:      +62-22-217493
-e-mail:      pcharis@maranatha.edu
-nic-hdl:     PC1-AP
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19970828
-source:      APNIC
-
-person:      Paul Pavlinovich
-address:     PO Box 879 Melton
-address:     Vic 3337
-address:     AU
-phone:       +61 3 747 9823
-e-mail:      paul@BIZNET.COM.AU
-nic-hdl:     PP108
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19930209
-source:      APNIC
-
-person:      Paul Weatherly
-address:     PO Box 106032, Auckland Mail Centre
-address:     AUCKLAND
-country:     NZ
-phone:       +64-9-302-3936
-fax-no:      +64-9-302-3939
-e-mail:      soei@soei.co.nz
-nic-hdl:     PW19-AP
-notify:      nic@netgate.net.nz
-mnt-by:      MAINT-NULL
-changed:     brett.telfer@telecom.co.nz 19980204
-source:      APNIC
-
-person:      Paul Wallin
-address:     Coal and Allied Operations Pty. Ltd
-address:     PO Box 509
-address:     Singleton
-address:     NSW 2330
-address:     AU
-phone:       +61 65 764 122
-fax-no:      +61 65 764 095
-e-mail:      pwallin@CANDA.COM.AU
-nic-hdl:     PW19
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19930906
-source:      APNIC
-
-person:      Paul Ripamonti
-address:     NetComm Limited
-address:     Block A
-address:     25 Paul Street North
-address:     North Ryde
-address:     NSW 2066
-address:     AU
-phone:       +61 2 878 7459
-fax-no:      +61 2 887 4649
-e-mail:      paulri@MSMAIL.NETCOMM.PRONET.COM
-nic-hdl:     PR2-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19940309
-source:      APNIC
-
-person:      Paul Schroeter
-address:     Hewlett Packard
-address:     31-41 Joseph Street
-address:     Blackburn
-address:     VIC 3131
-address:     AU
-phone:       +61 3 272 2088
-fax-no:      +61 3 898 7130
-e-mail:      pauls@HPMELB7.AUS.HP.COM
-nic-hdl:     PS3-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19940121
-source:      APNIC
-
-person:      Paul O'Connor
-address:     36-38 Clarke Street
-address:     South Melbourne. Victoria
-address:     AU
-phone:       +61-3-696-5955
-nic-hdl:     PO5
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19930629
-source:      APNIC
-
-person:      Paul Hoddinott
-address:     Royal Automobile Club of Victoria
-address:     IT Engineering Dept
-address:     Level 6
-address:     550 Princess Highway
-address:     Noble Park
-address:     VIC 3174
-address:     AU
-phone:       +61 3 790 3102
-fax-no:      +61 3 790 2559
-e-mail:      racv-au@NIC.AARNET.EDU.AU
-nic-hdl:     PH37
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19930917
-source:      APNIC
-
-person:      Paul Voulas
-address:     Zurich Australian Insurance Group
-address:     5 Blue Street
-address:     North Sydney
-address:     NSW 2060
-address:     AU
-phone:       +61 2 391 1864
-fax-no:      +61 2 391 1830
-e-mail:      zurich1-au@NIC.AARNET.EDU.AU
-nic-hdl:     PV10
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19931111
-source:      APNIC
-
-person:      Paul Gilet
-address:     Sedgwick Noble Lowndes
-address:     PO Box 929
-address:     North Sydney
-address:     NSW 2059
-address:     AU
-phone:       +61 2 977 2585
-fax-no:      +61 2 957 3980
-e-mail:      sedgwick-nl-au@NIC.AU.NET
-nic-hdl:     PG-2-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19931027
-source:      APNIC
-
-person:      Paul Flynn
-address:     401 Collins Street
-address:     Melbourne VIC 3000
-address:     AU
-phone:       +61 3 617 5454
-nic-hdl:     PF69
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19930205
-source:      APNIC
-
-person:      John Paul Burton-Clemence
-address:     JPM Networks Pty Ltd
-address:     Suite 10/9 Bungan Street
-address:     Mona Vale NSW 2103
-address:     AU
-phone:       +61-2-979-5677
-nic-hdl:     JPB-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19940426
-source:      APNIC
-
-person:      Paul Mizzi
-address:     HarTec Limited
-address:     205 Middleborough Road
-address:     Box Hill
-address:     VICTORIA 3128
-address:     AU
-phone:       +61 3 268 9000
-fax-no:      +61 3 890 3137
-e-mail:      hartec-au@aunic.net
-nic-hdl:     PM3-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19940609
-source:      APNIC
-
-person:      Paul Pavlinovich
-address:     PPIT Pty Ltd T/A AccServ
-address:     12 Moodie St
-address:     Melton South
-address:     VIC 3338
-address:     AU
-phone:       +61 3 747 9823
-fax-no:      +61 3 747 8152
-e-mail:      paulp@ppit.com.au
-nic-hdl:     PP3-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19950123
-source:      APNIC
-
-person:      Paul Jolliff
-address:     ANZ Funds Management
-address:     GPO Box 4028
-address:     Sydney
-address:     NSW 2000
-address:     AU
-phone:       +61 2 216 2325
-fax-no:      +61 2 216 2586
-e-mail:      anzfm-au@aunic.net
-nic-hdl:     PJ1-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19940422
-source:      APNIC
-
-person:      Paul Damien McConnell
-address:     Semeion Pty Ltd
-address:     GPO Box 1782
-address:     Canberra
-address:     ACT 2601
-address:     AU
-phone:       +61 6 2824328
-fax-no:      +61 6 2822783
-e-mail:      mccop@par18.aph.gov.au
-nic-hdl:     PM6-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19941214
-source:      APNIC
-
-person:      Paul Webster
-address:     Computer Results Team
-address:     2/555 Willoughby Rd
-address:     Willoughby
-address:     NSW 2068
-address:     AU
-phone:       +61 2 958 2944
-fax-no:      +61 2 958 5855
-e-mail:      AUCRTPWE@IBMMAIL.COM
-nic-hdl:     PW5-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19950217
-source:      APNIC
-
-person:      Paul Kendall
-address:     Orion Systems (NZ) Ltd
-address:     PO Box 8273
-address:     Auckland
-address:     New Zealand
-phone:       +64 9 357 6323 ext. 3303
-phone:       +64 25 903 927
-fax-no:      +64 9 357 6324
-e-mail:      paul@orion.co.nz
-nic-hdl:     PK3-NZ
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     edwin@orion.co.nz 19950407
-source:      APNIC
-
-person:      Koh Nguk Lim Paul
-address:     Colourscan CO Pte Ltd
-address:     No 21 Kim Keat Rd
-address:     
-address:     Singapore 328805
-phone:       +65 2538888
-fax-no:      +65 2533767
-nic-hdl:     KNLP1-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     maylcc@singnet.com.sg 19980326
-source:      APNIC
-
-person:      Koh Nguk Lim Paul
-address:     Colourscan CO Pte Ltd
-address:     No 21 Kim Keat Rd
-address:     
-address:     Singapore 328805
-phone:       +65 2538888
-fax-no:      +65 2533767
-nic-hdl:     KNLP2-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     maylcc@singnet.com.sg 19980326
-source:      APNIC
-
-person:      Paul R Pyyvaara
-address:     Artson System P/L tas On the Net
-address:     PO Box 151
-address:     Bond University 4229
-country:     AU
-phone:       +61-7-5593-3535
-fax-no:      +61-7-5593-3557
-e-mail:      paulp@OntheNet.com.au
-nic-hdl:     PRP1-AP
-mnt-by:      MAINT-NULL
-changed:     paulp@OntheNet.com.au 19980514
-source:      APNIC
-
-person:      Paul Tubman
-address:     unit d 480 moorehouse ave
-address:     p.o. box 10281
-address:     christchurch
-phone:       +64-3-379-1201
-fax-no:      +64-3-377-2965
-e-mail:      paul.cablecraft@netaccess.co.nz
-nic-hdl:     PT14-AP
-notify:      nic@netgate.net.nz
-notify:      oob@oob.gen.nz
-mnt-by:      MAINT-NULL
-changed:     brett.telfer@telecom.co.nz 19980630
-source:      APNIC
-
-person:      Paul Shing
-address:     19/F Ka Ming Centre
-address:     690 Castle Peak Road
-country:     HK
-phone:       +852-25311856
-nic-hdl:     PS24-AP
-mnt-by:      MAINT-NULL
-changed:     ellis@hk.linkage.net 19980709
-source:      APNIC
-
-person:      Paul Bennett
-address:     Unit 2, 242 Ferry Road
-address:     Christchurch 8030
-address:     New Zealand
-address:     PO Box 10-290
-phone:       +64-3-377-8900
-fax-no:      +64-3-377-8870
-e-mail:      paul.bennett@teltrend.co.nz
-nic-hdl:     PB55
-notify:      nic@netgate.net.nz
-mnt-by:      MAINT-NULL
-changed:     brett.telfer@telecom.co.nz 19980722
-source:      APNIC
-
-person:      Paul Berryman
-address:     Laptop Land
-address:     60 Miller St
-address:     North Sydney
-address:     NSW 2060
-country:     AU
-phone:       +61 2 9957 4090
-fax-no:      +61 2 9957 1854
-e-mail:      paul.berryman@laptopland.com.au
-nic-hdl:     PB13-AP
-mnt-by:      MAINT-NULL
-changed:     apnic@zipworld.net 19981019
-source:      APNIC
-
-person:      Paul McNulty
-address:     36/F Central Plaza
-address:     18 Harbour Road, Wan Chai
-country:     HK
-phone:       +852 9163 3000
-fax-no:      +852 2521 6929
-e-mail:      pmcnulty@uu.net
-nic-hdl:     PM1-AP
-mnt-by:      MAINT-NULL
-changed:     hostmaster@apnic.net 19981116
-source:      APNIC
-
-person:      Paul H. Dompas
-address:     Jl. Raya Ranca Ekek, Km 27 Sumedang - Bandung
-country:     ID
-phone:       +62-022-798-800
-nic-hdl:     PHD1-AP
-mnt-by:      MAINT-NULL
-changed:     apmpnreg@jp.ibm.com 19981125
-source:      APNIC
-
-person:      Paul Pang
-address:     10/F, Hong KOng Telecom Tower, Taikoo Place, HK
-country:     HK
-phone:       +852-2825-6149
-nic-hdl:     PP11-AP
-mnt-by:      MAINT-NULL
-changed:     apmpnreg@jp.ibm.com 19981125
-source:      APNIC
-
-person:      Paul Lee
-address:     Suite 1103, Evergo House, 38 Gloucester Road, Wanchai, HK
-country:     HK
-phone:       +852-9155-9328
-nic-hdl:     PL35-AP
-mnt-by:      MAINT-NULL
-changed:     apmpnreg@jp.ibm.com 19981127
-source:      APNIC
-
-person:      Paul Smith
-address:     223-239 Liverpool Road Ashfield,NSW
-address:     2131 Sydney
-country:     AU
-phone:       +61-2-9798-1330
-nic-hdl:     PS33-AP
-mnt-by:      MAINT-NULL
-changed:     apmpnreg@jp.ibm.com 19981222
-source:      APNIC
-
-person:      Paul Earl
-address:     Pegler Hettersley Australia Pte Ltd
-address:     541 Orchard Road
-address:     #19-02 Liat Towers
-address:     Singapore 238881
-phone:       +65 7363477
-fax-no:      +65 7363478
-nic-hdl:     PE5-AP
-notify:      hostmaster@singnet.com.sg
-mnt-by:      MAINT-NULL
-changed:     shafiah1@singnet.com.sg 19981221
-source:      APNIC
-
-person:      Paul Barnetta
-address:     Telecom Tower L1
-address:     16 Kingston St
-address:     Auckland
-country:     NZ
-phone:       +64-9-355-5940
-fax-no:      +64-9-355-5260
-e-mail:      paulb@team.xtra.co.nz
-nic-hdl:     PB14-AP
-mnt-by:      MAINT-NULL
-changed:     brett.telfer@telecom.co.nz 19990114
-source:      APNIC
-
-person:      Paul Hoddinott
-address:     Com Connexions
-address:     Technical Services
-address:     Unit 11
-address:     27-33 Thornton Crescent
-address:     Mitcham
-address:     VIC 3132
-address:     AU
-phone:       +61 3 9873 2333
-fax-no:      +61 3 9873 2444
-e-mail:      phoddinott@comconnexions.com.au
-nic-hdl:     PH23
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     phoddinott@comconnexions.com.au 19990217
-source:      APNIC
-
-person:      Paul Wiig
-address:     Private Bag
-address:     New Plymouth
-country:     NZ
-phone:       +64-6-755-3563
-nic-hdl:     PW44-AP
-mnt-by:      MAINT-NULL
-changed:     paulb@team.xtra.co.nz 19990401
-source:      APNIC
-
-person:      Paul Cadle
-address:     P O Box 8
-address:     Auckland
-country:     NZ
-phone:       +64-9-367-8307
-nic-hdl:     PC71-AP
-mnt-by:      MAINT-NULL
-changed:     paulb@team.xtra.co.nz 19990401
-source:      APNIC
-
-person:      Paul Williams
-address:     Fax Deluxe
-address:     55 Pyrmont Bridge Road
-address:     Pyrmont NSW  2009
-country:     AU
-phone:       +840 61 417-230698
-fax-no:      +61 2 9310-4433
-e-mail:      paul@XSTREAM.NET.AU
-nic-hdl:     PW12-AU
-mnt-by:      MAINT-NULL
-changed:     hbenawa@uu.net 19990111
-source:      APNIC
-
-person:      Paul Dickinson
-address:     Armishaw Bldg
-address:     102 Albert St
-address:     Auckland
-country:     NZ
-phone:       +64-9-358-5752
-e-mail:      paul@dickinson.co.nz
-nic-hdl:     PD18-AP
-mnt-by:      MAINT-NULL
-changed:     karen.king@team.xtra.co.nz 19990525
-source:      APNIC
-
-person:      Paul Chadzynski
-address:     Kodak Building 21,  173 Elizabeth Street
-address:     Coburg Victoria  3058, Australia
-country:     AU
-phone:       +61-3-9538-0999
-nic-hdl:     PC84-AP
-mnt-by:      MAINT-NULL
-changed:     apmpnreg@jp.ibm.com 19990527
-source:      APNIC
-
-person:      Paul Simpson
-address:     Bay Technologies Pty Ltd
-address:     PO Box 1070
-address:     Brisbane
-address:     QLD 4001
-address:     AU
-phone:       +61 7 3223 9900
-fax-no:      +61 7 3223 9999
-e-mail:      psimpson@BAYTECH.COM.AU
-nic-hdl:     PS2-AU
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     psimpson@baytech.com.au 19990531
-source:      APNIC
-
-person:      Paul Tan
-address:     Gasi Holdings Pte Ltd
-address:     23A Choo Chiat Place
-address:     Singapore 427750
-phone:       +65 3480866
-fax-no:      +65 2595426
-e-mail:      gasibdu1@singnet.com.sg
-nic-hdl:     PT40-AP
-notify:      hostmaster@singnet.com.sg
-mnt-by:      MAINT-NULL
-changed:     shafiah1@singnet.com.sg 19990530
-source:      APNIC
-
-person:      Paul Deavoll
-address:     Wellington Airport
-address:     Wellington
-country:     NZ
-phone:       +64-25-351-321
-e-mail:      paul.deavoll@team.xtra.co.nz
-nic-hdl:     PD20-AP
-mnt-by:      MAINT-NULL
-changed:     karen.king@team.xtra.co.nz 19990701
-source:      APNIC
-
-person:      Paul Cull
-address:     14 Hazeldean Road
-address:     Christchurch
-country:     NZ
-phone:       +64-3-338-9059
-e-mail:      john.shaw@pdl.co.nz
-nic-hdl:     PC90-AP
-mnt-by:      MAINT-NULL
-changed:     karen.king@team.xtra.co.nz 19990701
-source:      APNIC
-
-person:      Paul Cheng
-address:     Keteca Singapore Pte Ltd
-address:     35 Tannery Rd #07-06 Tannery Blk
-address:     Ruby Ind Complex
-address:     Singapore 347740
-phone:       +65 7493318
-fax-no:      +65 7493360
-e-mail:      keteca1@pacific.net.sg
-nic-hdl:     PC91-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     maylcc@singnet.com.sg 19990706
-source:      APNIC
-
-person:      Paul Bick
-address:     M&C Saatchi (S) Pte Ltd
-address:     38 Club St
-address:     
-address:     Singapore 069418
-phone:       +65 2273381
-fax-no:      +65 2273382
-nic-hdl:     PB16-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-NULL
-changed:     shafiah1@singnet.com.sg 19990719
-source:      APNIC
-
-person:      Paul Au
-address:     Chevas Int'l Ltd.
-address:     1347 HITEC, 1 Trademart Drive
-address:     Kowloon Bay, Kowloon
-country:     HK
-phone:       +852 2332 7818
-nic-hdl:     PA13-AP
-mnt-by:      MAINT-NULL
-changed:     nemo@hknet.com 19990730
-source:      APNIC
-
-person:      Paul Haaker
-address:     PO Box 4127
-address:     Auckland
-country:     NZ
-phone:       +64-9-357-0410
-e-mail:      paul.haaker@keystone-solutions.com
-nic-hdl:     PH29-AP
-mnt-by:      MAINT-NULL
-changed:     karen.king@team.xtra.co.nz 19990808
-source:      APNIC
-
-person:      Paul Gill
-address:     Jan De Nul N.V
-address:     400 Orchard Road
-address:     #18-06 Orchard Towers
-address:     Singapore 238875
-phone:       +65 2352790
-fax-no:      +65 2352791
-e-mail:      paulgill@jandenul.com.sg
-nic-hdl:     PG18-AP
-notify:      hostmaster@singnet.com.sg
-mnt-by:      MAINT-NULL
-changed:     shafiah1@singnet.com.sg 19990810
-source:      APNIC
-
-person:      Paul Li
-address:     GCE (WF Pak Kung St)
-address:     Pak Kung Street,
-address:     18 Hung Hum,
-address:     Kowloon, HK
-country:     HK
-phone:       +852 23659123
-nic-hdl:     PL59-AP
-mnt-by:      MAINT-NULL
-changed:     nemo@hknet.com 19990827
-source:      APNIC
-
-person:      Paul Li
-address:     GCE (WF, Ko Shan Rd)
-address:     G/F, 2-8,
-address:     Ko Shan Road,
-address:     Kowloon
-country:     HK
-phone:       +852 23659123
-nic-hdl:     PL60-AP
-mnt-by:      MAINT-NULL
-changed:     nemo@hknet.com 19990827
-source:      APNIC
-
-person:      Paul Li
-address:     GCE (Web Force)
-address:     G/F, Pak Kung Street,
-address:     18 Hung Hum,
-address:     Kowloon, Hong Kong
-country:     HK
-phone:       +852 23659123
-nic-hdl:     PL62-AP
-mnt-by:      MAINT-NULL
-changed:     nemo@hknet.com 19990828
-source:      APNIC
-
-person:      Paul Li
-address:     GCE (WF, Pak Kung St)
-address:     G/F, Pak Kung Street,
-address:     18 Hung Hum,
-address:     Kowloon, Hong Kong
-country:     HK
-phone:       +852 23659123
-nic-hdl:     PL63-AP
-mnt-by:      MAINT-NULL
-changed:     nemo@hknet.com 19990828
-source:      APNIC
-
-person:      Paul Li
-address:     GCE (WF, Ko Shan Rd)
-address:     G/F,
-address:     Ko Shan Road,
-address:     Kowloon, Hong Kong
-country:     HK
-phone:       +852 23659123
-nic-hdl:     PL64-AP
-mnt-by:      MAINT-NULL
-changed:     nemo@hknet.com 19990828
-source:      APNIC
-
-person:      Paul Le Page
-address:     P O Box 27025
-address:     Shirley
-address:     Christchurch
-country:     NZ
-phone:       +64-21-271-3442
-e-mail:      paul.lepage@bigfoot.com
-nic-hdl:     PLP1-AP
-mnt-by:      MAINT-NULL
-changed:     karen.king@team.xtra.co.nz 19990921
-source:      APNIC
-
-person:      Paul Caples
-address:     PO Box 8
-address:     Auckland
-country:     NZ
-phone:       +64-9-367-8151
-e-mail:      paul.caples@rmmb.co.nz
-nic-hdl:     PC104-AP
-mnt-by:      MAINT-NULL
-changed:     soa@xtra.co.nz 19991022
-source:      APNIC
-
-person:      RENJIT PAUL
-address:     Malayala Manorama Co. Ltd.
-address:     K. K. Road
-address:     Kottayam ,Kerala - 686 001
-address:     INDIA
-country:     IN
-phone:       +91-481-563646
-fax-no:      +91-481-562479
-e-mail:      renjitpaul@hotmail.com
-nic-hdl:     RP25-AP
-mnt-by:      MAINT-NULL
-changed:     ngupta@vsnl.com 19991230
-source:      APNIC
-
-person:      Paul Hung
-address:     Suite A, 11/F, Hennessy Plaza,
-address:     164-166 Hennessy Road,
-address:     Wanchi, HK
-country:     HK
-phone:       +852-21447728
-fax-no:      +852-21447738
-e-mail:      info@adtic.com
-nic-hdl:     PH39-AP
-mnt-by:      MAINT-NULL
-changed:     rayfung@iadvantage.net.hk 20000103
-source:      APNIC
-
-person:      Paul Shu
-address:     Rame System Corp.
-address:     F17,No.5, Sec.1Hsin Tai Wu Rd.,
-address:     Taipei City
-address:     Taiwan, R.O.C
-country:     TW
-phone:       +886-2-26981920
-fax-no:      +886-2-269814891
-e-mail:      billjean@mail.infoserve.com.tw
-nic-hdl:     PS63-AP
-mnt-by:      MAINT-NULL
-changed:     billjean@mail.infoserve.com.tw 20000119
-source:      APNIC
-
-person:      Paul Ruan
-address:     Joint Networking Corp.
-address:     No.15,Lane 304,Anle Rd.,
-address:     Taipei City
-address:     Taiwan, R.O.C
-country:     TW
-phone:       +886-2-29276618
-fax-no:      +886-2-29284899
-e-mail:      billjean@mail.infoserve.com.tw
-nic-hdl:     PR22-AP
-mnt-by:      MAINT-NULL
-changed:     billjean@mail.infoserve.com.tw 20000124
-source:      APNIC
-
-person:      Paul Libauer
-address:     5/490 Northbourne Avenue
-address:     Dickson
-address:     ACT 2602
-country:     AU
-phone:       +61 1800 065744
-fax-no:      +61 1800 644377
-e-mail:      paull@telstra.net
-nic-hdl:     PL955-AP
-remarks:     (Organisation) Telstra Internet Big Pond Direct
-remarks:     (position) Engineer
-mnt-by:      MAINT-NULL
-changed:     apnic-dbm@apnic.net 20000128
-source:      APNIC
-
-person:      Paul Hung
-address:     Suite A, 11/F, Hennessy Plaza
-address:     164-166 Hennessy Road, Wanchai
-address:     HK
-country:     HK
-phone:       +852-21447728
-fax-no:      +852-21447738
-e-mail:      info@adtic.com
-nic-hdl:     PH47-AP
-mnt-by:      MAINT-HK-IS
-changed:     hostmaster@iadvantage.net.hk 20000313
-source:      APNIC
-
-person:      Paul Swafford
-address:     Christchurch, New Zealand
-country:     NZ
-phone:       +64 3 365 6480
-e-mail:      paul@e-caf.com
-nic-hdl:     PS70-AP
-notify:      mat@voyager.co.nz
-mnt-by:      MAINT-VOYAGER
-changed:     mat@voyager.co.nz 20000315
-source:      APNIC
-
-person:      Paul Rajeswaran
-address:     Wellington, New Zealand
-country:     NZ
-phone:       +64 4 473 3330
-e-mail:      pr@oticon.co.nz
-nic-hdl:     PR23-AP
-notify:      mat@voyager.co.nz
-mnt-by:      MAINT-VOYAGER
-changed:     mat@voyager.co.nz 20000404
-source:      APNIC
-
-person:      Paul Mathiopoulos
-address:     ACI Packaging
-address:     310 Ferntreegully Road
-address:     North Clayton, VIC, 3168
-country:     AU
-phone:       +61 39627 5535
-e-mail:      mathiopp@melbourne.btap.bt.com
-nic-hdl:     PM32-AP
-mnt-by:      CIP-MNT-AP
-changed:     ipadmin@eu.concert.net 19990804
-source:      APNIC
-
-person:      Paul Hitchen
-address:     Concert Management Services Inc
-address:     Reston
-address:     11921 Freedom Drive
-address:     VA 20190
-country:     US
-phone:       +44 1473606344
-e-mail:      paul.hitchen@bt.com
-nic-hdl:     PH33-AP
-mnt-by:      CIP-MNT-AP
-changed:     ipadmin@eu.concert.net 19990917
-source:      APNIC
-
-person:      Paul Chen
-address:     9F,No.87,Chung Chen 4th Rd,
-address:     Kaohsiung,Taiwan,R.O.C.
-country:     TW
-phone:       +886-07-2613030
-fax-no:      +886-07-2118001
-e-mail:      liang@kbb.com.tw
-nic-hdl:     PCH
-mnt-by:      MAINT-HITRON-AP
-changed:     adm@ht.net.tw 20000330
-source:      APNIC
-
-person:      Paul Ng
-address:     45 Pekin Street #03-01
-address:     Singapore 048774
-phone:       +65-2988859
-fax-no:      +65-5358115
-e-mail:      paul.ng@aretae.com
-nic-hdl:     PN28-AP
-notify:      noc@ix.singtel.com
-mnt-by:      MAINT-AP-CONNECTPLUS
-changed:     munchye@singtel.com 20000417
-source:      APNIC
-
-person:      Paul Exala
-address:     60 Samson Road, Subic Bay Freeport Zone, Philippines
-country:     PH
-phone:       +63-47-252-1540
-fax-no:      +63-47-252-2680
-e-mail:      paule@svisp.com
-nic-hdl:     PE8-AP
-mnt-by:      MAINT-PH-INFOCOM
-changed:     pdacanay@info.com.ph 20000419
-source:      APNIC
-
-person:      Paul Norton
-address:     Level 3, 502 Albert Street
-address:     East Melbourne VIC 3002
-country:     AU
-phone:       +61-3-9662-1233
-fax-no:      +61-3-9663-8805
-e-mail:      paul.norton@swish.com.au
-nic-hdl:     PN30-AP
-mnt-by:      MAINT-AU-SWISH
-changed:     rod.bacon@swish.com.au 20000509
-source:      APNIC
-
-person:      Paul Shirley
-address:     PO Box 1544
-address:     Invercargill
-country:     NZ
-phone:       +64-3-214 4184
-e-mail:      paul.shirley@southcom.co.nz
-nic-hdl:     PS78-AP
-mnt-by:      NZTELECOM
-changed:     soa@xtra.co.nz 20000413
-source:      APNIC
-
-person:      Paul Hornell
-address:     PO Box 58-128
-address:     Greenmount
-address:     Auckland
-country:     NZ
-phone:       +64-9-273 1160
-e-mail:      phornell@astronplatics.co.nz
-nic-hdl:     PH51-AP
-mnt-by:      NZTELECOM
-changed:     soa@xtra.co.nz 20000508
-source:      APNIC
-
-person:      Paul Wei
-address:     No10,Lane62,Tachih St,
-address:     Taipei, Taiwan, R.O.C.
-country:     TW
-phone:       +886-2-25338082
-fax-no:      +886-2-25335663
-e-mail:      clayton@ortv.com.tw
-nic-hdl:     PAW
-mnt-by:      MAINT-HITRON-AP
-changed:     adm@ht.net.tw 19991206
-source:      APNIC
-
-person:      Paul Quek
-address:     International Plant Genetic Resources
-address:     Institute (IPGRI)
-address:     P.O.Box 236, UPM Post Office
-address:     43400  Selangor
-country:     MY
-phone:       +60-3-8942-3891
-fax-no:      +60-3-8948-7655
-e-mail:      ipgriap@po.jaring.my
-nic-hdl:     PQ3-AP
-remarks:     jaring-ipgriap
-notify:      ip-request@jaring.my
-mnt-by:      MAINT-JARING-AP
-changed:     ip-request@jaring.my 20000526
-source:      APNIC
-
-person:      Paul Li
-address:     Computer Room, 1/F,
-address:     DHL House, 13 Mok Cheong Street,
-address:     To Kusa Wan,
-address:     Hong Kong
-phone:       +852- 2774 7671
-fax-no:      +852- 2176 4033
-e-mail:      cs@imsbiz.com
-nic-hdl:     PL114-AP
-notify:      dbmon@apnic.net
-mnt-by:      MAINT-HKT
-changed:     NOC@hkt.net 20000428
-source:      APNIC
-
-person:      Paul Walker
-address:     United States Olympic Committee
-address:     Bankstown
-address:     Town Hall Civic center
-address:     Bankstown, Nsw 2200
-country:     AU
-phone:       +1 7195784787
-e-mail:      paul.walker@usoc.org
-nic-hdl:     PW71-AP
-mnt-by:      CIP-MNT-AP
-changed:     ipadmin@eu.concert.net 20000609
-source:      APNIC
-
-person:      Paul Liu
-address:     No.253, Feng-Shi Rd., Dong-Shi Town,
-address:     Taichung County, Taiwan, R.O.C.
-country:     TW
-phone:       +886-4-310-9266
-fax-no:      +886-4-310-9268
-e-mail:      yufen106@ms22.hinet.net
-nic-hdl:     PLL
-mnt-by:      MAINT-HITRON-AP
-changed:     adm@ht.net.tw 20000615
-source:      APNIC
-
-person:      Paul Wan
-address:     90 Cecil Street
-address:     Singapore 069531
-country:     SG
-phone:       +65-324-6690
-fax-no:      +65-324-6691
-e-mail:      paul_wan@email.com
-nic-hdl:     PW74-AP
-mnt-by:      MAINT-CWNSS-AP
-changed:     hostmaster@cwasia.net.sg 20000623
-source:      APNIC
-
-person:      John Paul Lonie
-address:     60 Carrington St
-address:     Sydney, NSW, Australia
-address:     2000`
-country:     AU
-phone:       +612-82345286
-fax-no:      +612-82345290
-e-mail:      john.paul.lonie@computershare.com.au
-nic-hdl:     JL316-AP
-mnt-by:      MAINT-NEW
-changed:     john.paul.lonie@computershare.com.au 20000629
-source:      APNIC
-
-person:      Paul Culmsee
-address:     Level 9
-address:     256 Adelaide Terrace
-address:     Perth WA 6000
-country:     AU
-phone:       +61 8 92189780
-fax-no:      +61 8 92189790
-e-mail:      pculmsee@wiredcity.com.au
-nic-hdl:     PC137-AP
-mnt-by:      MAINT-AU-WIREDCITY
-changed:     pculmsee@wiredcity.com.au 20000630
-source:      APNIC
-
-person:      Paul Gampe
-address:     Level 1 - 33 Park Road
-address:     Milton, QLD, 4064
-country:     AU
-phone:       +61-7-3367-0490
-fax-no:      +61-7-3367-0482
-e-mail:      paulg@apnic.net
-nic-hdl:     PG6-AP
-remarks:     APNIC Technical Operations Team
-notify:      paulg@apnic.net
-mnt-by:      MAINT-APNIC-AP
-changed:     paulg@apnic.net 19990909
-source:      APNIC
-
-person:      Paul Deely
-address:     Level 40, 385 Bourke Street,
-address:     Melbourne, 3000
-country:     AU
-phone:       +61-3-8602-9000
-fax-no:      +61-3-8602-9090
-e-mail:      paul.deely@datafast.net.au
-nic-hdl:     PD25-AP
-mnt-by:      MAINT-NEW
-changed:     paul.deely@datafast.net.au 20000714
-source:      APNIC
-
-person:      Paul Beecroft
-address:     BT Openworld
-address:     iAdvantage
-address:     36/F Standard Chartered Tower
-address:     Millenium City, Kwun Tong Rd, Kwun Tong, Hong Kong
-country:     HK
-phone:       +44 1977592958
-e-mail:      paul.beecroft@bt.com
-nic-hdl:     PB28-AP
-mnt-by:      CIP-MNT-AP
-changed:     ipadmin@eu.concert.net 20000721
-source:      APNIC
-
-person:      Paul Padilla
-address:     11 F, Octagon Building, San Miguel Ave., Pasig M. Manila
-country:     PH
-phone:       +632-6358652
-e-mail:      ppadilla@e-net.ph
-nic-hdl:     PP42-AP
-mnt-by:      MAINT-NEW
-changed:     ppadilla@e-net.ph 20000804
-source:      APNIC
-
-person:      Paul Dompas
-address:     Jl.Raya Ranca Ekek,km 27
-address:     Sumedang
-country:     ID
-phone:       +62-022-798-800
-e-mail:      APMPNREG@jp.att.com
-nic-hdl:     PD26-AP
-mnt-by:      MAINT-NULL
-changed:     APMPNREG@jp.att.com 20000807
-source:      APNIC
-
-person:      Paul Canterbury
-address:     Whiteman St.
-address:     Southbank
-address:     Australia
-country:     AU
-phone:       +61-929-28888
-e-mail:      paulc@crownltd.com.au
-nic-hdl:     PC144-AP
-mnt-by:      MAINT-NEW
-changed:     tlewin@netstarnetworks.com 20000809
-source:      APNIC
-
-person:      Paul Ang
-address:     De-Consultants (S) Pte Ltd
-address:     158 Cecil Street
-address:     #08-02 Dapenso Building
-address:     Singapore 069545
-phone:       +65 97461340
-fax-no:      +65 7836837
-e-mail:      paulang@hotmail.com
-nic-hdl:     PA23-AP
-notify:      hostmaster@singnet.com.sg
-mnt-by:      MAINT-SG-SINGNET
-changed:     hostmaster@singnet.com.sg 20000815
-source:      APNIC
-
-person:      Paul Fung
-address:     3/F, Kwai Chung Exchange,
-address:     145-159 Kwok Shui Road
-address:     Kwai Chung, New Territories
-address:     Hong Kong
-country:     HK
-phone:       +852-26101659
-fax-no:      +852-24017665
-e-mail:      paul.my.fung@cwhkt.com
-nic-hdl:     PF14-AP
-mnt-by:      MAINT-AP-SYSENG
-changed:     paul.my.fung@cwhkt.com 20000821
-source:      APNIC
-
-person:      Paul Ting
-address:     Man Yue House
-address:     Tsz Man Estate
-country:     HK
-phone:       +852-81022871
-fax-no:      +852-23278695
-e-mail:      paulting@hongkong.com
-nic-hdl:     PT17-AP
-mnt-by:      MAINT-NULL
-changed:     paulting@hongkong.com 20000822
-source:      APNIC
-
-person:      Paul Liu
-address:     Cheng Loong Corp.
-address:     No. 1, Ming Sun Rd., Pan Chiao, Taipei
-address:     Taiwan, R.O.C
-country:     TW
-phone:       +886-2-22225131
-fax-no:      +886-2-29599288
-e-mail:      billjean@mail.infoserve.com.tw
-nic-hdl:     PL16-AP
-mnt-by:      IS-NCD
-changed:     billjean@mail.infoserve.com.tw 20000825
-source:      APNIC
-
-person:      Paul Templeton
-address:     RCI Pacific Pty Ltd
-address:     PO Box 6495
-address:     Queensland
-address:     Australia
-country:     AU
-phone:       +61 (7) 5588 9967
-e-mail:      paul.templeton@rcipacific.com
-nic-hdl:     AG26-AP
-mnt-by:      NETLINK-NOC-AP
-changed:     alastair.galloway@netlink.net.nz 20000828
-source:      APNIC
-
-person:      Paul Canterbury
-address:     Whiteman St.
-address:     Southbank
-address:     Melbourne
-address:     Australia
-country:     AU
-phone:       +61-3-9292-8888
-fax-no:      +61-3-9292-4141
-e-mail:      paulc@crownltd.com.au
-nic-hdl:     PC153-AP
-mnt-by:      MAINT-NEW
-changed:     tlewin@netstarnetworks.com 20000831
-source:      APNIC
-
-person:      Paul Giannelis
-address:     Mercury Marine
-address:     132 - 140 frankston road
-address:     Dandenong Victoria 3175
-country:     AU
-phone:       +61 397676453
-e-mail:      paul_giannelis@mercmarine.com
-nic-hdl:     PG30-AP
-mnt-by:      CIP-MNT-AP
-changed:     ipadmin@eu.concert.net 20000831
-source:      APNIC
-
-person:      Paul Raj Khangure
-address:     c/o Internet Infobahn
-address:     Level 4, QV1 Building,
-address:     250 St Georges Tce
-address:     Perth. Western Australia
-address:     6000
-country:     AU
-phone:       +61-8-9226-1011
-fax-no:      +61-8-9226-1012
-e-mail:      prk@infobahn.com.au
-nic-hdl:     PK51-AP
-mnt-by:      MAINT-AU-INFOBAHN
-changed:     prk@infobahn.com.au 20000904
-source:      APNIC
-
-person:      Paul Caples
-address:     P O Box 8
-address:     AUCKLAND
-country:     NZ
-phone:       +64-9-309 8839
-e-mail:      paul.caples@russellmcveagh.com
-nic-hdl:     PC155-AP
-mnt-by:      NZTELECOM
-changed:     soa@xtra.co.nz 20000911
-source:      APNIC
-
-person:      Paul De Wijze
-address:     Unity Ltd
-address:     PO Box 5083
-address:     Wellington
-address:     New Zealand
-country:     NZ
-phone:       +64 (4) 474 8780
-e-mail:      paul.dw@unity.org.nz
-nic-hdl:     AG32-AP
-mnt-by:      NETLINK-NOC-AP
-changed:     alastair.galloway@netlink.net.nz 20000912
-source:      APNIC
-
-person:      Paul Faung
-address:     Merino Industrial Ltd.
-address:     No. 79, Sec. 1, Sin Ta Wu Rd., Taipei
-address:     Taiwan, R.O.C
-country:     TW
-phone:       +886-2-26989345
-fax-no:      +886-2-26989455
-e-mail:      billjean@mail.infoserve.com.tw
-nic-hdl:     PF15-AP
-mnt-by:      IS-NCD
-changed:     billjean@mail.infoserve.com.tw 20000913
-source:      APNIC
-
-person:      Paul Sotheran
-address:     61 Bowen Street,
-address:     Spring Hill, QLD 4000
-country:     AU
-phone:       +61 7 38311700
-fax-no:      +61 7 38314900
-e-mail:      paul@networkers.com.au
-nic-hdl:     PS101-AP
-mnt-by:      MAINT-NEW
-changed:     paul@networkers.com.au 20000913
-source:      APNIC
-
-person:      Paul Hutton
-address:     371 Beach Road #13-06
-address:     Keypoint S(199597)
-phone:       +65-292-7412
-fax-no:      +65-293-3018
-e-mail:      pobox@congruent.com.sg
-nic-hdl:     PH60-AP
-mnt-by:      PIPL-NOC-AP
-changed:     operations@pacific.net.sg 20000914
-source:      APNIC
-
-person:      Paul Ruan
-address:     Joint Networking Elements International Corp.
-address:     No. 15, An Le Rd., Yungho, Taipei
-address:     Taiwan, R.O.C
-country:     TW
-phone:       +886-2-29276618
-fax-no:      +886-2-29284899
-e-mail:      billjean@mail.infoserve.com.tw
-nic-hdl:     PR25-AP
-mnt-by:      IS-NCD
-changed:     billjean@mail.infoserve.com.tw 20000914
-source:      APNIC
-
-person:      Paul Shu
-address:     Ramon System Corp.
-address:     No. 79, Sec. 1, Sin Tai Wu Rd., Taipei
-address:     Taiwan, R.O.C
-country:     TW
-phone:       +886-2-26981920
-fax-no:      +886-2-26981891
-e-mail:      billjean@mail.infoserve.com.tw
-nic-hdl:     PS102-AP
-mnt-by:      IS-NCD
-changed:     billjean@mail.infoserve.com.tw 20000918
-source:      APNIC
-
-person:      Paul Lin
-address:     WHEREVER Computer Tech Co., Ltd
-address:     8F, 188, Sec. 2, Chung-Ching N. Rd.
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2553-3800 ext 106
-fax-no:      +886-2-2553-3844
-e-mail:      paul@wherever.net
-nic-hdl:     PL7-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Lee
-address:     Lucent Technologies Co., Ltd.
-address:     No.2, Innovation Rd.¢º, Scinece Based Industrial Park
-address:     Hsin Chu Taiwan
-country:     TW
-phone:       +886-3-579-1182
-e-mail:      paull@shts.seed.net.tw
-nic-hdl:     PL6-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Tseng
-address:     FAT Capital Corporation Limited
-address:     10F, No.6, Tun Hua N.Rd,
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2714-7108
-fax-no:      +886-2-2546-9356
-e-mail:      mduan@mail.fatcap.com.tw
-nic-hdl:     PT3-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Hsu
-address:     Winmax Technology Corp.
-address:     5F, No.26, Nanking E. Rd., Sec. 3
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2506-3668
-fax-no:      +886-2-2506-0237
-e-mail:      paul@winmax.net.tw
-nic-hdl:     PH-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Jair
-address:     Petrus System Inc.
-address:     4F, No. 98 Chung Hsiao E. Rd. Sec. 3
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2721-2721
-fax-no:      +886-2-2721-2032
-e-mail:      admin@topsoft.com.tw
-nic-hdl:     PJ2-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Chang
-address:     Great Master Information Co., Ltd.
-address:     5F-2, No. 30, Gong Yuan Rd
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2311-4537
-fax-no:      +886-2-2331-7731
-e-mail:      hn80030241@hn.hinet.net
-nic-hdl:     PC5-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Chang
-address:     Great Master Information Co., Ltd.
-address:     5F-2, No. 30, Gong Yuan Rd
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2311-4537
-fax-no:      +886-2-2331-7731
-e-mail:      hn80070057@hn.hinet.net
-nic-hdl:     PC4-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Chang
-address:     Grent Master Information Co., Ltd.
-address:     5F-2, No. 30, Gong Yuan Rd
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2311-4537
-fax-no:      +886-2-2331-7731
-e-mail:      james@gmiedu.com.tw
-nic-hdl:     PC3-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Lee
-address:     Maifung Co., Ltd.
-address:     No. 41, Wu-Chuan-Wu Road, Wu-Ku Industrial Zone.
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2298-8556 ext 48
-fax-no:      +886-2-2299-2189
-e-mail:      paul@mail.mfc.com.tw
-nic-hdl:     PL4-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Chang
-address:     Great Master Information Co., Ltd.
-address:     NO.102 Enpen ROAD ChouZui Town
-address:     Pingtung Taiwan
-country:     TW
-phone:       +886-2-2311-4537
-e-mail:      pual@pcschool.com.tw
-nic-hdl:     PC1-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Chang
-address:     Great Master Information Co., Ltd.
-address:     No.246 Section 2 Dunmen Road
-address:     Tainan Taiwan
-country:     TW
-phone:       +886-2-2311-4537
-e-mail:      paul@pcschool.com.tw
-nic-hdl:     PC2-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul Kung
-address:     Jade Web Information Shop
-address:     No.483, Ching Bei 3rd, ji-an shang
-address:     Hualian County Taiwan
-country:     TW
-phone:       +886-3-854-2303
-e-mail:      paul@ms1.jadenet.com.tw
-nic-hdl:     PK1-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19990924
-source:      TWNIC
-
-person:      Paul
-address:     Getop Automatic Inc.
-address:     No.80,10Fl,Room.1,Ho-Ping W Rd,Taipei,Taiwan.
-address:     Taiwan
-country:     TW
-phone:       +886-2-2369-6330 ext 21
-fax-no:      +886-2-2365-5604
-e-mail:      sales@mail.getop.com.tw
-nic-hdl:     P4-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991005
-source:      TWNIC
-
-person:      Paul
-address:     Fast Technololgies Inc
-address:     6f,no.335,wen-Hsin rd Kushan Kistricy
-address:     Taiwan
-country:     TW
-phone:       +886-7-585-519 ext 314
-fax-no:      +886-0-585-519
-e-mail:      sten@khmail.fast.com.tw
-nic-hdl:     P8-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991006
-source:      TWNIC
-
-person:      Paul
-address:     Buffalo Machinery Co.,Ltd
-address:     no19,alley5,lane192,sec1,tong sun rd
-address:     Taiwan
-country:     TW
-phone:       +886-4-560-375
-fax-no:      +886-4-560-376
-e-mail:      pauleman@tcts.seed.net.tw
-nic-hdl:     P12-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991006
-source:      TWNIC
-
-person:      Paul
-address:     Leadwell CNC Machines MFG,Corp
-address:     no5,gone 10th rd,taichung industrial park
-address:     Taiwan
-country:     TW
-phone:       +886-4-359-188 ext 280
-fax-no:      +886-4-359-252
-e-mail:      louis@leadwell.com.tw
-nic-hdl:     P14-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991006
-source:      TWNIC
-
-person:      Paul
-address:     Ever Team International Corp.
-address:     no.55,10-1r,tungkuang rd,hsinchu
-address:     Taiwan
-country:     TW
-phone:       +886-3-572-954
-fax-no:      +886-3-572-872
-e-mail:      etsales1@ms6.hinet.net
-nic-hdl:     P19-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991006
-source:      TWNIC
-
-person:      Paul Chang
-address:     Amway Taiwan Company Limited
-address:     11F, No.168, Tun-Hwa N. Rd.,
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2546-7566
-fax-no:      +886-2-2546-7566
-e-mail:      paulchang@amway.com.tw
-nic-hdl:     PC16-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991008
-source:      TWNIC
-
-person:      PAUL LEE
-address:     TAOYUAN JEISOI JUNIOR HIGH SCHOOL
-address:     248 , CHUNG CHENG RD., FU HSING ,
-address:     TAOYUAN COUNTY Taiwan
-country:     TW
-phone:       +886-3-382-2166
-fax-no:      +886-3-382-1292
-e-mail:      paullee@noc1.tyc.edu.tw
-nic-hdl:     PL14-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991015
-source:      TWNIC
-
-person:      tsai paul
-address:     NABISCO TAIWAN CORP
-address:     NO.182 CHUNG SHAN RD TAINAN HSIEN
-address:     N/A Taiwan
-country:     TW
-phone:       +886-6-599-5200 ext 390
-fax-no:      +886-6-599-5036
-e-mail:      tptip@nabisco.com.tw
-nic-hdl:     TP2-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991109
-source:      TWNIC
-
-person:      Chang Paul
-address:     Firmness Enterprise Ltd.
-address:     No.259,1Fl,Sec.7,Yan Ping N Rd,Taipei,Taiwan.
-address:     N/A Taiwan
-country:     TW
-phone:       +886-2-2810-0208
-fax-no:      +886-2-2810-0177
-e-mail:      paul@firmness.com
-nic-hdl:     CP4-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991109
-source:      TWNIC
-
-person:      Paul Tsai
-address:     CHARDER ELECTRONIC CO., LTD.
-address:     No. 103 , Kuo Chung Rd., Dah Li City , Taichung County ,
-address:     Taichung Taiwan
-country:     TW
-phone:       +886-4-406-3766
-fax-no:      +886-4-406-5612
-e-mail:      paultsai@tcts.seed.net.tw
-nic-hdl:     PT4-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991109
-source:      TWNIC
-
-person:      Paul Tasy
-address:     Tasy, Paul
-address:     No. 21 Hwa Chung 6 St, Hsihu Town,
-address:     Changhua Taiwan
-country:     TW
-phone:       +886-4-885-4929
-e-mail:      hn83600008@hn.hinet.net
-nic-hdl:     PT5-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991109
-source:      TWNIC
-
-person:      Paul Hsu
-address:     Paul Hsu
-address:     2F,No.340,Jung Jeng Rd., PanChiao City,Taipei County,
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2968-8178
-e-mail:      hn83100846@hn.hinet.net
-nic-hdl:     PH8-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 19991109
-source:      TWNIC
-
-person:      Paul Chiu
-address:     Best Casting Industries Co., Ltd.
-address:     10F-6, No.2, Jien Ba Rd., Chung Ho City, Taipei
-address:     Taipei County Taiwan
-country:     TW
-phone:       +886-2-8226-1282
-fax-no:      +886-2-8226-1519
-e-mail:      paul@bestcast.com.tw
-nic-hdl:     PC19-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000126
-source:      TWNIC
-
-person:      Paul Ko
-address:     Sunrise Information Co., Ltd.
-address:     8F-1., No. 190, S-Wei 4 Rd., Kaohsiung
-address:     Kaohsiung Taiwan
-country:     TW
-phone:       +886-7-536-7707
-fax-no:      +886-7-536-7717
-e-mail:      paul_ko@mail.sric.com.tw
-nic-hdl:     PK6-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000217
-source:      TWNIC
-
-person:      Paul Chou
-address:     Sinonet Com
-address:     1F, No.9, Lane 9, I-Ning St., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2585-4701
-e-mail:      paul.chou@webex.net
-nic-hdl:     PC44-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000621
-source:      TWNIC
-
-person:      Paul DH Chiang
-address:     Speedy Care Ent  Co., Ltd.
-address:     15F-1., No. 59, Sec. 2, TungHwa S. Rd., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2703-2099
-fax-no:      +886-2-2703-3289
-e-mail:      speedycare@best.sewice.com
-nic-hdl:     PDC2-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000621
-source:      TWNIC
-
-person:      Paul Chen
-address:     Swpro Electronics Co., Ltd.
-address:     2F., No. 2, Sec. Dung, Gung-Ye 6 Rd., Pingtung
-address:     Pingtung Taiwan
-country:     TW
-phone:       +886-8-755-0116 ext 22
-fax-no:      +886-8-755-0173
-e-mail:      paul697@ms16.hinet.net
-nic-hdl:     PC45-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000621
-source:      TWNIC
-
-person:      Paul Lue
-address:     Lue, Paul
-address:     5F., No. 290, Sec. 4, Cheng-Der Rd., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2880-2590
-fax-no:      +886-2-2509-6084
-e-mail:      myriad@ms1.hinet.net
-nic-hdl:     PL26-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000408
-source:      TWNIC
-
-person:      Paul Houng
-address:     Modern Lin Technology Co., Ltd.
-address:     5F, No.5, Sec 2, An Ho Rd., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2217-5235
-fax-no:      +886-2-2705-5055
-e-mail:      jadehow@mxtpa.biglobe.net.tw
-nic-hdl:     PH12-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000408
-source:      TWNIC
-
-person:      Paul Chou
-address:     Paul Chou
-address:     7F, No.11, Aly.21, Lane 450, Chen Gweng Rd., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2632-2305
-e-mail:      paulchou@ethome.net.tw
-nic-hdl:     PC43-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000621
-source:      TWNIC
-
-person:      Paul Lee
-address:     Lee, Paul
-address:     3F, No 7, Le 32, BeiNing Rd.
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2358-2961 ext 510
-e-mail:      paull@ms1.hinet.net
-nic-hdl:     PL49-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000621
-source:      TWNIC
-
-person:      Paul Yang
-address:     Shin Long Construct Co., Ltd.
-address:     6F, No 92, Sec. 2, Duenhua S. Rd., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2755-0606 ext 318
-fax-no:      +886-2-2702-0959
-e-mail:      dsyang@ms1.tisnet.net.tw
-nic-hdl:     PY11-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000621
-source:      TWNIC
-
-person:      Paul Li
-address:     Paul Li
-address:     7F, No. 6, Lane 92, An Road, Shin Dian City.
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2218-5611 ext 165
-e-mail:      paulie@ms24.hinet.net
-nic-hdl:     PL35-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000509
-source:      TWNIC
-
-person:      Paul Lin
-address:     Paul Lin
-address:     608,No.167,Shi An St.,
-address:     Taichung Taiwan
-country:     TW
-phone:       +886-4-252-3137
-e-mail:      linpaul@ms33.url.com.tw
-nic-hdl:     PL39-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000509
-source:      TWNIC
-
-person:      Paul Chien
-address:     Uni-Onward Corp.
-address:     3 Fl-2., NO. 93, Sec. 1, Wenhwa 1th Rd., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2600-0611
-fax-no:      +886-2-2600-0799
-e-mail:      paul@uni-onward.com.tw
-nic-hdl:     PC38-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000509
-source:      TWNIC
-
-person:      Paul NULL
-address:     Getop Automatic Inc.
-address:     No.98,7Fl,Sec.2,Jan Ai Rd,Taipei,Taiwan.
-address:     N/A Taiwan
-country:     TW
-phone:       +886-2-2322-2662 ext 621
-fax-no:      +886-2-2322-2995
-e-mail:      paul@marl.getop.com.tw
-nic-hdl:     PN25-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000608
-source:      TWNIC
-
-person:      Paul Chang
-address:     Great Master Information Co., Ltd
-address:     5F-2, No.5, Gong Yuan Rd., Taipei
-address:     Taipei Taiwan
-country:     TW
-phone:       +886-2-2311-4507
-fax-no:      +886-2-2331-7731
-e-mail:      gmfq@ms4.hinet.net
-nic-hdl:     PC46-TW
-remarks:     This information has been partially mirrored by APNIC from
-remarks:     TWNIC. To obtain more specific information, please use the
-remarks:     TWNIC whois server at whois.twnic.net.
-changed:     hostmaster@twnic.net 20000705
-source:      TWNIC
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+notify: nobody@nowhere.test
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+notify: nobody@nowhere.test
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+mnt-by: AA11-AA
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
+
+person: person
+address: address
+address: address
+address: address
+country: AU
+phone: +11-1-1111-1111
+fax-no: +11-1-1111-1111
+e-mail: nobody@nowhere.test
+nic-hdl: AA11-AA
+remarks: remark remark remark
+remarks: remark remark remark
+remarks: remark remark remark
+changed: nobody@nowhere.test 20000101
+source: TEST
 
 

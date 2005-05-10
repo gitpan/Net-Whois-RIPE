@@ -6,7 +6,19 @@ WriteMakefile(
 	'VERSION_FROM'    => 'RIPE.pm', # finds $VERSION
 	'PREREQ_PM'       => {
 		'IO'                   => 1.20,
-	#	'IO::Socket'           => 1.1603,
 	},
-	'dist'            => { COMPRESS=> 'gzip -9f', SUFFIX=>'gz' },
 );
+
+
+sub MY::postamble {
+		return <<'MAKE_RPM';
+
+# source for tarball for rpmbuild
+SOURCEDIR = `pwd`
+
+rpm:	dist
+		sed -e 's/@VERSION@/$(VERSION)/' perl-$(DISTNAME).spec > perl-$(DISTNAME)-$(VERSION).spec
+		rpmbuild --define "_sourcedir $(SOURCEDIR)" -ba perl-$(DISTNAME)-$(VERSION).spec
+MAKE_RPM
+
+}

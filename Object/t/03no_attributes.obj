@@ -1,8 +1,0 @@
-
-% an empty object. need some text so content will pass =~ /^\s*$/;
-% there are no attributes here
-% not one.
-% these below are not attributes
-
-asd : asd
-asd asd: asd

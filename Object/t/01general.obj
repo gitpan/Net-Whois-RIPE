@@ -1,18 +1,18 @@
 
 % Rights restricted by copyright. See http://www.apnic.net/db/dbcopyright.html
 
-person:      Paul Gampe
-address:     Level 1 - 33 Park Road
-address:     Milton, QLD, 4064
+person:      Firstname Lastname
+address:     Address 1
+address:     Address 2
 country:     AU
-phone:       +61-7-3367-0490
-fax-no:      +61-7-3367-0482
-e-mail:      paulg@apnic.net
-nic-hdl:     PG6-AP
-remarks:     APNIC Technical Operations Team
-notify:      paulg@apnic.net
-mnt-by:      MAINT-APNIC-AP
-changed:     paulg@apnic.net 19990909
-source:      APNIC
+phone:       +11-1-1111-1111
+fax-no:      +11-1-1111-1111
+e-mail:      nobody@nowhere.test
+nic-hdl:     AA11-AA
+remarks:     remarks remarks
+notify:      nobody@nowhere.test
+mnt-by:      MAINT-AAAAA-AA
+changed:     nobody@nowhere.test 19990909
+source:      TEST
 
 

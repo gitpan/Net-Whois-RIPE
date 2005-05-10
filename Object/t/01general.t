@@ -23,20 +23,20 @@ test(5,$o->success==1,"failed to parse $file");
 # now pull all that back out
 my @addy;
 
-test(6,($o->person eq 'Paul Gampe'),"person method failed");
+test(6,($o->person eq 'Firstname Lastname'),"person method failed");
 test(7,@addy = $o->address,"address method failed");
-test(8,($addy[0] eq 'Level 1 - 33 Park Road'),"add method failed");
-test(9,($addy[1] eq 'Milton, QLD, 4064'),"add method failed");
+test(8,($addy[0] eq 'Address 1'),"add method failed");
+test(9,($addy[1] eq 'Address 2'),"add method failed");
 test(10,($o->country eq 'AU'),"country method failed");
-test(11,($o->phone eq '+61-7-3367-0490'),"phone method failed");
-test(12,($o->fax_no eq '+61-7-3367-0482'),"fax method failed");
-test(13,($o->e_mail eq 'paulg@apnic.net'),"e_mail method failed");
-test(14,($o->nic_hdl eq 'PG6-AP'),"nic_hdl method failed");
-test(15,($o->remarks eq 'APNIC Technical Operations Team'),"remarks failed");
-test(16,($o->notify eq 'paulg@apnic.net'),"notify method failed");
-test(17,($o->mnt_by eq 'MAINT-APNIC-AP'),"mnt_by method failed");
-test(18,($o->changed eq 'paulg@apnic.net 19990909'),"changed method failed");
-test(19,($o->source eq 'APNIC'),"source method failed");
+test(11,($o->phone eq '+11-1-1111-1111'),"phone method failed");
+test(12,($o->fax_no eq '+11-1-1111-1111'),"fax method failed");
+test(13,($o->e_mail eq 'nobody@nowhere.test'),"e_mail method failed");
+test(14,($o->nic_hdl eq 'AA11-AA'),"nic_hdl method failed");
+test(15,($o->remarks eq 'remarks remarks'),"remarks failed");
+test(16,($o->notify eq 'nobody@nowhere.test'),"notify method failed");
+test(17,($o->mnt_by eq 'MAINT-AAAAA-AA'),"mnt_by method failed");
+test(18,($o->changed eq 'nobody@nowhere.test 19990909'),"changed method failed");
+test(19,($o->source eq 'TEST'),"source method failed");
 
 # try a method that should not exist
 
