@@ -1,11 +1,23 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Net-Whois-RIPE
-version:      1.22
-version_from: RIPE.pm
-installdirs:  site
+---
+name: Net-Whois-RIPE
+version: 1.23
+author: ~
+abstract: ~
+license: gpl
 requires:
-    IO:                            1.2
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+  IO: 1.2
+  Test::More: ~
+provides:
+  Net::Whois::RIPE:
+    file: lib/Net/Whois/RIPE.pm
+    version: 1.04
+  Net::Whois::RIPE::Iterator:
+    file: lib/Net/Whois/RIPE/Iterator.pm
+    version: 1.01
+  Net::Whois::RIPE::Object:
+    file: lib/Net/Whois/RIPE/Object.pm
+    version: 1.03
+  Net::Whois::RIPE::Object::Template:
+    file: lib/Net/Whois/RIPE/Object/Template.pm
+    version: 1.01
+generated_by: Module::Build version 0.2612

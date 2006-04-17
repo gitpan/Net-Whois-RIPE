@@ -1,16 +1,16 @@
 ###############################################################################
 # Net::Whois::RIPE - implementation of RIPE Whois.
-# Copyright (C) 2005 Paul Gampe
+# Copyright (C) 2005 Paul Gampe, Kevin Baker
 # vim:tw=78:ts=4
 ###############################################################################
 %define pkgname Net-Whois-RIPE
 %define filelist %{pkgname}-%{version}-filelist
 %define NVR %{pkgname}-%{version}-%{release}
-%define maketest 1
+%define maketest 0
 
 name:      perl-Net-Whois-RIPE
 summary:   Net-Whois-RIPE - Perl module
-version:	@VERSION@
+version:@VERSION@
 release:   1
 vendor:    pgampe@users.sourceforge.net
 packager:  Paul Gampe <pgampe@users.sourceforge.net>
@@ -69,7 +69,7 @@ find %{buildroot}%{_prefix}             \
 
 %{__perl} -MFile::Find -le '
     find({ wanted => \&wanted, no_chdir => 1}, "%{buildroot}");
-    print "%doc  Iterator Object ChangeLog README";
+    print "%doc ChangeLog README";
     for my $x (sort @dirs, @files) {
         push @ret, $x unless indirs($x);
         }
@@ -109,5 +109,8 @@ find %{buildroot}%{_prefix}             \
 %defattr(-,root,root)
 
 %changelog
+* Tue Mar 13 2005 pgampe@users.sourceforge.net 1.231
+- add caching, retry and fixes from Marco
+
 * Mon Nov 8 2004 pgampe@users.sourceforge.net
 - Initial build.

@@ -18,7 +18,7 @@ my $o;
 # test case 1. totally empty 
 
 my $file = $0;
-$file =~ s/\.t$/1\.obj/;
+$file =~ s/\.t$/_1\.obj/;
 test(2,open(FH,$file),"cannot open $file: $!");
 test(3,!($o = Net::Whois::RIPE::Object->new(\*FH)),
 	"object constructor should have failed");
@@ -29,7 +29,7 @@ test(5,Net::Whois::RIPE::Object->errstr eq "no lines read from handle",
 # test case 2. just newlines
 
 $file = $0;
-$file =~ s/\.t$/2\.obj/;
+$file =~ s/\.t$/_2\.obj/;
 test(6,open(FH,$file),"cannot open $file: $!");
 test(7,!($o = Net::Whois::RIPE::Object->new(\*FH)),
 	"object constructor should have failed");
@@ -40,7 +40,7 @@ test(9,Net::Whois::RIPE::Object->errstr eq "content is all whitespace",
 # test case 3. just newlines, tabs and spaces
 
 $file = $0;
-$file =~ s/\.t$/3\.obj/;
+$file =~ s/\.t$/_3\.obj/;
 test(10,open(FH,$file),"cannot open $file: $!");
 test(11,!($o = Net::Whois::RIPE::Object->new(\*FH)),
 	"object constructor should have failed");
