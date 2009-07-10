@@ -11,7 +11,7 @@ use Carp;
 use Net::Whois::RIPE::Object;
 use Net::Whois::RIPE::Object::Template;
 
-our $ERSION = '1.10';
+our $VERSION = '1.30';
 
 # class wide debug flag 0=off,1=on,2=on for IO::Socket
 my $DEBUG = 0;

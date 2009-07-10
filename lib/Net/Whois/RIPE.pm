@@ -17,7 +17,7 @@ use Net::Whois::RIPE::Iterator;
 use constant MAX_RETRY_ATTEMPTS => 3;  # number of times to attempt connection
 use constant SLEEP_INTERVAL     => 1;  # time interval between attempts
 
-our $VERSION = '1.10';
+our $VERSION = '1.30';
 
 # class wide debug flag 0=off,1=on,2=on for IO::Socket
 my $DEBUG = 0;

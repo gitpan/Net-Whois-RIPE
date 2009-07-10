@@ -2,7 +2,7 @@ package Net::Whois::RIPE::Object::Template;
 use strict;
 use Carp;
 
-our $VERSION = '1.10';
+our $VERSION = '1.30';
 
 our @ISA = qw(Net::Whois::RIPE::Object);
 

@@ -20,7 +20,7 @@ RPM
 
 my $build = $class->new(
     'module_name'  => 'Net::Whois::RIPE',
-    'dist_version' => '1.25',
+    'dist_version' => '1.30',
     'license'      => 'gpl',
     'requires'     => {
         'IO'         => 1.20,

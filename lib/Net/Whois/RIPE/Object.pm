@@ -8,7 +8,7 @@ package Net::Whois::RIPE::Object;
 use strict;
 use Carp;
 
-our $VERSION = '1.10';
+our $VERSION = '1.30';
 
 my $errstr = '';
 sub errstr {$errstr}
