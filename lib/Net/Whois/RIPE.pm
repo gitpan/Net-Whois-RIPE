@@ -1,5 +1,6 @@
 ###############################################################################
 # Net::Whois::RIPE - implementation of RIPE Whois.
+# Copyright (C) 2009 Luis Motta Campos
 # Copyright (C) 2005-2006 Paul Gampe, Kevin Baker
 # vim:tw=78:ts=4
 ###############################################################################
@@ -13,11 +14,10 @@ use Net::Whois::RIPE::Object;
 use Net::Whois::RIPE::Object::Template;
 use Net::Whois::RIPE::Iterator;
 
-use constant MAX_RETRY_ATTEMPTS => 3;    # number of times to attempt connection
-use constant SLEEP_INTERVAL     => 1;    # time interval between attempts
+use constant MAX_RETRY_ATTEMPTS => 3;  # number of times to attempt connection
+use constant SLEEP_INTERVAL     => 1;  # time interval between attempts
 
-use vars qw($VERSION);
-$VERSION = do { my @r = ( q$Revision: 1.4 $ =~ /\d+/g ); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = '1.10';
 
 # class wide debug flag 0=off,1=on,2=on for IO::Socket
 my $DEBUG = 0;
@@ -49,11 +49,12 @@ sub new {
         DEBUG         => $debug,                 # object debug
 
         # whois flags
-        FLAG_a => 0, # search all databases
-        FLAG_B => 0, # disable filtering of "notify:", "changed:",  "e-mail:
-        FLAG_F => 0, # fast raw output
-        FLAG_g => 0, # used to sync databases. shouldn't be used for general use
-        FLAG_G => 0, # Disables the grouping of objects by relevance
+        FLAG_a => 0,   # search all databases
+        FLAG_B => 0,   # disable filtering of "notify:", "changed:",  "e-mail:
+        FLAG_F => 0,   # fast raw output
+        FLAG_g =>
+            0,    # used to sync databases. shouldn't be used for general use
+        FLAG_G => 0,        # Disables the grouping of objects by relevance
         FLAG_h => $host,    # host to connect to
         FLAG_i => '',       # do an inverse lookup for specified attributes
         FLAG_k => 0,        # for persistant socket connection
@@ -61,10 +62,10 @@ sub new {
         FLAG_L => 0,        # find all Less specific matches
         FLAG_m => 0,        # find first level more specific matches
         FLAG_M => 0,        # find all More specific matches
-        FLAG_p => $arg{Port} || 'whois', # port, usually 43 for whois
-        FLAG_r => 0,                     # turn off recursive lookups
-        FLAG_R => 0,                     # do not trigger referral mechanism
-        FLAG_s => '',                    # search databases with source 'source'
+        FLAG_p => $arg{Port} || 'whois',   # port, usually 43 for whois
+        FLAG_r => 0,                       # turn off recursive lookups
+        FLAG_R => 0,                       # do not trigger referral mechanism
+        FLAG_s => '',    # search databases with source 'source'
         FLAG_S => 0,     # tell server to leave out 'syntactic sugar'
         FLAG_t => '',    # requests template for object of type 'type'
         FLAG_T => '',    # only look for objects of type 'type'
@@ -75,8 +76,8 @@ sub new {
     # if host matches a server that accepts a
     # referral IP then add the remote addr to version
     $self->{FLAG_V} = $VER_FLAG . "," . $ENV{"REMOTE_ADDR"}
-      if $self->{FLAG_h} =~ /$RE_WHOIS/oi
-      and $ENV{"REMOTE_ADDR"};
+        if $self->{FLAG_h} =~ /$RE_WHOIS/oi
+            and $ENV{"REMOTE_ADDR"};
 
     # connect to server
     #unless ($self->_connect) {
@@ -166,12 +167,12 @@ sub query {
     }
 
     my $string;
-    unless ($string = $self->_options($query_key)) {
+    unless ( $string = $self->_options($query_key) ) {
         carp "query: unable to parse options" if $self->debug;
         return undef;
     }
 
-    if ($self->{cache}) {
+    if ( $self->{cache} ) {
         my $object = $self->{cache}->get($string);
         return wantarray ? @$object : $object->[0] if $object;
     }
@@ -185,11 +186,11 @@ sub query {
         return undef;
     }
 
-     my @object = $self->_query($string."\n", "Net::Whois::RIPE::Object");
- 
-     $self->{cache}->set($string, \@object) if $self->{cache} and @object;
- 
-     return wantarray ? @object : $object[0];
+    my @object = $self->_query( $string . "\n", "Net::Whois::RIPE::Object" );
+
+    $self->{cache}->set( $string, \@object ) if $self->{cache} and @object;
+
+    return wantarray ? @object : $object[0];
 }
 
 sub update {
@@ -221,53 +222,57 @@ sub _query {
     my @objects;
     my $connection_attempts = 0;
 
-    while ($connection_attempts < MAX_RETRY_ATTEMPTS) {
- 
-       unless ( $sock = $self->_connect ) {
-         carp "_query: unable to obtain socket" if $self->debug;
-         return undef;
-       }
+    while ( $connection_attempts < MAX_RETRY_ATTEMPTS ) {
 
-       unless ( print $sock $string ) {
-         carp "_query: unable to print to socket:\n$string" if $self->debug;
-         return undef;
-       }
+        unless ( $sock = $self->_connect ) {
+            carp "_query: unable to obtain socket" if $self->debug;
+            return undef;
+        }
 
-       $sock->flush;
+        unless ( print $sock $string ) {
+            carp "_query: unable to print to socket:\n$string"
+                if $self->debug;
+            return undef;
+        }
 
-       my $bytes = 0;
-       my $max = $self->max_read_size;
+        $sock->flush;
 
-       while ( my $t = $ripe_type->new( $sock, $self->{FLAG_k} ) ) {
+        my $bytes = 0;
+        my $max   = $self->max_read_size;
 
-         # discards pseudo-records containing only comments
-         next if $self->{FLAG_k} and not $t->attributes and $t->success;
-         if ( $t->size <= 2 ) {
-             return wantarray ? @objects : $objects[0];
-         }
-         push @objects, $t;
-         $bytes += $t->size;
-         if ( $max and $bytes > $max ) {
-             my $msg =
-                 "exceeded maximum read size of " . $max
-               . " bytes."
-               . " results may have been truncated.";
-             $t->push_warn($msg);
-             carp "_query: " . $msg if $self->debug;
-             last;
-         }
-         last if $sock->eof or not wantarray;
-       }
+        while ( my $t = $ripe_type->new( $sock, $self->{FLAG_k} ) ) {
 
-       # exit the retry loop unless the client has been disconnected
-       last unless not @objects and $sock->eof;
+            # discards pseudo-records containing only comments
+            next if $self->{FLAG_k} and not $t->attributes and $t->success;
+            if ( $t->size <= 2 ) {
+                return wantarray ? @objects : $objects[0];
+            }
+            push @objects, $t;
+            $bytes += $t->size;
+            if ( $max and $bytes > $max ) {
+                my $msg
+                    = "exceeded maximum read size of " 
+                    . $max
+                    . " bytes."
+                    . " results may have been truncated.";
+                $t->push_warn($msg);
+                carp "_query: " . $msg if $self->debug;
+                last;
+            }
+            last if $sock->eof or not wantarray;
+        }
 
-       carp "_query: disconnected by server " . $self->{FLAG_h}
-           . ", trying again..." if $self->debug;
-       $self->_disconnect;
-       sleep SLEEP_INTERVAL;
-       $connection_attempts++;
-       next;
+        # exit the retry loop unless the client has been disconnected
+        last unless not @objects and $sock->eof;
+
+        carp "_query: disconnected by server "
+            . $self->{FLAG_h}
+            . ", trying again..."
+            if $self->debug;
+        $self->_disconnect;
+        sleep SLEEP_INTERVAL;
+        $connection_attempts++;
+        next;
     }
 
     if ( $sock and $self->{FLAG_k} ) {
@@ -283,15 +288,14 @@ sub _query {
 
 sub max_read_size {
     my $self = shift;
-    @_ ? $self->{MAX_READ_SIZE} = 0 + shift: $self->{MAX_READ_SIZE};
+    @_ ? $self->{MAX_READ_SIZE} = 0 + shift : $self->{MAX_READ_SIZE};
 }
 
 sub disconnect {
     $_[0]->_disconnect;
 }
 
-sub cache
-{
+sub cache {
     return $_[0]->{cache} if not defined $_[1];
     $_[0]->{cache} = $_[1];
 }
@@ -350,7 +354,7 @@ sub server {
 sub debug {
     my $self = shift;
     if (@_) {
-        ref($self) ? $self->{DEBUG} = shift: $DEBUG = shift;
+        ref($self) ? $self->{DEBUG} = shift : $DEBUG = shift;
     }
     return ref($self) ? ( $DEBUG || $self->{DEBUG} ) : $DEBUG;
 }
@@ -389,24 +393,24 @@ sub _connect {
     while ( !$connected and $attempt < MAX_RETRY_ATTEMPTS ) {
         if ($attempt) {
             carp "_connect: to server "
-              . $self->{FLAG_h}
-              . " failed, trying again..."
-              if $self->debug;
+                . $self->{FLAG_h}
+                . " failed, trying again..."
+                if $self->debug;
             sleep SLEEP_INTERVAL;
         }
         $attempt++;
         $connected = 1
-          if $sock = IO::Socket::INET->new(
+            if $sock = IO::Socket::INET->new(
             PeerAddr => $self->server,
             PeerPort => $self->port,
             Proto    => 'tcp',
             Timeout  => $self->{TIMEOUT}
-          );
+            );
         carp $@ if $@ and $self->debug > 1;
     }
     if ( not $connected ) {
         carp "Failed to connect to host [" . $self->server . "]"
-          if $self->debug;
+            if $self->debug;
         return undef;
     }
     $sock->autoflush;    # on by default since IO 1.18, but anyhow

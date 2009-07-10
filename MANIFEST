@@ -2,7 +2,6 @@ Build.PL
 ChangeLog
 MANIFEST			This list of files
 META.yml
-Makefile.PL
 README
 lib/Net/Whois/RIPE.pm
 lib/Net/Whois/RIPE.pod

@@ -20,15 +20,17 @@ RPM
 
 my $build = $class->new(
     'module_name'  => 'Net::Whois::RIPE',
-    'dist_version' => '1.23',
+    'dist_version' => '1.25',
     'license'      => 'gpl',
     'requires'     => {
         'IO'         => 1.20,
+        'Carp'       => undef,
         'Test::More' => undef,
     },
-    'create_makefile_pl' => 'traditional',    # TODO: remove after 2005
 );
 $build->create_build_script;
 
-# TODO prompt user here for a whois server to test against?
-$build->notes(host => 'does not exist');
+# This is the public RIPE Whois host. As this is a permanent service and very
+# stable DNS name, I can safely put it here. TODO: prompt user here for a whois
+# server to test against?
+$build->notes(host => 'whois.ripe.net');

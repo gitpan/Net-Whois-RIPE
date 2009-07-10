@@ -1,5 +1,6 @@
 ###############################################################################
 # Net::Whois::RIPE - implementation of RIPE Whois.
+# Copyright (C) 2009 Luis Motta Campos
 # Copyright (C) 2005 Paul Gampe, Kevin Baker
 # vim:tw=78:ts=4
 ###############################################################################
@@ -7,16 +8,18 @@ package Net::Whois::RIPE::Object;
 use strict;
 use Carp;
 
-my $errstr = '';
-sub errstr { $errstr }
+our $VERSION = '1.10';
 
-use vars qw($VERSION $AUTOLOAD);
-$VERSION = do { my @r = ( q$Revision: 1.3 $ =~ /\d+/g ); sprintf "%d." . "%02d" x $#r, @r };
+my $errstr = '';
+sub errstr {$errstr}
+
+# XXX: remove declaration of AUTOLOAD from here
+use vars qw($AUTOLOAD);
 
 # values not permitted to be added
 my @NO_ADD = qw(
-  content methods attributes warning error success debug parse
-  size _ok _err _wrn
+    content methods attributes warning error success debug parse
+    size _ok _err _wrn
 );
 my %NO_ADD = map { $_ => 1 } @NO_ADD;
 
@@ -71,7 +74,7 @@ sub parse {
         }
 
         /^The object shown below is NOT in the/ and $self->_err($_);
-        /^\% No entries found\./ and $self->_err('No entries found');
+        /^\%\s+No entries found/ and $self->_err('No entries found');
         /^\%ERROR:(.*)/ and $self->_err($1), next;
         /^%/   and next;                     # skip server comments
         /^\n$/ and $found_record and last;
@@ -87,19 +90,23 @@ sub parse {
         /^WARNING:\s+(.*)/   and $self->_wrn($1), next;
 
         # ok, now try to match attribute value pairs
-        if (my ($value2) = /^\+?\s+(.+)$/ and $precedent_attribute){
-            $value2 =~ s/#.*$// unless exists $Free_Form{$precedent_attribute};
+        if ( my ($value2) = /^\+?\s+(.+)$/ and $precedent_attribute ) {
+            $value2 =~ s/#.*$//
+                unless exists $Free_Form{$precedent_attribute};
             $value2 =~ s/\s+$//;
-            $self->add($precedent_attribute, $value2);
-        } elsif (my ($attribute, $value) = /^([\w\-]+|\*\w\w):\s+(.*)$/) {
+            $self->add( $precedent_attribute, $value2 );
+        }
+        elsif ( my ( $attribute, $value ) = /^([\w\-]+|\*\w\w):\s+(.*)$/ ) {
+
             # strip end of line comments and trailing white space
             $value =~ s/#.*$// unless exists $Free_Form{$attribute};
             $value =~ s/\s+$//;
             $self->add( $attribute, $value );
             $precedent_attribute = $attribute;
-            $found_record = 1;
-        } else {
-             $self->_err("unparseable line: '$_'");
+            $found_record        = 1;
+        }
+        else {
+            $self->_err("unparseable line: '$_'");
         }
     }
 
@@ -109,7 +116,7 @@ sub parse {
         return 0;
     }
 
-    if ( @{ $self->{_content} } == 0 ) {    # this should be caught by $line_cnt
+    if ( @{ $self->{_content} } == 0 ) {  # this should be caught by $line_cnt
         carp "parse: no content read from handle" if $self->debug;
         $errstr = "no content read from handle";
         return 0;
@@ -149,7 +156,7 @@ sub add {
     # if this ATTRIBUTE has been saved before then do not
     # place it on the order list again.
     push @{ $self->{_order} }, $attr
-      unless exists $self->{_methods}->{$attr};
+        unless exists $self->{_methods}->{$attr};
 
     # save the VALUE on the list for that ATTRIBUTE
     push @{ $self->{_methods}->{$attr} }, $value;
@@ -158,8 +165,8 @@ sub add {
 sub content {
     my $self = shift;
     return wantarray
-      ? @{ $self->{_content} }
-      : join( '', @{ $self->{_content} } );
+        ? @{ $self->{_content} }
+        : join( '', @{ $self->{_content} } );
 }
 
 sub methods { return $_[0]->attributes }
@@ -173,7 +180,8 @@ sub warning {
     my $self = shift;
 
     #    local $^W=0;
-    return wantarray ? @{ $self->{_warn} } : join( "\n", @{ $self->{_warn} } );
+    return
+        wantarray ? @{ $self->{_warn} } : join( "\n", @{ $self->{_warn} } );
 }
 
 sub error {
@@ -181,7 +189,7 @@ sub error {
 
     #    local $^W=0;
     return
-      wantarray ? @{ $self->{_error} } : join( "\n", @{ $self->{_error} } );
+        wantarray ? @{ $self->{_error} } : join( "\n", @{ $self->{_error} } );
 }
 
 sub success {
@@ -191,7 +199,7 @@ sub success {
 
 sub debug {
     my $self = shift;
-    return @_ ? $self->{_debug} = shift: $self->{_debug};
+    return @_ ? $self->{_debug} = shift : $self->{_debug};
 }
 
 sub AUTOLOAD {
@@ -199,18 +207,19 @@ sub AUTOLOAD {
     my $type = ref($self) or croak "$self is not an object";
 
     my $name = $AUTOLOAD;
-    $name =~ s/^.*://;   # strip fully-qualified portion
-    $name =~ s/_/-/g;    # change _ to - in method name: same as 'add'
+    $name =~ s/^.*://;    # strip fully-qualified portion
+    $name =~ s/_/-/g;     # change _ to - in method name: same as 'add'
 
     unless ( exists $self->{_methods}->{$name} ) {
-        carp "I don't know about method `$name' in class $type" if $self->debug;
+        carp "I don't know about method `$name' in class $type"
+            if $self->debug;
         return undef;
     }
 
     # all the attribute values are stored in arrays
     return wantarray
-      ? @{ $self->{_methods}->{$name} }
-      : $self->{_methods}->{$name}->[0];
+        ? @{ $self->{_methods}->{$name} }
+        : $self->{_methods}->{$name}->[0];
 }
 
 sub DESTROY { }
@@ -219,9 +228,9 @@ sub DESTROY { }
 ##            P R I V A T E   M E T H O D S
 ###############################################################################
 
-sub _err      { my $self = shift; (@_) and push @{ $self->{_error} }, shift }
+sub _err { my $self = shift; (@_) and push @{ $self->{_error} }, shift }
 sub push_warn { shift->_wrn(@_) }
-sub _wrn      { my $self = shift; (@_) and push @{ $self->{_warn} }, shift }
+sub _wrn { my $self = shift; (@_) and push @{ $self->{_warn} }, shift }
 
 sub _ok {
     my ( $self, $text ) = @_;
@@ -244,6 +253,3 @@ sub _ok {
 
 1;
 __END__
-
-
-

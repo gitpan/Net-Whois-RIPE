@@ -2,10 +2,9 @@ package Net::Whois::RIPE::Object::Template;
 use strict;
 use Carp;
 
-use vars qw($VERSION @ISA);
-$VERSION = do { my @r = ( q$Revision: 1.1 $ =~ /\d+/g ); sprintf "%d." . "%02d" x $#r, @r };
+our $VERSION = '1.10';
 
-@ISA = qw(Net::Whois::RIPE::Object);
+our @ISA = qw(Net::Whois::RIPE::Object);
 
 sub parse {
     my $self   = shift;
@@ -34,8 +33,3 @@ sub parse {
 }
 1;
 __END__
-
-
-
-
-

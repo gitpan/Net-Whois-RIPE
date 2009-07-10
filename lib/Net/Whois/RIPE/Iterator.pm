@@ -1,5 +1,6 @@
 ###############################################################################
 # Net::Whois::RIPE - implementation of RIPE Whois.
+# Copyright (C) 2009 Luis Motta Campos
 # Copyright (C) 2005 Paul Gampe, Kevin Baker
 # vim:tw=78:ts=4
 ###############################################################################
@@ -10,8 +11,7 @@ use Carp;
 use Net::Whois::RIPE::Object;
 use Net::Whois::RIPE::Object::Template;
 
-use vars qw($VERSION);
-$VERSION = do { my @r = ( q$Revision: 1.1 $ =~ /\d+/g ); sprintf "%d." . "%02d" x $#r, @r };
+our $ERSION = '1.10';
 
 # class wide debug flag 0=off,1=on,2=on for IO::Socket
 my $DEBUG = 0;
@@ -21,7 +21,7 @@ sub new {
     my $class = ref($proto) || $proto;
     unless ( @_ == 2 ) {
         carp "new: expecting Net::Whois::RIPE object and a query string"
-          if $DEBUG;
+            if $DEBUG;
         return undef;
     }
     my $self = bless {
@@ -31,7 +31,8 @@ sub new {
     }, $class;
 
     unless ( ref( $self->{WHOIS} ) =~ /^Net::Whois::RIPE$/ ) {
-        carp "new: first parameter must be a Net::Whois::RIPE object" if $DEBUG;
+        carp "new: first parameter must be a Net::Whois::RIPE object"
+            if $DEBUG;
         return undef;
     }
 
@@ -67,7 +68,7 @@ sub next {
 sub debug {
     my $self = shift;
     if (@_) {
-        ref($self) ? $self->{DEBUG} = shift: $DEBUG = shift;
+        ref($self) ? $self->{DEBUG} = shift : $DEBUG = shift;
     }
     return ref($self) ? ( $DEBUG || $self->{DEBUG} ) : $DEBUG;
 }
@@ -78,7 +79,8 @@ sub DESTROY {
 }
 
 END {
-    carp "All Net::Whois::RIPE::Iterator objects are going away now." if $DEBUG;
+    carp "All Net::Whois::RIPE::Iterator objects are going away now."
+        if $DEBUG;
 }
 
 ###############################################################################

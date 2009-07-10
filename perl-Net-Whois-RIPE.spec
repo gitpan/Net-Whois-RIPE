@@ -1,5 +1,6 @@
 ###############################################################################
 # Net::Whois::RIPE - implementation of RIPE Whois.
+# Copyright (C) 2009 Luis Motta Campos
 # Copyright (C) 2005 Paul Gampe, Kevin Baker
 # vim:tw=78:ts=4
 ###############################################################################
@@ -10,11 +11,11 @@
 
 name:      perl-Net-Whois-RIPE
 summary:   Net-Whois-RIPE - Perl module
-version:@VERSION@
+version:   @VERSION@
 release:   1
-vendor:    pgampe@users.sourceforge.net
-packager:  Paul Gampe <pgampe@users.sourceforge.net>
-license:   Artistic
+vendor:    Luis Motta Campos
+packager:  lmc@cpan.org
+license:   Perl's Artistic License or GNU GPL
 group:     Applications/CPAN
 url:       http://www.cpan.org
 buildroot: %{_tmppath}/%{name}-%{version}-%(id -u -n)
@@ -109,6 +110,14 @@ find %{buildroot}%{_prefix}             \
 %defattr(-,root,root)
 
 %changelog
+* Fri Jul 10 2009 lmc@cpan.org 1.232
+- taking over package maintenance from Paul Gampe - thanks for your work,
+  Paul. :)
+- adding whois.ripe.net as the official host for package tests.
+- applying the patch provided by Ulrich Zehl <ulrich@topfen.net> which allows
+  Net::Whois::RIPE to correctly recognize answers from the whois.radb.net and
+  whois.altdb.net instead of timming out.
+
 * Tue Mar 13 2005 pgampe@users.sourceforge.net 1.231
 - add caching, retry and fixes from Marco
 

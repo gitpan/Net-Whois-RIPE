@@ -1,23 +1,28 @@
 ---
 name: Net-Whois-RIPE
-version: 1.23
-author: ~
-abstract: ~
+version: 1.25
+author: []
+abstract: implementation of RIPE Whois.
 license: gpl
+resources:
+  license: http://opensource.org/licenses/gpl-license.php
 requires:
+  Carp: ~
   IO: 1.2
   Test::More: ~
 provides:
   Net::Whois::RIPE:
     file: lib/Net/Whois/RIPE.pm
-    version: 1.04
+    version: 1.10
   Net::Whois::RIPE::Iterator:
     file: lib/Net/Whois/RIPE/Iterator.pm
-    version: 1.01
   Net::Whois::RIPE::Object:
     file: lib/Net/Whois/RIPE/Object.pm
-    version: 1.03
+    version: 1.10
   Net::Whois::RIPE::Object::Template:
     file: lib/Net/Whois/RIPE/Object/Template.pm
-    version: 1.01
-generated_by: Module::Build version 0.2612
+    version: 1.10
+generated_by: Module::Build version 0.33
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
