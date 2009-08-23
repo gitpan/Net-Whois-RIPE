@@ -1,3 +1,4 @@
+
 =head1 NAME
 
 Net::Whois::RIPE::Iterator - iterator for RIPE object's.
@@ -8,15 +9,15 @@ Net::Whois::RIPE::Iterator - iterator for RIPE object's.
  use Net::Whois::RIPE::Iterator;
 
  $whois = Net::Whois::RIPE->new($host);
- 
- $iterator = Net::Whois::RIPE::Iterator->new($whois,$query);  
+
+ $iterator = Net::Whois::RIPE::Iterator->new($whois,$query);
  while ($obj = $iterator->next) {
      ...
  }
 
 =head1 DESCRIPTION
 
-Implements an iterator for Net::Whois::RIPE::Objects. 
+Implements an iterator for Net::Whois::RIPE::Objects.
 
 =head1 CONSTRUCTOR
 
@@ -40,7 +41,7 @@ Returns undef if no more objects.
 
 =item B<debug(LEVEL)>
 
-Sets/gets debugging level on the class or an object.  
+Sets/gets debugging level on the class or an object.
 
  0 - no debugging
  1 - debugging on
@@ -57,18 +58,18 @@ Sets/gets debugging level on the class or an object.
 =head1 COPYRIGHT
 
  Copyright (C) 2000 Kevin Baker and APNIC Pty. Ltd.
- 
- This program is free software; you can redistribute it 
- and/or modify it under the terms of the GNU General Public 
- License as published by the Free Software Foundation; 
+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation;
  either version 1, or (at your option) any later version.
- 
+
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
- 
- You should have received a copy of the GNU General Public 
- License along with this program; if not, write to the 
- Free Software Foundation, Inc., 
+
+ You should have received a copy of the GNU General Public
+ License along with this program; if not, write to the
+ Free Software Foundation, Inc.,
  675 Mass Ave, Cambridge, MA 02139, USA.

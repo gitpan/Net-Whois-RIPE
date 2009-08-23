@@ -19,12 +19,12 @@ Net::Whois::RIPE::Object - RIPE Query Results
 
  $object->success || die;
 
- foreach $attribute ($object->attributes()) { 
+ foreach $attribute ($object->attributes()) {
      foreach $value ($object->$attribute()) {
          printf "%s:    %-s\n", $attribute, $value;
      }
  }
- 
+
  print $object->content; # raw content from whois server
 
  for $error ($object->error) {...}
@@ -36,7 +36,7 @@ Encapsulates the results of a whois query. The attribute/value pairs
 of the response may then by accessed using the attribute as a method
 name.
 
-These objects are created by I<Net::Whois::RIPE> to be 
+These objects are created by I<Net::Whois::RIPE> to be
 returned as I<query> results.
 
 Short background...a B<whois> server would return the following for a person
@@ -55,12 +55,12 @@ query.
    changed:     paulg@apnic.net 19990909
    source:      APNIC
 
-I<Net::Whois::RIPE::Object> parses the attribute's and values and B<add>'s 
-them to itself. The RIPE object can then be used to access the attribute 
+I<Net::Whois::RIPE::Object> parses the attribute's and values and B<add>'s
+them to itself. The RIPE object can then be used to access the attribute
 values using the attribute names as methods. A call to B<attributes> returns
 an ordered list of all attributes parsed.
 
-All values are stored as lists since some attributes are multiline 
+All values are stored as lists since some attributes are multiline
 (e.g. address). If there has been a problem with the query then the B<content>
 method may provide output from the server that can be used to diagnose why.
 
@@ -81,7 +81,7 @@ Attributes that had a dash '-' are converted to underscore '_' for method names.
 
 =item B<new(HANDLE)>
 
-Creates a new RIPE object. Attempts to parse lines from I<HANDLE>. Any 
+Creates a new RIPE object. Attempts to parse lines from I<HANDLE>. Any
 parsing failure causes the constructor to return undef. Error messages are
 available via B<errstr>. I<HANDLE> may be a file handle or a socket.
 
@@ -94,7 +94,7 @@ returns the lines from whois as a list. In a scalar context it returns
 the entire list in a scalar.
 
 In the case where no ATTRIBUTE's are available via the B<attributes> method,
-then the content may hold information from I<whois> as to why. 
+then the content may hold information from I<whois> as to why.
 
 =item B<attributes()>
 
@@ -104,7 +104,7 @@ The order of the list is the order the ATTRIBUTE's were added in.
 If no ATTRIBUTE's were added then an empty list is returned. Try calling
 B<content> to obtain output from the I<whois> server as to why.
 
-Call I<attributes> to find out if the object was successfully parsed. 
+Call I<attributes> to find out if the object was successfully parsed.
 I<success> reports errors from the whois server. It is possible that
 I<success> can report true but the object has no attributes.
 
@@ -118,7 +118,7 @@ These are the warnings from the whois server about the object.
 =item B<error()>
 
 In a list context it returns an array of error lines. In a scalar
-context it returns a \n separated string of error lines. 
+context it returns a \n separated string of error lines.
 
 These are the errors from the whois server about the object.
 
@@ -128,9 +128,9 @@ Returns 1 if no errors defined, 0 otherwise
 
 =item B<debug(LEVEL)>
 
-Sets/gets the debug level. 
+Sets/gets the debug level.
 
-=head1 CAVEATS 
+=head1 CAVEATS
 
 =head1 AUTHOR
 
@@ -150,17 +150,17 @@ Sets/gets the debug level.
  Copyright (C) 1999 Paul Gampe and APNIC Pty. Ltd.
  Copyright (C) 2000 Kevin Baker and APNIC Pty. Ltd.
  Copyright (C) 2009 Luis Motta Campos
- 
+
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 1, or (at your option)
  any later version.
- 
+
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
- 
+
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software
  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.

@@ -8,18 +8,18 @@ package Net::Whois::RIPE::Object;
 use strict;
 use Carp;
 
-our $VERSION = '1.30';
+our $VERSION = '1.31';
 
 my $errstr = '';
-sub errstr {$errstr}
+sub errstr { $errstr }
 
 # XXX: remove declaration of AUTOLOAD from here
 use vars qw($AUTOLOAD);
 
 # values not permitted to be added
 my @NO_ADD = qw(
-    content methods attributes warning error success debug parse
-    size _ok _err _wrn
+  content methods attributes warning error success debug parse
+  size _ok _err _wrn
 );
 my %NO_ADD = map { $_ => 1 } @NO_ADD;
 
@@ -90,18 +90,12 @@ sub parse {
         /^WARNING:\s+(.*)/   and $self->_wrn($1), next;
 
         # ok, now try to match attribute value pairs
-        if ( my ($value2) = /^\+?\s+(.+)$/ and $precedent_attribute ) {
-            $value2 =~ s/#.*$//
-                unless exists $Free_Form{$precedent_attribute};
-            $value2 =~ s/\s+$//;
-            $self->add( $precedent_attribute, $value2 );
+        if ( my ($value) = /^(\+\s*.*|\s+.+)$/ and $precedent_attribute ) {
+            $value =~ s/^\+/ /;
+            $self->clean_and_add( $precedent_attribute, $value );
         }
-        elsif ( my ( $attribute, $value ) = /^([\w\-]+|\*\w\w):\s+(.*)$/ ) {
-
-            # strip end of line comments and trailing white space
-            $value =~ s/#.*$// unless exists $Free_Form{$attribute};
-            $value =~ s/\s+$//;
-            $self->add( $attribute, $value );
+        elsif ( my ( $attribute, $v ) = /^([\w\-]+|\*\w\w):\s*(.*)$/ ) {
+            $self->clean_and_add( $attribute, $v );
             $precedent_attribute = $attribute;
             $found_record        = 1;
         }
@@ -116,7 +110,7 @@ sub parse {
         return 0;
     }
 
-    if ( @{ $self->{_content} } == 0 ) {  # this should be caught by $line_cnt
+    if ( @{ $self->{_content} } == 0 ) {    # this should be caught by $line_cnt
         carp "parse: no content read from handle" if $self->debug;
         $errstr = "no content read from handle";
         return 0;
@@ -136,10 +130,21 @@ sub size {    # will only work in the ascii world
     return length scalar $self->content;
 }
 
+sub clean_and_add {
+    my ( $self, $attr, $value ) = @_;
+
+    # strip end of line comments and leading and trailing white space
+    $value =~ s/#.*$// unless exists $Free_Form{$attr};
+    $value =~ s/^\s+//;
+    $value =~ s/\s+$//;
+
+    return $self->add( $attr, $value );
+}
+
 sub add {
     my ( $self, $attr, $value ) = @_;
 
-    unless ( ref($self) and $attr and $value ) {
+    unless ( ref($self) and $attr and defined $value ) {
         carp "add: expecting an ATTRIBUTE and a VALUE" if $self->debug;
         return undef;
     }
@@ -156,7 +161,7 @@ sub add {
     # if this ATTRIBUTE has been saved before then do not
     # place it on the order list again.
     push @{ $self->{_order} }, $attr
-        unless exists $self->{_methods}->{$attr};
+      unless exists $self->{_methods}->{$attr};
 
     # save the VALUE on the list for that ATTRIBUTE
     push @{ $self->{_methods}->{$attr} }, $value;
@@ -165,8 +170,8 @@ sub add {
 sub content {
     my $self = shift;
     return wantarray
-        ? @{ $self->{_content} }
-        : join( '', @{ $self->{_content} } );
+      ? @{ $self->{_content} }
+      : join( '', @{ $self->{_content} } );
 }
 
 sub methods { return $_[0]->attributes }
@@ -180,8 +185,7 @@ sub warning {
     my $self = shift;
 
     #    local $^W=0;
-    return
-        wantarray ? @{ $self->{_warn} } : join( "\n", @{ $self->{_warn} } );
+    return wantarray ? @{ $self->{_warn} } : join( "\n", @{ $self->{_warn} } );
 }
 
 sub error {
@@ -189,7 +193,7 @@ sub error {
 
     #    local $^W=0;
     return
-        wantarray ? @{ $self->{_error} } : join( "\n", @{ $self->{_error} } );
+      wantarray ? @{ $self->{_error} } : join( "\n", @{ $self->{_error} } );
 }
 
 sub success {
@@ -212,14 +216,14 @@ sub AUTOLOAD {
 
     unless ( exists $self->{_methods}->{$name} ) {
         carp "I don't know about method `$name' in class $type"
-            if $self->debug;
+          if $self->debug;
         return undef;
     }
 
     # all the attribute values are stored in arrays
     return wantarray
-        ? @{ $self->{_methods}->{$name} }
-        : $self->{_methods}->{$name}->[0];
+      ? @{ $self->{_methods}->{$name} }
+      : $self->{_methods}->{$name}->[0];
 }
 
 sub DESTROY { }
