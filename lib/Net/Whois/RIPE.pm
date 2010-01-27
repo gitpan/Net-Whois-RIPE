@@ -1,528 +1,578 @@
-###############################################################################
-# Net::Whois::RIPE - implementation of RIPE Whois.
-# Copyright (C) 2009 Luis Motta Campos
-# Copyright (C) 2005-2006 Paul Gampe, Kevin Baker
-# vim:tw=78:ts=4
-###############################################################################
-
 package Net::Whois::RIPE;
 
+use warnings;
 use strict;
-use Carp;
-use IO::Socket;
-use Net::Whois::RIPE::Object;
-use Net::Whois::RIPE::Object::Template;
-use Net::Whois::RIPE::Iterator;
+use IO::Socket::INET;
+use IO::Select;
+use Iterator;
+use Iterator::Util;
 
-use constant MAX_RETRY_ATTEMPTS => 3;  # number of times to attempt connection
-use constant SLEEP_INTERVAL     => 1;  # time interval between attempts
+use constant {
+    SOON                    => 0.00001,
+    END_OF_OBJECT_MARK      => "\n\n",
+    EOL                     => "\015\012",
+    QUERY_KEEPALIVE         => q{-k },
+    QUERY_NON_RECURSIVE     => q{-r },
+    QUERY_REFERRAL          => q{-R },
+    QUERY_GROUPING          => q{-G },
+    QUERY_UNFILTERED        => q{-B },
+    QUERY_LIST_OBJECTS      => q{-qtypes },
+    QUERY_LIST_SOURCES      => q{-qsources },
+    QUERY_FETCH_TEMPLATE    => q{-t%s },
+    QUERY_LIMIT_OBJECT_TYPE => q{-T%s },
+};
 
-our $VERSION = '1.30';
+=head1 NAME
 
-# class wide debug flag 0=off,1=on,2=on for IO::Socket
-my $DEBUG = 0;
+Net::Whois::RIPE - a pure-Perl implementation of the RIPE Database client.
 
-# couple of regexs that may need attention
-my $RE_WHOIS = '(?:whois\.apnic\.net)$';
-my $RE_RIPE  = '(?:ripe|ra|apnic|afrinic|rr\.arin|6bone)\.net$';
+=head1 VERSION
 
-# version string to let whois know which client version it is talking to
-my $VER_FLAG = '-VNWR' . $VERSION;
+Version 2.00_001 - ALPHA
 
-sub new {
-    my $proto = shift;
-    my ( $host, %arg ) = @_;
-    my $class = ref($proto) || $proto;
+=cut
 
-    my $debug = exists $arg{Debug} ? $arg{Debug} : 0;
-    unless ($host) {
-        carp "new: no hostname found." if $DEBUG || $debug;
-        return undef;
+our $VERSION = 2.00_001;
+
+=head1 SYNOPSIS
+
+This is a complete rewrite of version 1.31 of the module, which I inherited
+from Paul Gampe during the time I've worked for the RIPE NCC, between Nov 2007
+and Feb 2010.
+
+It intends to provide a cleaner, simpler, and complete implementation of a RIPE
+Database client.
+
+The usage should remain mostly the same:
+
+  use Net::Whois::RIPE;
+
+  my $whois = Net::Whois::RIPE->new( %options );
+  $iterator = $whois->query( 'AS333' );
+
+Of course, comments are more than welcome. If you believe you can help, please
+do not hesitate in contacting me.
+
+=head1 BACKWARD COMPATIBILITY
+
+I've choose to break backwards compatibility with older versions of the L<Net::Whois::RIPE> module for several different reasons. I will try to explain and justify them here, as design documentation. I will also strive to provide practical solutions for porting problems, if any.
+
+=head2 Architecture
+
+The old module provided it's own L<Iterator> implementation. This was common
+practice 10 years ago, when the module was initially written. I believe Perl
+has a stable and useful standard implementation of L<Iterators> now, and
+adopted it instead of maintaining my own. This allows me to reduce the
+necessary code base without losing features.
+
+=head2 Query Options
+
+From release 2.0 onwards, L<Net::Whois::RIPE> will allow almost all query
+options understanded by the RIPE Database Server. I bumped in the lack of
+options myself, sometimes, and I believe other programmers can also use the
+extra features offered.
+
+There are nice, sane defaults provided for most of the options. This should
+make it possible for a beginner to just ignore all options and settings and
+still be able to make some use of the module.
+
+=head2 Memory Footprint
+
+I had the intention of reducing the memory footprint of this module when doing
+heavy-lifting. I still don't have measurements, but that was the idea behind
+adopting an L<Iterator> wrapping the L<IO::Socket> used to return results.
+
+=head2 Better Data Structures
+
+A production release of this module will be able to feed a L<RPSL::Parser> with
+RPSL objects extracted from the RIPE Database and return full-fledged objects
+containing a parsed version of the text (way more useful than a text blob, I
+believe). This is unimplemented at the moment, and will probably show up as an
+experimental addition soon.
+
+=head1 METHODS
+
+=head2 B<new( %options )>
+
+Constructor. Returns a new L<Net::Whois::RIPE> object with an open connection
+to the RIPE Database service of choice (defaulting to C<whois.ripe.net:43>).
+
+The C<%options> hash migth contain configuration options for the RIPE Database
+server. Not all options provided by the RIPE Database server are suitable for
+this implementation, but the idea is to provide everything someone can show a
+use for. The options currently recognized are:
+
+=over 4
+
+=item B<hostname>  (IPv4 address or DNS name. Default is C<whois.ripe.net>)
+
+The hostname or IP address of the service to connect to
+
+=item B<port> (integer, default is C<43>)
+
+The TCP port of the service to connect to
+
+=item B<timeout> (integer, default is C<5>)
+
+The time-out (in seconds) for the TCP connection.
+
+=item B<keepalive> (boolean, default is C<false>)
+
+Wherever we want (C<true>) or not (C<false>) to keep the connection to the
+server open. This option implements the functionality available through RIPE
+Database's "-k" parameter.
+
+=item B<referral> (boolean, default is C<false>)
+
+When true, prevents the server from using the referral mechanism for domain
+lookups, so that the RIPE Database server returns an object in the RIPE
+Database with the exact match with the lookup argument, rather than doing a
+referral lookup.
+
+=item B<recursive> (boolean, default is C<false>)
+
+When set to C<true>, prevents recursion into queried objects for personal
+information. This prevents lots of unsolicited objects from showing up on
+queries.
+
+=item B<grouping> (boolean, default is C<false>)
+
+When C<true> enables object grouping in server responses. There's little
+utility to enable this option, as the objects will be parsed and returned on a
+much reasonable format most of the time. For the brave or more knowledgeable
+people that want to have they answers in plain text, this can help stablishing
+a 'good' ordering for the RPSL objects returned by a query ('good' is RIPE
+NCC's definition of 'good' in this case).
+
+=item B<types> (list of valid RIPE Database object types, default is empty, meaning all types)
+
+Restrict the RPSL object types allowed in the response to those in the list.
+Using this option will cause the L<Net::Whois::RIPE> object to query the RIPE
+Database for the available object types for validating the list. The response
+will be cached for speed and bandwidth.
+
+=item B<disconnected> (boolean, default is C<false>)
+
+Prevents the constructor from automatically opening a connection to the service
+specified (conneting the socket is the default behavior). When set (C<true>),
+the programmer is responsible for calling C<connect> in order to stablish a
+connection to the RIPE Database service desired.
+
+=back
+
+=cut
+
+{
+    my @option_keys = qw{hostname port timeout keepalive referral
+      recursive grouping types};
+    my %default_options = (
+        hostname     => 'whois.ripe.net',
+        port         => '43',
+        timeout      => 5,
+        keepalive    => 0,
+        referral     => 0,
+        recursive    => 0,
+        grouping     => 1,
+        types        => undef,
+        disconnected => 0,
+    );
+
+    sub new {
+        my ( $class, %options ) = @_;
+        my %known_options;
+        $known_options{$_} =
+          exists $options{$_} ? $options{$_} : $default_options{$_}
+          foreach @option_keys;
+
+        my $self = bless { __options => \%known_options }, $class;
+
+        $self->connect unless delete $self->{__options}{disconnected};
+        return $self;
     }
-
-    my $self = bless {
-
-        # object fields
-        SOCKET        => undef,                  # unconnected
-        TIMEOUT       => $arg{Timeout} || 30,    # default timeout
-        MAX_READ_SIZE => 0,                      # no read size limit
-        DEBUG         => $debug,                 # object debug
-
-        # whois flags
-        FLAG_a => 0,   # search all databases
-        FLAG_B => 0,   # disable filtering of "notify:", "changed:",  "e-mail:
-        FLAG_F => 0,   # fast raw output
-        FLAG_g =>
-            0,    # used to sync databases. shouldn't be used for general use
-        FLAG_G => 0,        # Disables the grouping of objects by relevance
-        FLAG_h => $host,    # host to connect to
-        FLAG_i => '',       # do an inverse lookup for specified attributes
-        FLAG_k => 0,        # for persistant socket connection
-        FLAG_K => 0,        # return only primary keys
-        FLAG_L => 0,        # find all Less specific matches
-        FLAG_m => 0,        # find first level more specific matches
-        FLAG_M => 0,        # find all More specific matches
-        FLAG_p => $arg{Port} || 'whois',   # port, usually 43 for whois
-        FLAG_r => 0,                       # turn off recursive lookups
-        FLAG_R => 0,                       # do not trigger referral mechanism
-        FLAG_s => '',    # search databases with source 'source'
-        FLAG_S => 0,     # tell server to leave out 'syntactic sugar'
-        FLAG_t => '',    # requests template for object of type 'type'
-        FLAG_T => '',    # only look for objects of type 'type'
-        FLAG_v => '',    # request verbose template for object of type 'type'
-        FLAG_V => $VER_FLAG,    # client Version
-    }, $class;
-
-    # if host matches a server that accepts a
-    # referral IP then add the remote addr to version
-    $self->{FLAG_V} = $VER_FLAG . "," . $ENV{"REMOTE_ADDR"}
-        if $self->{FLAG_h} =~ /$RE_WHOIS/oi
-            and $ENV{"REMOTE_ADDR"};
-
-    # connect to server
-    #unless ($self->_connect) {
-    #    carp "new: whois connection failure." if $DEBUG || $debug;
-    #    return undef;
-    #    }
-    return $self;
 }
 
-sub connect {
-    my $self = shift;
-    $self->_connect();
+=head2 B<hostname( [$hostname] )>
+
+Accessor to the hostname. Accepts an optional hostname, always return the
+current hostname.
+
+=cut
+
+sub hostname {
+    my ( $self, $hostname ) = @_;
+    $self->{__options}{hostname} = $hostname if defined $hostname;
+    return $self->{__options}{hostname};
 }
 
-sub query_iterator {
-    my $self      = shift;
-    my $query_key = shift;
+=head2 B<port()>
 
-    unless ($query_key) {
-        carp "query: no QUERY_KEY found" if $self->debug;
-        return undef;
-    }
+Accessor to the port. Accepts an optional port, always return the current
+port.
 
-    # TODO - close the connection pseudo gracefully if the timeout value
-    # expires. allow user to set timeouts?
-
-    my $sock;
-    unless ( $sock = $self->_connect ) {
-        carp "query: unable to obtain socket" if $self->debug;
-        return undef;
-    }
-
-    my $string;
-    unless ( $string = $self->_options($query_key) ) {
-        carp "query: unable to parse options" if $self->debug;
-        return undef;
-    }
-
-    return Net::Whois::RIPE::Iterator->new( $self, $string . "\n\n" );
-}
-
-sub template {
-    my $self     = shift;
-    my $template = shift;
-    unless ($template) {
-        carp "template: no WHOIS OBJECT NAME found" if $self->debug;
-        return wantarray ? () : undef;
-    }
-    $self->{FLAG_t} = 1;
-
-    my $string;
-    unless ( $string = $self->_options($template) ) {
-        carp "template: unable to parse options" if $self->debug;
-        return undef;
-    }
-
-    return $self->_query( $string . "\n\n",
-        "Net::Whois::RIPE::Object::Template" );
-}
-
-sub verbose_template {
-    my $self     = shift;
-    my $template = shift;
-    unless ($template) {
-        carp "verbose_template: no WHOIS OBJECT NAME found" if $self->debug;
-        return wantarray ? () : undef;
-    }
-    $self->{FLAG_v} = 1;
-
-    my $string;
-    unless ( $string = $self->_options($template) ) {
-        carp "verbose_template: unable to parse options" if $self->debug;
-        return undef;
-    }
-
-    return $self->_query( $string . "\n\n",
-        "Net::Whois::RIPE::Object::Template" );
-}
-
-sub query {
-    my $self      = shift;
-    my $query_key = shift;
-
-    unless ($query_key) {
-        carp "query: no QUERY_KEY found" if $self->debug;
-        return undef;
-    }
-
-    my $string;
-    unless ( $string = $self->_options($query_key) ) {
-        carp "query: unable to parse options" if $self->debug;
-        return undef;
-    }
-
-    if ( $self->{cache} ) {
-        my $object = $self->{cache}->get($string);
-        return wantarray ? @$object : $object->[0] if $object;
-    }
-
-    # TODO - close the connection pseudo gracefully if the timeout value
-    # expires. allow user to set timeouts?
-
-    my $sock;
-    unless ( $sock = $self->_connect ) {
-        carp "query: unable to obtain socket" if $self->debug;
-        return undef;
-    }
-
-    my @object = $self->_query( $string . "\n", "Net::Whois::RIPE::Object" );
-
-    $self->{cache}->set( $string, \@object ) if $self->{cache} and @object;
-
-    return wantarray ? @object : $object[0];
-}
-
-sub update {
-    my $self    = shift;
-    my $message = shift;
-
-    unless ($message) {
-        carp 'update: no TEXT message found' if $self->debug;
-        return undef;
-    }
-
-    # pull out login and domain from the changed: line
-    my ( $login, $domain ) = ( $message =~ /changed:\s+(.+)@(.+)\n/ );
-    unless ( $login and $domain ) {
-        carp "update: cannot find 'changed' attribute" if $self->debug;
-        return undef;
-    }
-
-    my $string = $self->{FLAG_V} . " -U $login $domain\n" . $message;
-    return $self->_query( $string, "Net::Whois::RIPE::Object" );
-}
-
-sub _query {
-    my $self      = shift;
-    my $string    = shift;
-    my $ripe_type = shift;
-
-    my $sock;
-    my @objects;
-    my $connection_attempts = 0;
-
-    while ( $connection_attempts < MAX_RETRY_ATTEMPTS ) {
-
-        unless ( $sock = $self->_connect ) {
-            carp "_query: unable to obtain socket" if $self->debug;
-            return undef;
-        }
-
-        unless ( print $sock $string ) {
-            carp "_query: unable to print to socket:\n$string"
-                if $self->debug;
-            return undef;
-        }
-
-        $sock->flush;
-
-        my $bytes = 0;
-        my $max   = $self->max_read_size;
-
-        while ( my $t = $ripe_type->new( $sock, $self->{FLAG_k} ) ) {
-
-            # discards pseudo-records containing only comments
-            next if $self->{FLAG_k} and not $t->attributes and $t->success;
-            if ( $t->size <= 2 ) {
-                return wantarray ? @objects : $objects[0];
-            }
-            push @objects, $t;
-            $bytes += $t->size;
-            if ( $max and $bytes > $max ) {
-                my $msg
-                    = "exceeded maximum read size of " 
-                    . $max
-                    . " bytes."
-                    . " results may have been truncated.";
-                $t->push_warn($msg);
-                carp "_query: " . $msg if $self->debug;
-                last;
-            }
-            last if $sock->eof or not wantarray;
-        }
-
-        # exit the retry loop unless the client has been disconnected
-        last unless not @objects and $sock->eof;
-
-        carp "_query: disconnected by server "
-            . $self->{FLAG_h}
-            . ", trying again..."
-            if $self->debug;
-        $self->_disconnect;
-        sleep SLEEP_INTERVAL;
-        $connection_attempts++;
-        next;
-    }
-
-    if ( $sock and $self->{FLAG_k} ) {
-        $sock->flush;
-        $self->{SOCKET}->flush;
-    }
-    else {
-        $self->_disconnect;
-    }
-
-    return wantarray ? @objects : $objects[0];
-}
-
-sub max_read_size {
-    my $self = shift;
-    @_ ? $self->{MAX_READ_SIZE} = 0 + shift : $self->{MAX_READ_SIZE};
-}
-
-sub disconnect {
-    $_[0]->_disconnect;
-}
-
-sub cache {
-    return $_[0]->{cache} if not defined $_[1];
-    $_[0]->{cache} = $_[1];
-}
-
-sub search_all      { $_[0]->{FLAG_a} = 1 }
-sub fast_raw        { $_[0]->{FLAG_F} = 1 }
-sub set_persistance { $_[0]->{FLAG_a} = 1 }
-sub find_less       { $_[0]->{FLAG_L} = 1 }
-sub find_more       { $_[0]->{FLAG_m} = 1 }
-sub find_all_more   { $_[0]->{FLAG_M} = 1 }
-sub no_recursive    { $_[0]->{FLAG_r} = 1 }
-sub no_referral     { $_[0]->{FLAG_R} = 1 }
-sub no_sugar        { $_[0]->{FLAG_S} = 1 }
-sub persistant      { $_[0]->{FLAG_k} = 1 }
-sub no_filtering    { $_[0]->{FLAG_B} = 1 }
-sub no_grouping     { $_[0]->{FLAG_G} = 1 }
-
-# sync is special and is here for completeness. it
-# is not expected that it wil be used
-sub sync           { my $self = shift; $self->{FLAG_g} = shift; }
-sub inverse_lookup { my $self = shift; $self->{FLAG_i} = shift; }
-sub primary_only   { my $self = shift; $self->{FLAG_K} = shift; }
-sub source         { my $self = shift; $self->{FLAG_s} = shift; }
-sub type           { my $self = shift; $self->{FLAG_T} = shift; }
+=cut
 
 sub port {
-    my $self = shift;
-
-    unless ( $self->{FLAG_p} ) {
-        carp 'port: no port defined!' if $self->debug;
-        return undef;
-    }
-
-    # trying to change port? not allowed
-    if (@_) {
-        carp "port: cannot switch port." if $self->debug;
-    }
-    return $self->{FLAG_p};
+    my ( $self, $port ) = @_;
+    $self->{__options}{port} = $port if defined $port && $port =~ m{^\d+$};
+    return $self->{__options}{port};
 }
 
-sub server {
-    my $self = shift;
+=head2 B<timeout()>
 
-    unless ( $self->{FLAG_h} ) {
-        carp 'server: no hostname found' if $self->debug;
-        return undef;
-    }
+Accessor to the timeout configuration option. Accepts an optional timeout,
+always return the current timeout.
 
-    # trying to change servers? not allowed
-    if (@_) {
-        carp "server: cannot switch server." if $self->debug;
-    }
-    return $self->{FLAG_h};
+=cut
+
+sub timeout {
+    my ( $self, $timeout ) = @_;
+    $self->{__options}{timeout} = $timeout
+      if defined $timeout && $timeout =~ m{^\d+$};
+    return $self->{__options}{timeout};
 }
 
-sub debug {
-    my $self = shift;
-    if (@_) {
-        ref($self) ? $self->{DEBUG} = shift : $DEBUG = shift;
+=begin UNDOCUMENTED
+
+=head2 B<__boolean_accessor( $self, $attribute [, $value ] )>
+
+Private method. Shouldn't be used from other modules.
+
+Generic implementation of an accessor for booleans. Receives a reference to the
+current instance, the attribute name, and a value to be interpreted under
+Perl's boolean rules. Sets or gets the named attribute with the given value.
+Always returns the most up-to-date value of the attribute.
+
+=end UNDOCUMENTED
+
+=cut
+
+sub __boolean_accessor {
+    my ( $self, $attribute ) = ( shift, shift );
+    if ( scalar @_ == 1 ) {
+        my $value = shift;
+        $self->{__options}{$attribute} = $value ? 1 : 0;
     }
-    return ref($self) ? ( $DEBUG || $self->{DEBUG} ) : $DEBUG;
+    return $self->{__options}{$attribute};
 }
+
+=head2 B<keepalive()>
+
+Accessor to the keepalive configuration option. Accepts an optional keepalive,
+always return the current keepalive.
+
+=cut
+
+sub keepalive {
+    my $self = shift;
+    return $self->__boolean_accessor( 'keepalive', @_ );
+}
+
+=head2 B<referral()>
+
+Accessor to the referral configuration option. Accepts an optional referral,
+always return the current referral.
+
+=cut
+
+sub referral {
+    my $self = shift;
+    return $self->__boolean_accessor( 'referral', @_ );
+}
+
+=head2 B<recursive()>
+
+Accessor to the recursive configuration option. Accepts an optional recursive,
+always return the current recursive.
+
+=cut
+
+sub recursive {
+    my $self = shift;
+    return $self->__boolean_accessor( 'recursive', @_ );
+}
+
+=head2 B<grouping()>
+
+Accessor to the grouping configuration option. Accepts an optional grouping,
+always return the current grouping.
+
+=cut
+
+sub grouping {
+    my $self = shift;
+    return $self->__boolean_accessor( 'grouping', @_ );
+}
+
+=head2 B<connect()>
+
+Initiates a connection with the current object's configuration.
+
+=cut
+
+sub connect {
+    my $self       = shift;
+    my %connection = (
+        Proto      => 'tcp',
+        Type       => SOCK_STREAM,
+        PeerAddr   => $self->hostname,
+        PeerPort   => $self->port,
+        Timeout    => $self->timeout,
+        Domain     => AF_INET,
+        Multihomed => 1,
+    );
+
+    # Create a new IO::Socket object
+    my $socket = $self->{__state}{socket} = IO::Socket::INET->new(%connection);
+    die q{Can't connect to "}
+      . $self->hostname . ':'
+      . $self->port
+      . qq{". Reason: [$@].\n}
+      unless defined $socket;
+
+    # Register $socket with the IO::Select object
+    if ( my $ios = $self->ios ) {
+        $ios->add($socket) unless $ios->exists($socket);
+    }
+    else {
+        $self->{__state}{ioselect} = IO::Select->new($socket);
+    }
+
+    # Set RIPE Database's "keepalive" capability
+    $self->send(QUERY_KEEPALIVE) if $self->keepalive;
+}
+
+=head2 B<ios()>
+
+Accessor to the L<IO::Select> object coordinating the I/O to the L<IO::Socket>
+object used by this module to communicate with the RIPE Database Server. You
+shouldn't use this object, but the L</"send()"> and L<"query( $query_string )">
+methods instead.
+
+=cut
+
+sub ios { return $_[0]->{__state}{ioselect} }
+
+=head2 B<socket()>
+
+Read-only accessor to the L<IO::Socket> object used by this module.
+
+=cut
+
+sub socket { return $_[0]->{__state}{socket} }
+
+=head2 B<send()>
+
+Sends a message to the RIPE Database server instance to which we're connected
+to. Dies if it cannot write, or if there's no open connection to the server.
+
+Return C<true> if the message could be written to the socket, C<false>
+otherwise.
+
+=cut
+
+sub send {
+    my ( $self, $message ) = @_;
+    die q{Not connected} unless $self->is_connected;
+    if ( my $socket = $self->can_write(SOON) ) {
+        $socket->print( $message, EOL );
+        $socket->flush;
+        return 1;
+    }
+    return 0;
+}
+
+=head2 B<reconnect()>
+
+Reconnects to the server in case we lost connection.
+
+=cut
+
+sub reconnect {
+    my $self = shift;
+    $self->disconnect if $self->is_connected;
+    $self->connect;
+}
+
+=head2 B<disconnect()>
+
+Disconnects this client from the server. This renders the client useless until
+you call L</"connect()"> again. This method is called by L</DESTROY()> as part of
+an object's clean-up process.
+
+=cut
+
+sub disconnect {
+    my $self = shift;
+    if ( $self->is_connected ) {
+        my $socket = $self->{__state}{socket};
+        $socket->close;
+        $self->{__state}{ioselect}->remove($socket);
+        delete $self->{__state}{socket};
+    }
+}
+
+=head2 B<is_connected()>
+
+Returns C<true> if this instance is connected to the RIPE Database service
+configured.
+
+=cut
+
+sub is_connected {
+    my $self   = shift;
+    my $socket = $self->socket;
+    return UNIVERSAL::isa( $socket, 'IO::Socket' )
+      && $socket->connected ? 1 : 0;
+}
+
+=head2 B<DESTROY()>
+
+Net::Whois::RIPE object destructor. Called by the Perl interpreter upon
+destruction of an instance.
+
+=cut
 
 sub DESTROY {
     my $self = shift;
+    $self->disconnect;
+}
 
-    carp "Destroying ", ref($self) if $self->debug;
-    if ( $self->{SOCKET} and $self->{FLAG_k} ) {    # $sock->flush;
-        $self->{SOCKET}->flush;
-    }
-    else {
-        $self->_disconnect;
+=head2 B<query( $query_string )>
+
+Sends a query to the server. Returns an L<Iterator> object that will return one RPSL block at a time.
+
+=cut
+
+# TODO: Identify and ignore comments within the Iterator scope?
+# TODO: Identify and rise as soon as possible "%ERROR:\d+:.+" results.
+
+sub query {
+    my ( $self, $query ) = @_;
+    $query .= QUERY_KEEPALIVE if $self->keepalive;
+    $query .= QUERY_NON_RECURSIVE unless $self->recursive;
+    $query .= QUERY_REFERRAL if $self->referral;
+    return $self->__query($query);
+}
+
+# Allows me to pass in queries without having all the automatic options added
+# up to it.
+sub __query {
+    my ( $self, $query ) = @_;
+    $self->reconnect unless $self->keepalive;
+    die "Not connected" unless $self->is_connected;
+
+    if ( $self->ios->can_write(SOON) ) {
+        $self->socket->print( $query, EOL );
+        return Iterator->new(
+            sub {
+                local $/ = "\n\n";
+                if ( $self->ios->can_read(SOON) ) {
+                    my $block = $self->socket->getline;
+                    return $block if defined $block;
+                }
+                Iterator::is_done;
+            }
+        );
     }
 }
 
-END {
-    carp "All Net::Whois::RIPE objects are going away now." if $DEBUG;
-}
+=head2 B<object_types()>
 
-###############################################################################
-##            P R I V A T E   M E T H O D S
-###############################################################################
+Return a list of known object types from the RIPE Database.
 
-sub _connect {
+Due to some strange mis-behaviour in the protocol (or documentation?) the RIPE
+Database server won't allow a keep-alive token with this query, meaning the
+connection will be terminated after this query.
+
+=cut
+
+sub object_types {
     my $self = shift;
-    if ( $self->{SOCKET} and $self->{SOCKET}->connected ) {
-
-        #carp 'already connected to '.$self->{SOCKET}->peerhost;
-        return $self->{SOCKET};
-    }
-
-    my $sock;
-    my $attempt   = 0;
-    my $connected = 0;
-    while ( !$connected and $attempt < MAX_RETRY_ATTEMPTS ) {
-        if ($attempt) {
-            carp "_connect: to server "
-                . $self->{FLAG_h}
-                . " failed, trying again..."
-                if $self->debug;
-            sleep SLEEP_INTERVAL;
-        }
-        $attempt++;
-        $connected = 1
-            if $sock = IO::Socket::INET->new(
-            PeerAddr => $self->server,
-            PeerPort => $self->port,
-            Proto    => 'tcp',
-            Timeout  => $self->{TIMEOUT}
-            );
-        carp $@ if $@ and $self->debug > 1;
-    }
-    if ( not $connected ) {
-        carp "Failed to connect to host [" . $self->server . "]"
-            if $self->debug;
-        return undef;
-    }
-    $sock->autoflush;    # on by default since IO 1.18, but anyhow
-    return $self->{SOCKET} = $sock;
+    my $iterator = igrep { !m{^%\s} } $self->__query(QUERY_LIST_OBJECTS);
+    return if $iterator->is_exhausted;
+    return split qr{\s+}, $iterator->value;
 }
 
-sub _disconnect {
-    my $self = shift;
-    my $sock = $self->{SOCKET};
-    return unless $sock and $sock->connected;
-    $sock->flush;        # probably not necessary
-    carp "disconnecting from " . $self->{FLAG_h} if $self->debug;
-    $sock->close;
-    $self->{SOCKET} = undef;
-}
+=head1 AUTHOR
 
-sub _options {
-    my $self = shift;
-    my $key  = shift;
+Luis Motta Campos, C<< <lmc at cpan.org> >>
 
-    if (   ( !$key )
-        && ( !$self->{FLAG_t} )
-        && ( !$self->{FLAG_g} )
-        && ( !$self->{FLAG_v} )
-        && ( !( ( $self->{FLAG_g} ) && ( $self->{FLAG_t} ) ) ) )
-    {
-        carp '_options: no search key or valid option found' if $self->debug;
-        return undef;
-    }
+=head1 CAVEATS
 
-    if ( !$self->{FLAG_h} ) {
-        carp "_options: no hostname found" if $self->debug;
-        return undef;
-    }
+=over 4
 
-    if ( $self->{FLAG_L} ) {
-        if ( $self->debug ) {
-            carp "_options: warning -L overrides -m\n" if $self->{FLAG_m};
-            carp "_options: warning -L overrides -M\n" if $self->{FLAG_M};
-        }
-        $self->{FLAG_m} = 0;
-        $self->{FLAG_M} = 0;
-    }
+=item B<No IPv6 Support>
 
-    if ( $self->{FLAG_m} ) {
-        if ( $self->debug ) {
-            carp "_options: warning -m overrides -M\n" if $self->{FLAG_M};
-        }
-        $self->{FLAG_M} = 0;
-    }
+There's no support for IPv6 still on this module. I'm planning to add it in a
+future version.
 
-    my $query = "";
+=item B<Tests Depend On Connectivity>
 
-    # tell the server what version of RIPE whois we are running,
-    # but only if we are sure that we are talking to an
-    # RIPE whois server
+As this is the initial alpha release, there is still some work to do in terms
+of testing. One of the first things I must work on is to eliminate the
+dependency on connectivity to the RIPE Database.
 
-    if (   ( $self->{FLAG_h} =~ /$RE_RIPE/oi )
-        || $self->{FLAG_a}
-        || $self->{FLAG_B}
-        || $self->{FLAG_g}
-        || $self->{FLAG_G}
-        || $self->{FLAG_F}
-        || $self->{FLAG_i}
-        || $self->{FLAG_k}
-        || $self->{FLAG_K}
-        || $self->{FLAG_m}
-        || $self->{FLAG_M}
-        || $self->{FLAG_R}
-        || $self->{FLAG_L}
-        || $self->{FLAG_r}
-        || $self->{FLAG_s}
-        || $self->{FLAG_S}
-        || $self->{FLAG_t}
-        || $self->{FLAG_v}
-        || $self->{FLAG_T} )
-    {
+=item B<Current Interface is not Backwards-Compatible>
 
-        $query .= $self->{FLAG_V} . " ";
-    }
+I plan to implement a drop-in replacement to the old interface soon, as an extension to this module. For now, this module just breaks compatibility with the old interface. Please read the full discussion about compatibility with older version of the L<NET::Whois::RIPE> in the L</"BACKWARD COMPATIBILITY"> section.
 
-    # XXX -g is an undocumented option: get specified updates:
-    #       -g Source:First-Last
-    # get updates with 'Source'
-    # from serial 'First' till 'Last' (you may use 'LAST')
+=back
 
-    $query .= "-a "                         if ( $self->{FLAG_a} );
-    $query .= "-B "                         if ( $self->{FLAG_B} );
-    $query .= "-F "                         if ( $self->{FLAG_F} );
-    $query .= "-g " . $self->{FLAG_g} . " " if ( $self->{FLAG_g} );
-    $query .= "-G "                         if ( $self->{FLAG_G} );
-    $query .= "-i " . $self->{FLAG_i} . " " if ( $self->{FLAG_i} );
-    $query .= "-k "                         if ( $self->{FLAG_k} );
-    $query .= "-K "                         if ( $self->{FLAG_K} );
-    $query .= "-L "                         if ( $self->{FLAG_L} );
-    $query .= "-m "                         if ( $self->{FLAG_m} );
-    $query .= "-M "                         if ( $self->{FLAG_M} );
-    $query .= "-r "                         if ( $self->{FLAG_r} );
-    $query .= "-R "                         if ( $self->{FLAG_R} );
-    $query .= "-S "                         if ( $self->{FLAG_S} );
-    $query .= "-s " . $self->{FLAG_s} . " " if ( $self->{FLAG_s} );
-    $query .= "-T " . $self->{FLAG_T} . " " if ( $self->{FLAG_T} );
-    $query .= "-t "                         if ( $self->{FLAG_t} );
-    $query .= "-v "                         if ( $self->{FLAG_v} );
+=head1 BUGS
 
-    $query .= $key;
+Please report any bugs or feature requests to C<bug-net-whois-ripe at
+rt.cpan.org>, or through the web interface at
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=net-whois-ripe>.  I will be
+notified, and then you'll automatically be notified of progress on your bug as
+I make changes.
 
-    carp "_options: parsed query string: $query" if $self->debug;
 
-    return $query;
-}
+=head1 SUPPORT
 
-1;
-__END__
+You can find documentation for this module with the perldoc command.
 
+    perldoc Net::Whois::RIPE
+
+
+You can also look for information at:
+
+=over 4
+
+=item * RT: CPAN's request tracker
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=net-whois-ripe>
+
+=item * AnnoCPAN: Annotated CPAN documentation
+
+L<http://annocpan.org/dist/net-whois-ripe>
+
+=item * CPAN Ratings
+
+L<http://cpanratings.perl.org/d/net-whois-ripe>
+
+=item * Search CPAN
+
+L<http://search.cpan.org/dist/net-whois-ripe>
+
+=back
+
+
+=head1 ACKNOWLEDGEMENTS
+
+Thanks to Paul Gampe and Kevin Backer for writing previous versions of this
+module;
+
+Thanks to Paul Gampe for allowing me to handle me the maintenance of this
+module on CPAN;
+
+Thanks to RIPE NCC for allowing me to work on this during some of my office
+hours.
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright 2010 Luis Motta Campos, all rights reserved.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+=cut

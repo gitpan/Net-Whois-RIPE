@@ -1,29 +1,22 @@
----
-name: Net-Whois-RIPE
-version: 1.31
-author: []
-abstract: implementation of RIPE Whois.
-license: gpl
-resources:
-  license: http://opensource.org/licenses/gpl-license.php
+--- #YAML:1.0
+name:               Net-Whois-RIPE
+version:            2.00001
+abstract:           a pure-Perl implementation of the RIPE Database client.
+author:
+    - Luis Motta Campos <lmc@cpan.org>
+license:            unknown
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
 requires:
-  Carp: ~
-  IO: 1.2
-  Test::More: ~
-provides:
-  Net::Whois::RIPE:
-    file: lib/Net/Whois/RIPE.pm
-    version: 1.30
-  Net::Whois::RIPE::Iterator:
-    file: lib/Net/Whois/RIPE/Iterator.pm
-    version: 1.30
-  Net::Whois::RIPE::Object:
-    file: lib/Net/Whois/RIPE/Object.pm
-    version: 1.31
-  Net::Whois::RIPE::Object::Template:
-    file: lib/Net/Whois/RIPE/Object/Template.pm
-    version: 1.30
-generated_by: Module::Build version 0.280801
+    Test::More:  0
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.55_02
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
