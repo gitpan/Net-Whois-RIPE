@@ -1,5 +1,6 @@
 package Net::Whois::RIPE;
 
+use 5.006;
 use warnings;
 use strict;
 use IO::Socket::INET;
@@ -28,11 +29,11 @@ Net::Whois::RIPE - a pure-Perl implementation of the RIPE Database client.
 
 =head1 VERSION
 
-Version 2.00_001 - ALPHA
+Version 2.00_002 - ALPHA
 
 =cut
 
-our $VERSION = 2.00_001;
+our $VERSION = 2.00_002;
 
 =head1 SYNOPSIS
 

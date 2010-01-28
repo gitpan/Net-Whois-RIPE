@@ -2,12 +2,19 @@
 
 use strict;
 use warnings;
-use Test::More tests => 3;
+use Test::More;
+
+unless ( $ENV{RUN_AUTHOR_TESTS} ) {
+    plan skip_all => q{Author tests not required to build this module};
+}
+else {
+    plan tests => 3;
+}
 
 sub not_in_file_ok {
     my ( $filename, %regex ) = @_;
     open( my $fh, '<', $filename )
-        or die "couldn't open $filename for reading: $!";
+      or die "couldn't open $filename for reading: $!";
 
     my %violated;
 
@@ -43,5 +50,3 @@ not_in_file_ok(
 );
 
 not_in_file_ok( Changes => "placeholder date/time" => qr(Date/time) );
-
-module_boilerplate_ok('lib/Net/Whois/RIPE.pm');
