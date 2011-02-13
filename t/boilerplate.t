@@ -8,7 +8,7 @@ unless ( $ENV{RUN_AUTHOR_TESTS} ) {
     plan skip_all => q{Author tests not required to build this module};
 }
 else {
-    plan tests => 3;
+    plan tests => 2;
 }
 
 sub not_in_file_ok {

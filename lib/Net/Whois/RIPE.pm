@@ -29,11 +29,11 @@ Net::Whois::RIPE - a pure-Perl implementation of the RIPE Database client.
 
 =head1 VERSION
 
-Version 2.00_002 - ALPHA
+Version 2.00_003 - BETA
 
 =cut
 
-our $VERSION = 2.00_002;
+our $VERSION = 2.00_003;
 
 =head1 SYNOPSIS
 
@@ -449,9 +449,9 @@ Sends a query to the server. Returns an L<Iterator> object that will return one 
 
 sub query {
     my ( $self, $query ) = @_;
-    $query .= QUERY_KEEPALIVE if $self->keepalive;
-    $query .= QUERY_NON_RECURSIVE unless $self->recursive;
-    $query .= QUERY_REFERRAL if $self->referral;
+    $query .= q{ } . QUERY_KEEPALIVE if $self->keepalive;
+    $query .= q{ } . QUERY_NON_RECURSIVE unless $self->recursive;
+    $query .= q{ } . QUERY_REFERRAL if $self->referral;
     return $self->__query($query);
 }
 
