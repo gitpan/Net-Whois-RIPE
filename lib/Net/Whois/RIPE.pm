@@ -9,7 +9,7 @@ use Iterator;
 use Iterator::Util;
 
 use constant {
-    SOON                    => 0.00001,
+    SOON                    => 30,
     END_OF_OBJECT_MARK      => "\n\n",
     EOL                     => "\015\012",
     QUERY_KEEPALIVE         => q{-k },
@@ -29,11 +29,11 @@ Net::Whois::RIPE - a pure-Perl implementation of the RIPE Database client.
 
 =head1 VERSION
 
-Version 2.00_003 - BETA
+Version 2.00_008 - BETA
 
 =cut
 
-our $VERSION = 2.00_003;
+our $VERSION = 2.00_008;
 
 =head1 SYNOPSIS
 
@@ -145,6 +145,11 @@ people that want to have they answers in plain text, this can help stablishing
 a 'good' ordering for the RPSL objects returned by a query ('good' is RIPE
 NCC's definition of 'good' in this case).
 
+=item B<unfiltered> (boolean, default is C<false>)
+
+When C<true> enables unfiltered object output responses. This produces objects
+that can be presented back to the RIPE Database for updating.
+
 =item B<types> (list of valid RIPE Database object types, default is empty, meaning all types)
 
 Restrict the RPSL object types allowed in the response to those in the list.
@@ -165,7 +170,7 @@ connection to the RIPE Database service desired.
 
 {
     my @option_keys = qw{hostname port timeout keepalive referral
-      recursive grouping types};
+        recursive grouping types};
     my %default_options = (
         hostname     => 'whois.ripe.net',
         port         => '43',
@@ -174,6 +179,7 @@ connection to the RIPE Database service desired.
         referral     => 0,
         recursive    => 0,
         grouping     => 1,
+        unfiltered   => 0,
         types        => undef,
         disconnected => 0,
     );
@@ -181,9 +187,9 @@ connection to the RIPE Database service desired.
     sub new {
         my ( $class, %options ) = @_;
         my %known_options;
-        $known_options{$_} =
-          exists $options{$_} ? $options{$_} : $default_options{$_}
-          foreach @option_keys;
+        $known_options{$_}
+            = exists $options{$_} ? $options{$_} : $default_options{$_}
+            foreach @option_keys;
 
         my $self = bless { __options => \%known_options }, $class;
 
@@ -228,7 +234,7 @@ always return the current timeout.
 sub timeout {
     my ( $self, $timeout ) = @_;
     $self->{__options}{timeout} = $timeout
-      if defined $timeout && $timeout =~ m{^\d+$};
+        if defined $timeout && $timeout =~ m{^\d+$};
     return $self->{__options}{timeout};
 }
 
@@ -304,6 +310,17 @@ sub grouping {
     return $self->__boolean_accessor( 'grouping', @_ );
 }
 
+=head2 B<unfiltered()>
+
+Accessor to the unfiltered configuration option.
+
+=cut
+
+sub unfiltered {
+    my $self = shift;
+    return $self->__boolean_accessor( 'unfiltered', @_ );
+}
+
 =head2 B<connect()>
 
 Initiates a connection with the current object's configuration.
@@ -323,12 +340,13 @@ sub connect {
     );
 
     # Create a new IO::Socket object
-    my $socket = $self->{__state}{socket} = IO::Socket::INET->new(%connection);
+    my $socket = $self->{__state}{socket}
+        = IO::Socket::INET->new(%connection);
     die q{Can't connect to "}
-      . $self->hostname . ':'
-      . $self->port
-      . qq{". Reason: [$@].\n}
-      unless defined $socket;
+        . $self->hostname . ':'
+        . $self->port
+        . qq{". Reason: [$@].\n}
+        unless defined $socket;
 
     # Register $socket with the IO::Select object
     if ( my $ios = $self->ios ) {
@@ -374,9 +392,9 @@ otherwise.
 sub send {
     my ( $self, $message ) = @_;
     die q{Not connected} unless $self->is_connected;
-    if ( my $socket = $self->can_write(SOON) ) {
-        $socket->print( $message, EOL );
-        $socket->flush;
+    if ( $self->ios->can_write( SOON + $self->timeout ) ) {
+        $self->socket->print( $message, EOL );
+        $self->socket->flush;
         return 1;
     }
     return 0;
@@ -423,7 +441,7 @@ sub is_connected {
     my $self   = shift;
     my $socket = $self->socket;
     return UNIVERSAL::isa( $socket, 'IO::Socket' )
-      && $socket->connected ? 1 : 0;
+        && $socket->connected ? 1 : 0;
 }
 
 =head2 B<DESTROY()>
@@ -449,10 +467,12 @@ Sends a query to the server. Returns an L<Iterator> object that will return one 
 
 sub query {
     my ( $self, $query ) = @_;
-    $query .= q{ } . QUERY_KEEPALIVE if $self->keepalive;
-    $query .= q{ } . QUERY_NON_RECURSIVE unless $self->recursive;
-    $query .= q{ } . QUERY_REFERRAL if $self->referral;
-    return $self->__query($query);
+    my $parameters = "";
+    $parameters .= q{ } . QUERY_KEEPALIVE if $self->keepalive;
+    $parameters .= q{ } . QUERY_NON_RECURSIVE unless $self->recursive;
+    $parameters .= q{ } . QUERY_REFERRAL if $self->referral;
+    my $fullquery = $parameters . $query;
+    return $self->__query($fullquery);
 }
 
 # Allows me to pass in queries without having all the automatic options added
@@ -462,12 +482,13 @@ sub __query {
     $self->reconnect unless $self->keepalive;
     die "Not connected" unless $self->is_connected;
 
-    if ( $self->ios->can_write(SOON) ) {
+    if ( $self->ios->can_write( SOON + $self->timeout ) ) {
         $self->socket->print( $query, EOL );
+
         return Iterator->new(
             sub {
                 local $/ = "\n\n";
-                if ( $self->ios->can_read(SOON) ) {
+                if ( $self->ios->can_read( SOON + $self->timeout ) ) {
                     my $block = $self->socket->getline;
                     return $block if defined $block;
                 }
@@ -568,6 +589,8 @@ module on CPAN;
 
 Thanks to RIPE NCC for allowing me to work on this during some of my office
 hours.
+
+Thanks to Carlos Fuentes for the nice patch with bugfixes for version 2.00_008.
 
 =head1 COPYRIGHT & LICENSE
 
