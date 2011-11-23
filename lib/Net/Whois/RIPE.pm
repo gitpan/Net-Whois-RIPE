@@ -29,11 +29,11 @@ Net::Whois::RIPE - a pure-Perl implementation of the RIPE Database client.
 
 =head1 VERSION
 
-Version 2.00_008 - BETA
+Version 2.00_009 - BETA
 
 =cut
 
-our $VERSION = 2.00_008;
+our $VERSION = 2.00_009;
 
 =head1 SYNOPSIS
 
@@ -469,6 +469,7 @@ sub query {
     my ( $self, $query ) = @_;
     my $parameters = "";
     $parameters .= q{ } . QUERY_KEEPALIVE if $self->keepalive;
+    $parameters .= q{ } . QUERY_UNFILTERED if $self->unfiltered;
     $parameters .= q{ } . QUERY_NON_RECURSIVE unless $self->recursive;
     $parameters .= q{ } . QUERY_REFERRAL if $self->referral;
     my $fullquery = $parameters . $query;
