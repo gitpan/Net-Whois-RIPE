@@ -2,7 +2,7 @@ package Net::Whois::Object;
 
 =head1 NAME
 
-Net/Whois/Object - Object encapsulating RPSL data returned by Whois queries
+Net::Whois::Object - Object encapsulating RPSL data returned by Whois queries
 
 =head1 SYNOPSIS
 
@@ -40,7 +40,6 @@ sub new {
 
     my ( $attribute, $value );
     for my $line (@lines) {
-
 
         if ( $line =~ /^(\S+):\s+(.*)/ ) {
 
@@ -98,18 +97,18 @@ sub new {
     return @results;
 }
 
-=head2 B<filter( $filter )>
+=head2 B<query_filter( $query_filter )>
 
-Accessor to the filter attribute used to filter out objects.
-Accepts an optional filter to be added to the filter array,
-always return the current filter array.
+Accessor to the query_filter attribute used to query_filter out objects.
+Accepts an optional query_filter to be added to the query_filter array,
+always return the current query_filter array.
 
 =cut
 
-sub filter {
-    my ( $self, $filter ) = @_;
-    push @{ $self->{filter} }, $filter if defined $filter;
-    return @{ $self->{filter} };
+sub query_filter {
+    my ( $self, $query_filter ) = @_;
+    push @{ $self->{query_filter} }, $query_filter if defined $query_filter;
+    return @{ $self->{query_filter} };
 }
 
 =head2 B<hidden_attributes( $attribute )>
@@ -157,33 +156,39 @@ sub _object_factory {
     my $type  = shift;
     my $value = shift;
 
-    my %class = ( aut_num      => 'AutNum',
-                  as_block     => 'AsBlock',
+    my %class = ( as_block     => 'AsBlock',
                   as_set       => 'AsSet',
+                  aut_num      => 'AutNum',
                   comment      => 'Information',
-                  person       => 'Person',
-                  role         => 'Role',
                   domain       => 'Domain',
-                  inetnum      => 'InetNum',
+                  filter_set   => 'FilterSet',
                   inet6num     => 'Inet6Num',
+                  inetnum      => 'InetNum',
                   inet_rtr     => 'InetRtr',
-                  rtr_set      => 'RtrSet',
-                  mntner       => 'Mntner',
+                  irt          => 'Irt',
                   key_cert     => 'KeyCert',
+                  limerick     => 'Limerick',
+                  mntner       => 'Mntner',
+                  organisation => 'Organisation',
+                  organisation => 'Organisation',
+                  peering_set  => 'PeeringSet',
+                  person       => 'Person',
+                  poem         => 'Poem',
+                  poetic_form  => 'PoeticForm',
+                  response     => 'Response',
+                  role         => 'Role',
+                  route6       => 'Route6',
                   route        => 'Route',
                   route_set    => 'RouteSet',
-                  peering_set  => 'PeeringSet',
-                  limerick     => 'Limerick',
-                  poem         => 'Poem',
-                  organisation => 'Organisation',
-                  response     => 'Response'
+                  rtr_set      => 'RtrSet',
     );
 
     die "Unrecognized Object ($type first attribute)" unless $class{$type};
 
     my $class = "Net::Whois::Object::" . $class{$type};
 
-    eval "require $class";
+    eval "require $class" or die "Can't require $class ($!)";
+
     return $class->new( $type => $value );
 
 }
@@ -201,4 +206,5 @@ Thanks to Luis Motta Campos for his trust when allowing me to publish this
 release.
 
 =cut
+
 1;

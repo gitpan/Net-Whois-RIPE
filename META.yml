@@ -1,25 +1,28 @@
----
-abstract: 'a pure-Perl implementation of the RIPE Database client.'
+--- #YAML:1.0
+name:               Net-Whois-RIPE
+version:            2.00011
+abstract:           a pure-Perl implementation of the RIPE Database client.
 author:
-  - 'Luis Motta Campos <lmc@cpan.org>'
-build_requires:
-  Test::Exception: 0
+    - Luis Motta Campos <lmc@cpan.org>
+license:            unknown
+distribution_type:  module
 configure_requires:
-  ExtUtils::MakeMaker: 0
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.59, CPAN::Meta::Converter version 2.112150'
-license: unknown
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
-name: Net-Whois-RIPE
-no_index:
-  directory:
-    - t
-    - inc
+    ExtUtils::MakeMaker:  0
+build_requires:
+    Test::Exception:  0
 requires:
-  Iterator: 0
-  Iterator::Util: 0
-  Test::More: 0
-  perl: 5.006
-version: 2.00_010
+    Iterator:        0
+    Iterator::Util:  0
+    perl:            5.006
+    Test::More:      0
+resources:
+    bugtracker:  https://github.com/arhuman/Net-Whois-RIPE/issues
+    repository:  https://github.com/arhuman/Net-Whois-RIPE
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.57_05
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4

@@ -14,7 +14,7 @@ BEGIN { $class = 'Net::Whois::Object'; use_ok $class; }
 my  @lines = <DATA>; 
 my $object = (Net::Whois::Object->new(@lines))[0];
 
-isa_ok $object, "Net::Whois::Object::Route";
+isa_ok $object, "Net::Whois::Object::Route6";
 
 # Inherited method from Net::Whois::Object;
 can_ok $object,
@@ -25,15 +25,15 @@ can_ok $object,
     # OO Support
     qw( query_filter filtered_attributes displayed_attributes );
 
-can_ok $object, qw( route descr country origin cross_mnt cross_nfy holes member_of inject aggr_mtd
+can_ok $object, qw( route6 descr country origin org holes member_of inject aggr_mtd
 aggr_bndry export_comps components remarks notify mnt_lower mnt_routes mnt_by
 changed source);
 
-ok( !$object->can('bogusmethod'), "No AUTOLOAD interference with Net::Whois::Object::Route tests" );
+ok( !$object->can('bogusmethod'), "No AUTOLOAD interference with Net::Whois::Object::Route6 tests" );
 
-is ($object->route(),'192.168.1.0/24','route properly parsed');
-$object->route('10.0.0.0/24');
-is ($object->route(),'10.0.0.0/24','route properly set');
+is ($object->route6(),'2001:0DB8::/32','route properly parsed');
+$object->route6('2001:0DB8::0001/48');
+is ($object->route6(),'2001:0DB8::0001/48','route properly set');
 
 is_deeply ($object->descr(),[ 'route object for 192.168.1.0/24' ],'descr properly parsed');
 $object->descr('Added descr');
@@ -47,13 +47,11 @@ is ($object->origin(),'AS1234','origin properly parsed');
 $object->origin('AS12');
 is ($object->origin(),'AS12','origin properly set');
 
-is_deeply ($object->cross_mnt(),[ 'CROSS-MAINT01' ],'cross_mnt properly parsed');
-$object->cross_mnt('CROSS-MAINT02');
-is ($object->cross_mnt()->[1],'CROSS-MAINT02','cross_mnt properly added');
-
-is_deeply ($object->cross_nfy(),[ 'watcher2@somewhere.com' ],'cross_nfy properly parsed');
-$object->cross_nfy('watcher@somewhere.com');
-is ($object->cross_nfy()->[1],'watcher@somewhere.com','cross_ntfy properly added');
+my $orgs = $object->org();
+is ($orgs->[0],'ORG-MISC01-RIPE','org properly parsed');
+$orgs = $object->org('ORG-MOD');
+is ($orgs->[0],'ORG-MISC01-RIPE','org array preserved');
+is ($orgs->[1],'ORG-MOD','org properly added');
 
 is_deeply ($object->holes(),[ '192.168.1.23' ],'holes properly parsed');
 $object->holes('192.168.1.123');
@@ -112,12 +110,11 @@ $object->source('APNIC');
 is ($object->source(),'APNIC','source properly set');
 
 __DATA__
-route:          192.168.1.0/24
+route6:         2001:0DB8::/32
 descr:          route object for 192.168.1.0/24
 country:        FR
 origin:         AS1234
-cross-mnt:      CROSS-MAINT01
-cross-nfy:      watcher2@somewhere.com
+org:            ORG-MISC01-RIPE
 holes:          192.168.1.23
 member_of:      RTES-SET01
 inject:         RTR01
@@ -132,4 +129,5 @@ mnt-lower:      MAINT-EXAMPLECOM
 mnt-routes:     MAINT-EXAMPLECOM
 changed:        abc@somewhere.com 20120131
 source:         RIPE
+
 

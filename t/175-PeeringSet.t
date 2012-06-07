@@ -23,7 +23,7 @@ can_ok $object,
     qw( new ),
 
     # OO Support
-    qw( filter filtered_attributes displayed_attributes );
+    qw( query_filter filtered_attributes displayed_attributes );
 
 can_ok $object, qw( peering_set descr peering mp_peering remarks tech_c
 admin_c notify mnt_by mnt_lower changed source);
