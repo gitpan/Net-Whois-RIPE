@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Net-Whois-RIPE
-version:            2.00011
+version:            2.00012
 abstract:           a pure-Perl implementation of the RIPE Database client.
 author:
     - Luis Motta Campos <lmc@cpan.org>

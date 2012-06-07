@@ -1,6 +1,7 @@
 Revision history for net-whois-ripe
 
-2.00011     05 Jun 2012
+2.00012     05 Jun 2012
+            Fix previous broken release (merge goof)
             Fix some tests
                 to skip when there's a Network issue
                 to adapt to the current type of objects managed 
@@ -10,6 +11,9 @@ Revision history for net-whois-ripe
             Renamed Net::Whois::Object filter attribute to query_filter
             (to fix name collision with FilterSet filter attribute)
             Enhance the documentation
+
+2.00011     05 Jun 2012
+            Broken release on github.
 
 2.00010     20 Apr 2012
             Net::Whois::Object addition (By Arnaud "Arhuman" Assad)
