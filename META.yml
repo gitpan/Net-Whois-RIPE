@@ -17,6 +17,8 @@ no_index:
   directory:
     - t
     - inc
+recommends:
+  WWW::Mechanize: 0
 requires:
   Iterator: 0
   Iterator::Util: 0
@@ -25,4 +27,4 @@ requires:
 resources:
   bugtracker: https://github.com/arhuman/Net-Whois-RIPE/issues
   repository: https://github.com/arhuman/Net-Whois-RIPE
-version: 2.00013
+version: 2.00014
