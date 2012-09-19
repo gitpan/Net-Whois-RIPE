@@ -39,24 +39,22 @@ of IPv4 address space.
 
 =head1 METHODS
 
-=head2 new ( %options )
+=head2 new ( @options )
 
 Constructor for the Net::Whois::Object::InetNum class
 
 =cut
 
 sub new {
-    my ( $class, %options ) = @_;
+    my ( $class, @options ) = @_;
 
     my $self = bless {}, $class;
 
-    for my $key ( keys %options ) {
-        $self->$key( $options{$key} );
-    }
+    $self->_init(@options);
 
     $self->attributes( 'primary', ['inetnum'] );
     $self->attributes( 'mandatory', [ 'inetnum', 'netname', 'descr', 'country', 'tech_c', 'admin_c', 'status', 'mnt_by', 'changed', 'source' ] );
-    $self->attributes( 'optionnal', [ 'org', 'remarks', 'notify', 'mnt_lower', 'mnt_routes', 'mnt_domains', 'mnt_irt' ] );
+    $self->attributes( 'optional', [ 'org', 'remarks', 'notify', 'mnt_lower', 'mnt_routes', 'mnt_domains', 'mnt_irt' ] );
     $self->attributes( 'single', [ 'inetnum', 'netname', 'org', 'status', 'source' ] );
     $self->attributes( 'multiple', [ 'descr', 'country', 'tech_c', 'admin_c', 'remarks', 'notify', 'mnt_by', 'mnt_lower', 'mnt_routes', 'mnt_domains', 'mnt_irt', 'changed' ] );
 
@@ -302,7 +300,7 @@ object.
 sub mnt_routes {
     my ( $self, $mnt_route ) = @_;
 
-    return $self->_multiple_attribute_setget( 'mnt_route', $mnt_route );
+    return $self->_multiple_attribute_setget( 'mnt_routes', $mnt_route );
 }
 
 =head2 B<mnt_domains( [$mnt_domain] )>
@@ -320,7 +318,7 @@ object.
 sub mnt_domains {
     my ( $self, $mnt_domain ) = @_;
 
-    return $self->_multiple_attribute_setget( 'mnt_domain', $mnt_domain );
+    return $self->_multiple_attribute_setget( 'mnt_domains', $mnt_domain );
 }
 
 =head2 B<changed( [$changed] )>

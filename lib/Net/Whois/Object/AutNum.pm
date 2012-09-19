@@ -40,24 +40,21 @@ operated by one or more network operators – an Autonomous System (AS).
 
 =head1 METHODS
 
-=head2 new ( %options )
+=head2 new ( @options )
 
 Constructor for the Net::Whois::Object::AutNum class
 
 =cut
 
 sub new {
-    my ( $class, %options ) = @_;
+    my ( $class, @options ) = @_;
 
     my $self = bless {}, $class;
-
-    for my $key ( keys %options ) {
-        $self->$key( $options{$key} );
-    }
+    $self->_init(@options);
 
     $self->attributes( 'primary',   ['aut_num'] );
     $self->attributes( 'mandatory', [ 'aut_num', 'as_name', 'descr', 'tech_c', 'admin_c', 'mnt_by', 'changed', 'source' ] );
-    $self->attributes( 'optionnal', [ 'member_of', 'import', 'mp_import', 'export', 'mp_export', 'default', 'mp_default', 'remarks', 'notify', 'mnt_lower', 'mnt_routes' ] );
+    $self->attributes( 'optional', [ 'member_of', 'import', 'mp_import', 'export', 'mp_export', 'default', 'mp_default', 'remarks', 'notify', 'mnt_lower', 'mnt_routes' ] );
     $self->attributes( 'single', [ 'aut_num', 'as_name', 'source' ] );
     $self->attributes( 'multiple', [ 'descr', 'member_of', 'import', 'mp_import', 'export', 'mp_export', 'default', 'mp_default', 'remarks', 'admin_c', 'tech_c', 'notify', 'mnt_lower', 'mnt_routes', 'mnt_by', 'changed' ] );
 
@@ -255,7 +252,7 @@ include a URL or email address.
 sub remarks {
     my ( $self, $remark ) = @_;
 
-    return $self->_multiple_attribute_setget( 'remark', $remark );
+    return $self->_multiple_attribute_setget( 'remarks', $remark );
 }
 
 =head2 B<admin_c( [$contact] )>
@@ -339,7 +336,7 @@ always return the current mnt_routes array.
 sub mnt_routes {
     my ( $self, $mnt_routes ) = @_;
 
-    return $self->_multiple_attribute_setget( 'mnt_route', $mnt_route );
+    return $self->_multiple_attribute_setget( 'mnt_routes', $mnt_route );
 }
 
 =head2 B<mnt_by( [$mnt_by] )>

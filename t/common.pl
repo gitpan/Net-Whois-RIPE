@@ -14,12 +14,12 @@ ok( !$object->can('bogusmethod'), "No AUTOLOAD interference with $class tests" )
 
 for my $a ( $object->attributes('mandatory') ) {
     ok( $object->attribute_is( $a, 'mandatory' ), "Attribute $a is mandatory" );
-    ok( !$object->attribute_is( $a, 'optionnal' ), "Attribute $a is not optionnal");
+    ok( !$object->attribute_is( $a, 'optional' ), "Attribute $a is not optional");
 }
 
-for my $a ( $object->attributes('optionnal') ) {
+for my $a ( $object->attributes('optional') ) {
     ok( !$object->attribute_is( $a, 'mandatory' ), "Attribute $a is not mandatory" );
-    ok( $object->attribute_is( $a, 'optionnal' ), "Attribute $a is optionnal");
+    ok( $object->attribute_is( $a, 'optional' ), "Attribute $a is optional");
 }
 
 for my $a ( $object->attributes('single') ) {
@@ -42,3 +42,7 @@ for my $a ( $object->attributes('all') ) {
     ok ($object->attribute_is($a, 'single') or $object->attribute_is($a, 'multiple'), "$a is either single or multiple");
     ok ($object->attribute_is($a, 'single') != $object->attribute_is($a, 'multiple'), "$a can't be both single".$object->attribute_is($a,'single')." and multi".$object->attribute_is($a,'multiple'));
 }
+
+# check that the object can be dumped
+# this catches spelling errors in attribute accessors
+ok $object->dump, 'can dump object';

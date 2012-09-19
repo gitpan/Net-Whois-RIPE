@@ -28,24 +28,21 @@ It defines a group of Autonomous Systems with the same routing policies.
 
 =head1 METHODS
 
-=head2 new ( %options )
+=head2 new ( @options )
 
 Constructor for the Net::Whois::Object::AsSet class
 
 =cut
 
 sub new {
-    my ( $class, %options ) = @_;
+    my ( $class, @options ) = @_;
 
     my $self = bless {}, $class;
-
-    for my $key ( keys %options ) {
-        $self->$key( $options{$key} );
-    }
+    $self->_init(@options);
 
     $self->attributes( 'primary', ['as_set'] );
     $self->attributes( 'mandatory', [ 'as_set', 'descr', 'tech_c', 'admin_c', 'mnt_by', 'changed', 'source' ] );
-    $self->attributes( 'optionnal', [ 'members', 'mbrs_by_ref', 'remarks', 'notify' ] );
+    $self->attributes( 'optional', [ 'members', 'mbrs_by_ref', 'remarks', 'notify' ] );
     $self->attributes( 'single', [ 'as_set', 'source' ] );
     $self->attributes( 'multiple', [ 'descr', 'members', 'mbrs_by_ref', 'remarks', 'tech_c', 'admin_c', 'notify', 'mnt_by', 'changed' ] );
 
@@ -101,7 +98,7 @@ of AS Numbers, or other as-set names.
 sub members {
     my ( $self, $member ) = @_;
 
-    return $self->_multiple_attribute_setget( 'member', $member );
+    return $self->_multiple_attribute_setget( 'members', $member );
 }
 
 =head2 B<mbrs_by_ref( [$mbr] )>
@@ -127,7 +124,7 @@ defined explicitly by the members attribute.
 sub mbrs_by_ref {
     my ( $self, $mbr ) = @_;
 
-    return $self->_multiple_attribute_setget( 'mbr', $mbr );
+    return $self->_multiple_attribute_setget( 'mbrs_by_ref', $mbr );
 }
 
 =head2 B<remarks( [$remark] )>
@@ -224,7 +221,7 @@ object will be able to change details.
 sub mnt_by {
     my ( $self, $mnt ) = @_;
 
-    return $self->_multiple_attribute_setget( 'mnt', $mnt );
+    return $self->_multiple_attribute_setget( 'mnt_by', $mnt );
 }
 
 =head2 B<changed( [$changed] )>
