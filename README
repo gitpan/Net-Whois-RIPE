@@ -31,14 +31,9 @@ perldoc command.
 
 You can also look for information at:
 
-    RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=net-whois-ripe
+    GitHub 
+        https://github.com/arhuman/Net-Whois-RIPE
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/net-whois-ripe
-
-    CPAN Ratings
-        http://cpanratings.perl.org/d/net-whois-ripe
 
     Search CPAN
         http://search.cpan.org/dist/net-whois-ripe
