@@ -26,4 +26,4 @@ requires:
 resources:
   bugtracker: https://github.com/arhuman/Net-Whois-RIPE/issues
   repository: https://github.com/arhuman/Net-Whois-RIPE
-version: 2.003
+version: 2.004
